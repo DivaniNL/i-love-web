@@ -1,6 +1,6 @@
 # Talk Webtechnologie 03-09-2024
 
-## Wat heb ik voor nieuws tijdens deze presentatie geleerd?
+# Wat heb ik voor nieuws tijdens deze presentatie geleerd?
 
 1. Voor mij vorheen nog onbekende CSS-selectors:
 a[href$=".pdf"] - a elementen die een href hebben die de string ".pdf" bevat.
