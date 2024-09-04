@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
 </head>
 <body>
-    
+    <md id="output">
+    </md>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>  -->
+    <script>
+        // Function to fetch and display the file content on page load
+        function loadFileOnPageLoad() {
+            fetch('md/sprint1/04-09-checkout.md')  // Path to your local file within your project
+                .then(response => response.text())
+                .then(text => {
+                    var node = document.getElementById('output');
+                    node.innerText = text;
+                    console.log(text.substring(0, 200));
+                })
+                .catch(error => console.error('Error loading file:', error));
+        }
+
+        // Call the function on page load
+        window.onload = loadFileOnPageLoad;
+    </script>
 </body>
-</html>l
+</html>
