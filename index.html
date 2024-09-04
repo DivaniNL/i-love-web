@@ -9,20 +9,48 @@
 </head>
 <body>
     <md id="output">
+# My Tribe
 
+Voor deze opdracht moesten we een online visitekaartje maken in je eigen stijl.
+
+## Waar heb ik voor gekozen?
+
+Ik heb gekozen om een layout te maken waar in de linkerkant een menu te vinden is met buttons waardoor het gedeelte rechts beperkt is qua hogote en er geen nieuwe pagina's nodig zijn.
+
+## Waar liep ik tegen aan?
+
+Aan het begin stonden mijn scss -> css watch instellingen nog niet helemaal goed, dus dit duurde even voordat mijn scss goed gecompiled werdt naar css code.
+Daarnaast waren sommige stukke content niet selecteerbaar. Dit heb ik opgelost met de volgende code:
+
+```css 
+.wrapper{
+    opacity: 0;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    &.active{
+        opacity: 1;
+        z-index: 99;
+        overflow: auto;
+    }
+}
+```
+
+Met behulp van een hoge z-index op de actieve wrapper valt deze over alle blokken heen, waardoor alleen deze tekst selecteerbaar is.
+        
     </md>
 
-    <script>
-        // Path to your markdown file on GitHub
-        const filePath = 'https://raw.githubusercontent.com/divaninl/i-love-web/main/md/sprint1/04-09-checkout.md';
-
-        // Fetch the content of the markdown file
-        fetch(filePath)
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById('output').innerText = text;
-            })
-            .catch(error => console.error('Error fetching file:', error));
-    </script>
+    <main>
+        <header>
+            <div class="header_container">
+                <figure class="logo_container"></figure>
+            </div>
+        </header>
+    </main>
+   
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
 </body>
 </html>
