@@ -27,7 +27,20 @@ Daarnaast waren sommige stukke content niet selecteerbaar. Dit heb ik opgelost m
    }
 }
 ```
-
 Met behulp van een hoge z-index op de actieve wrapper valt deze over alle blokken heen, waardoor alleen deze tekst selecteerbaar is.
+
+### 04-09-2024 Shortened Some Code
+Er bestond een functie die na een page load de eerste button en wrapper ative class geeft. Later bedacht ik me dat ik simpelweg in de HTML deze handmatig een active class kan geven. Dit is voor nu beter aangezien mijn menu nu niet dynamisch is, maar hard in de code staat. Mocht ik deze code later nog nodig hebben, dan weet ik hem te vinden ;)
+
+```JS
+function setActiveTab(){
+    //At page load set the first tab
+    var $this = $('nav .nav_item').first();
+    let num = $this.data('giver');
+    $this.toggleClass("active")
+    let toshow = $('article .wrapper[data-receiver='+num+']');
+    toshow.toggleClass("active")
+}
+```
 
 Op de I Love Website zullen hieronder afbeeldingen getoond worden van de schetsen voor deze website.
