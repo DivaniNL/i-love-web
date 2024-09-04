@@ -1,0 +1,29 @@
+//importeren van variables en mixins
+@import "./vars";
+@import "./mixins";
+@import "./header";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font1;
+}
+md#output{
+    display: block;
+    background-color: white;
+}
+.full, .full-row, .full-container {
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0 35px;
+}
+button{
+    @include button;
+}
+body{
+    background-color: #333;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

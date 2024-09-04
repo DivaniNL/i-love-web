@@ -1,0 +1,30 @@
+
+header{
+    background-color: $color2;
+    .header_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        figure{
+            display: flex;
+            img{
+                border-radius: $br;
+            }
+        }
+        nav{
+            ul{
+                display: flex;
+                gap: 25px;
+                list-style-type: none;
+                align-items: center;
+                li{
+                    a{
+                        @include navitem;
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
+}
