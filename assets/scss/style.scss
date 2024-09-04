@@ -20,6 +20,20 @@ md#output{
 button{
     @include button;
 }
+pre{
+    padding: 1rem;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    color: #1f2328;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    margin: 10px;
+
+    code{
+        font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace) !important;
+    }
+}
 body{
     background-color: #333;
 }
