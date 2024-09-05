@@ -13,4 +13,8 @@ jQuery(document).ready(function ($) {
         }
     })
 
+    $('.logo_container').on("click tap", function(){
+         $(this).toggleClass('scared');
+    });
+
 });

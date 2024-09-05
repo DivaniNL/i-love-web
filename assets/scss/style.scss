@@ -1,5 +1,6 @@
 //importeren van variables en mixins
 @import "./vars";
+@import "./keyframes";
 @import "./mixins";
 @import "./header";
 
@@ -16,6 +17,10 @@ md#output{
     margin: 0 auto;
     max-width: 1240px;
     padding: 0 35px;
+}
+.blocks-container{
+    background: $white;
+    width: 100%;
 }
 button{
     @include button;

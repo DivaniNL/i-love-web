@@ -5,11 +5,45 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        figure{
+        height: 97px;
+        .logo_container{
             display: flex;
-            img{
-                border-radius: $br;
+            height: 75px;
+            border-radius: $br;
+            border: 4px solid $color3;
+            overflow: hidden;
+            transform: translate(-50%, 48px);
+            transition: 0.2s ease;
+            cursor: pointer;
+            &:not(.scared){
+                color: red;
+                &:hover{
+                    animation: shake 0.5s;
+                    animation-iteration-count: infinite;
+                }
+            
             }
+            img{
+                height: 100%;
+            }
+            &.scared{
+                transform: translate(0, 0);
+                &:hover{
+                    animation: shakescared 0.5s;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+        .title_container h1 {
+            overflow: hidden;
+            color: $white;
+            border-right: .15em solid $color3; 
+            white-space: nowrap; 
+            margin: 0 auto; 
+            letter-spacing: .15em;
+            animation: 
+              typing 1s steps(40, end),
+              blink-caret .75s step-end infinite;
         }
         nav{
             ul{
