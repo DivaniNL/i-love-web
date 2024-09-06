@@ -1,0 +1,45 @@
+main.semester_page{
+    section.outer-container{
+        .blocks-container{
+            border: 3px solid $color3;
+            padding: 24px;
+            .blocks-group{
+                &:not(:last-child){
+                    margin-bottom: $margin-s;
+                    @include sm{
+                        margin-bottom: $margin-xs;
+                    }
+                }
+                &.note-group{ // notitions sections
+                    .text{
+                        h2, h3, h4, h5, h6{
+                            &:not(:last-child){
+                                margin-bottom: 15px;
+                            }
+                        }
+                        p, li{
+                            &:not(:last-child){
+                                margin-bottom: 5px;
+                            }
+                        }
+                        ul, ol{
+                            margin-bottom: 5px;
+                        }
+                    }
+                    .ilw_codeblock{
+                        padding: 1rem;
+                        overflow: auto;
+                        font-size: 85%;
+                        line-height: 1.45;
+                        color: #1f2328;
+                        background-color: #f6f8fa;
+                        border-radius: 6px;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+

@@ -3,11 +3,15 @@
 @import "./keyframes";
 @import "./mixins";
 @import "./header";
+@import "./index"; 
+@import "./semester_pages"; 
+
 
 *{
     margin: 0;
     padding: 0;
     font-family: $font1;
+    box-sizing: border-box;
 }
 md#output{
     display: block;
@@ -25,24 +29,41 @@ md#output{
 button{
     @include button;
 }
-pre{
-    padding: 1rem;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-    color: #1f2328;
-    background-color: #f6f8fa;
-    border-radius: 6px;
-    margin: 10px;
-
-    code{
-        font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace) !important;
-    }
-}
-body{
-    background-color: #333;
-}
 a{
     text-decoration: none;
     color: inherit;
+}
+body{
+    background-color: $color3;
+    &:after{
+        content:''; 
+        background-image: linear-gradient($color2, $color3);
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        z-index: -1;
+        min-height: calc(100vh - 100px);
+        height: 100%;
+    }
+    .sections_container_outer{
+        height: calc(100vh - 100px);
+        margin-bottom: 100px;
+        .full-row{
+            height: 100%;
+            .sections_container{
+                height: 100%;
+                border-top: 3px solid $color3;
+                border-left: 3px solid $color3;
+                border-right: 3px solid $color3;
+                border-bottom: 3px solid $color3;
+                background-color: $white;
+            }
+        }
+        
+    }
+    .full-row{
+        .blocks-container{
+            padding: 24px;
+        }
+    }
 }

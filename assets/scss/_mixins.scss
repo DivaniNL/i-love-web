@@ -12,9 +12,6 @@
    
 }
 @mixin navitem{
-    padding: 10px 0;
-    width: fit-content;
-    min-width: 165px;
     &.active{
         button{
             background-color: $color3;
@@ -25,11 +22,13 @@
     button{
         padding: 10px 15px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         border: 2px solid $color3;
         background-color: $white;
         transition: 0.2s ease;
         font-size: 14px;
+        min-height: 46px;
         color: $color3;
         border-radius: $br;
         width: 100%;
