@@ -1,7 +1,6 @@
 main.semester_page{
-    section.outer-container{
+    section.outer-container, section.note-section-container{
         .blocks-container{
-            border: 3px solid $color3;
             padding: 24px;
             .blocks-group{
                 &:not(:last-child){
