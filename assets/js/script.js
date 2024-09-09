@@ -1,5 +1,5 @@
-jQuery(document).ready(function ($) {
-   addNoteAnchors();
+document.addEventListener('DOMContentLoaded', function () {
+    addNoteAnchors();
 });
 
 function addNoteAnchors(){
