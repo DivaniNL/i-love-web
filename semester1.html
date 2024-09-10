@@ -55,19 +55,21 @@
                     <section class="i_love_web_section note-section-container">
                         <div class="blocks-container">
                             <section class="blocks-group note-group">
-                                    <h2>My Tribe</h2>
-                                    <p>Voor deze opdracht moesten we een online visitekaartje maken in je eigen stijl.</p>
-                                    <h3>Waar heb ik voor gekozen?</h3>
-                                    <p>Ik heb gekozen om een layout te maken waar in de linkerkant een menu te vinden is met
-                                        buttons waardoor het gedeelte rechts beperkt is qua hogote en er geen nieuwe
-                                        pagina&#39;s nodig zijn.</p>
-                                    <h3>Waar liep ik tegen aan?</h3>
-                                    <p>Aan het begin stonden mijn scss -&gt; css watch instellingen nog niet helemaal goed, dus
-                                        dit duurde even voordat mijn scss goed gecompiled werdt naar css code.
-                                        Daarnaast waren sommige stukke content niet selecteerbaar. Dit heb ik opgelost met de
-                                        volgende code:
-                                    </p>
-                                    <pre class="ilw_codeblock"><code>
+                                <h2>My Tribe</h2>
+                                <p>Voor deze opdracht moesten we een online visitekaartje maken in je eigen stijl.</p>
+                                <h3>Waar heb ik voor gekozen?</h3>
+                                <p>Ik heb gekozen om een layout te maken waar in de linkerkant een menu te vinden is met
+                                    buttons waardoor het gedeelte rechts beperkt is qua hogote en er geen nieuwe
+                                    pagina&#39;s nodig zijn.</p>
+                                <h3>Waar liep ik tegen aan?</h3>
+                                <p>Aan het begin stonden mijn scss -&gt; css watch instellingen nog niet helemaal goed,
+                                    dus
+                                    dit duurde even voordat mijn scss goed gecompiled werdt naar css code.
+                                    Daarnaast waren sommige stukke content niet selecteerbaar. Dit heb ik opgelost met
+                                    de
+                                    volgende code:
+                                </p>
+                                <pre class="ilw_codeblock"><code>
             .wrapper{
                 opacity: 0;
                 padding: 24px;
@@ -83,15 +85,19 @@
                 }
             }
                                     </code></pre>
-                                    <p>Met behulp van een hoge z-index op de actieve wrapper valt deze over alle blokken heen,
-                                        waardoor alleen deze tekst selecteerbaar is.</p>
-                                    <h4>04-09-2024 Shortened Some Code</h4>
-                                    <p>Er bestond een functie die na een page load de eerste button en wrapper active class
-                                        geeft. Later bedacht ik me dat ik simpelweg in de HTML deze handmatig een active class
-                                        kan geven. Dit is voor nu beter aangezien mijn menu nu niet dynamisch is, maar hard in
-                                        de code staat. Mocht ik deze code later nog nodig hebben, dan weet ik hem te vinden ;)
-                                    </p>
-                                    <pre class="ilw_codeblock"><code>
+                                <p>Met behulp van een hoge z-index op de actieve wrapper valt deze over alle blokken
+                                    heen,
+                                    waardoor alleen deze tekst selecteerbaar is.</p>
+                                <h4>04-09-2024 Shortened Some Code</h4>
+                                <p>Er bestond een functie die na een page load de eerste button en wrapper active class
+                                    geeft. Later bedacht ik me dat ik simpelweg in de HTML deze handmatig een active
+                                    class
+                                    kan geven. Dit is voor nu beter aangezien mijn menu nu niet dynamisch is, maar hard
+                                    in
+                                    de code staat. Mocht ik deze code later nog nodig hebben, dan weet ik hem te vinden
+                                    ;)
+                                </p>
+                                <pre class="ilw_codeblock"><code>
         function setActiveTab(){
             //At page load set the first tab
             var $this = $(&#39;nav .nav_item&#39;).first();
@@ -101,8 +107,9 @@
             toshow.toggleClass(&quot;active&quot;)
         }
                                     </code></pre>
-                                    <p>Op de I Love Website zullen hieronder afbeeldingen getoond worden van de schetsen voor
-                                        deze website.</p>
+                                <p>Op de I Love Website zullen hieronder afbeeldingen getoond worden van de schetsen
+                                    voor
+                                    deze website.</p>
 
 
                             </section>
@@ -115,12 +122,14 @@
                                         <p>Voor mij vorheen nog onbekende CSS-selectors:
                                             a[href$=&quot;.pdf&quot;] - a elementen die een href hebben die de string
                                             &quot;.pdf&quot; bevat.
-                                            p::first-letter/line - de eerste letter of regel van een p tag wordt getarget.
+                                            p::first-letter/line - de eerste letter of regel van een p tag wordt
+                                            getarget.
                                             Hiervoor gebruikte ik normaal
                                             een span-element</p>
                                     </li>
                                     <li>
-                                        <p>LCH kleuren - een nieuw kleurenmodel die kleuren weergeeft die meer overeenkomen
+                                        <p>LCH kleuren - een nieuw kleurenmodel die kleuren weergeeft die meer
+                                            overeenkomen
                                             met hoe het menselijk oog
                                             deze weergeeft.</p>
                                     </li>
@@ -150,7 +159,8 @@
                                 <h3>TO DO:</h3>
                                 <ul>
                                     <li>Comments refinen op de my-tribe page</li>
-                                    <li>Met rode en groene pen de html + css benoemen op de schets van de i love web page
+                                    <li>Met rode en groene pen de html + css benoemen op de schets van de i love web
+                                        page
                                     </li>
                                     <li>I love web pagina begin bouwen</li>
                                     <li>Tekst maken over de Lessen van week 1 in markdowns:
@@ -163,29 +173,34 @@
                                 <h2>Daily Checkout 05-09-2024</h2>
                                 <h3>Schrijf kort op wat je
                                     vandaag hebt gedaan en nog gaat doen</h3>
-                                <p>Ik ben vanochtend met een uitklapbare sidebar begonnen. Ik moet enkel nog twee icons met
+                                <p>Ik ben vanochtend met een uitklapbare sidebar begonnen. Ik moet enkel nog twee icons
+                                    met
                                     links toevoegen.</p>
                                 <h3>Schrijf een aantal studievragen op:</h3>
                                 <ol>
                                     <li>Wat maakt JavaScript verschillend van HTML en CSS?</li>
                                 </ol>
                                 <blockquote>
-                                    <p>Met JavaScript maak je je website dynamisch en kan HTML en CSS veranderen op basis
+                                    <p>Met JavaScript maak je je website dynamisch en kan HTML en CSS veranderen op
+                                        basis
                                         van acties en/of gebeurtenissen.</p>
                                 </blockquote>
                                 <ol>
                                     <li>Wat van mijn HTML en CSS kennis kan ik hergebruiken binnen JavaScript?</li>
                                 </ol>
                                 <blockquote>
-                                    <p>Je hebt CSS-notaties nodig om elementen aan te spreken in JavaScript en het is handig
-                                        om te weten hoe een HTML structuur werkt als je functies als document.CreateElement
+                                    <p>Je hebt CSS-notaties nodig om elementen aan te spreken in JavaScript en het is
+                                        handig
+                                        om te weten hoe een HTML structuur werkt als je functies als
+                                        document.CreateElement
                                         gaat gebruiken.</p>
                                 </blockquote>
                                 <ol>
                                     <li>Wat ga ik verder vandaag nog doen met JavaScript?</li>
                                 </ol>
                                 <blockquote>
-                                    <p>Vandaag niks meer, het Javascript gedeelte van mijn uitvouwbare social media blok op
+                                    <p>Vandaag niks meer, het Javascript gedeelte van mijn uitvouwbare social media blok
+                                        op
                                         mijn visitekaart werkt. Er zitten alleen nog wat bugs in de CSS en de HTML.</p>
                                 </blockquote>
                                 <h3>TO DO:</h3>
@@ -198,30 +213,52 @@
                                 </ul>
 
                             </section>
+                            <section class="blocks-group note-group">
 
-<h2>Daily Checkout 09-09-2024</h2>
-<h3>Schrijf op wat je vandaag gedaan hebt</h3>
-<p>Vandaag zijn we begonnen aan de Squadpage-opdracht.
-Hiervoor hebben we een design geschetst + al onderzoek gedaan welke technieken we willen gebruiken en hoe we ze willen gebruiken.</p>
-<p>Drie dingen die ik vandaag geleerd heb:</p>
-<ul>
-<li>:focus-within</li>
-<li>om minder jquery te gebruiken</li>
-<li>Verschill tussen a- en button-tags, wanneer je beide gebruikt</li>
-</ul>
-<h3>Schrijf 2 dingen die je interessant vind:</h3>
-<ul>
-<li>CSS Grid layout</li>
-<li>Verschill tussen a- en button-tags, wanneer je beide gebruikt</li>
-</ul>
-<h3>Schrijf 1 ding waar je nog vragen over hebt</h3>
-<ul>
-<li>CSS Grid layout</li>
-</ul>
-                    </section>
+                                <h2>Daily Checkout 09-09-2024</h2>
+                                <h3>Schrijf op wat je vandaag gedaan hebt</h3>
+                                <p>Vandaag zijn we begonnen aan de Squadpage-opdracht.
+                                    Hiervoor hebben we een design geschetst + al onderzoek gedaan welke technieken we
+                                    willen gebruiken en hoe we ze willen gebruiken.</p>
+                                <p>Drie dingen die ik vandaag geleerd heb:</p>
+                                <ul>
+                                    <li>:focus-within</li>
+                                    <li>om minder jquery te gebruiken</li>
+                                    <li>Verschill tussen a- en button-tags, wanneer je beide gebruikt</li>
+                                </ul>
+                                <h3>Schrijf 2 dingen die je interessant vind:</h3>
+                                <ul>
+                                    <li>CSS Grid layout</li>
+                                    <li>Verschill tussen a- en button-tags, wanneer je beide gebruikt</li>
+                                </ul>
+                                <h3>Schrijf 1 ding waar je nog vragen over hebt</h3>
+                                <ul>
+                                    <li>CSS Grid layout</li>
+                                </ul>
+                            </section>
+                            <section class="blocks-group note-group">
+                                <h2>Daily Checkout 10-09-2024</h2>
+                                <h3>Schrijf op wat je vandaag gedaan hebt</h3>
+                                <p>Vandaag hebben we de basics geleerd van CSS grids</p>
+                                <p>Drie dingen die ik vandaag geleerd heb:</p>
+                                <ul>
+                                    <li>verschil tussen grid layouts met alleen afmetingen + areas</li>
+                                    <li>grid-column/row: 1/-1 (-1 is de laatste)</li>
+                                    <li>gebruik align en justify self</li>
+                                </ul>
+                                <h3>Schrijf 2 dingen die je interessant vind:</h3>
+                                <ul>
+                                    <li>grid-column/row: 1/-1 (-1 is de laatste)</li>
+                                    <li>Responsive grid layouts</li>
+                                </ul>
+                                <h3>Schrijf 1 ding waar je nog vragen over hebt</h3>
+                                <ul>
+                                    <li>PRE CODE tags in je html zonder whitespacing</li>
+                                </ul>
+                            </section>
+                        </div>
                 </div>
             </div>
-        </div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>
