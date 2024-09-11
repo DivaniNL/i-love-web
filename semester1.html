@@ -16,249 +16,271 @@
 
 <body>
     <main class="semester_page">
-        <header>
-            <div class="full-row">
-                <div class="header_container">
-                    <a href="./index.html">
-                        <figure class="logo_container">
-                            <img src="./assets/img/divani.png" alt="">
-                        </figure>
-                    </a>
-                    <div class="title_container">
-                        <h1>I Love Web</h1>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href=""><button>Handige links</button></a>
-                            </li>
-                            <li>
-                                <div class="dropdown">
-                                    <a href="">
-                                        <button class="dropbtn">Semesters</button>
-                                    </a>
-                                    <div class="dropdown-content">
-                                        <a href="./semester1.html">Semester 1</a>
-                                    </div>
+        <header class="main_grid">
+            <div></div>
+            <div class="header_container">
+                <a href="./index.html">
+                    <figure class="logo_container">
+                        <img src="./assets/img/divani.png" alt="">
+                    </figure>
+                </a>
+                <div class="title_container">
+                    <h1>I Love Web</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href=""><button>Handige links</button></a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="">
+                                    <button class="dropbtn">Semesters</button>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="./semester1.html">Semester 1</a>
                                 </div>
-                            </li>
+                            </div>
+                        </li>
 
-                        </ul>
-                    </nav>
-                </div>
+                    </ul>
+                </nav>
             </div>
-
+            <div></div>
         </header>
-        <div class="sections_container_outer">
-            <div class="full-row">
-                <div class="sections_container">
-                    <section class="i_love_web_section note-section-container">
-                        <div class="blocks-container">
-                            <section class="blocks-group note-group">
-                                <h2>My Tribe</h2>
-                                <p>Voor deze opdracht moesten we een online visitekaartje maken in je eigen stijl.</p>
-                                <h3>Waar heb ik voor gekozen?</h3>
-                                <p>Ik heb gekozen om een layout te maken waar in de linkerkant een menu te vinden is met
-                                    buttons waardoor het gedeelte rechts beperkt is qua hogote en er geen nieuwe
-                                    pagina&#39;s nodig zijn.</p>
-                                <h3>Waar liep ik tegen aan?</h3>
-                                <p>Aan het begin stonden mijn scss -&gt; css watch instellingen nog niet helemaal goed,
-                                    dus
-                                    dit duurde even voordat mijn scss goed gecompiled werdt naar css code.
-                                    Daarnaast waren sommige stukke content niet selecteerbaar. Dit heb ik opgelost met
-                                    de
-                                    volgende code:
-                                </p>
-                                <pre class="ilw_codeblock"><code>
-            .wrapper{
-                opacity: 0;
-                padding: 24px;
-                width: 100%;
-                box-sizing: border-box;
-                position: absolute;
-                top: 0;
-                height: 100%;
-                &amp;.active{
-                    opacity: 1;
-                    z-index: 99;
-                    overflow: auto;
-                }
-            }
-                                    </code></pre>
-                                <p>Met behulp van een hoge z-index op de actieve wrapper valt deze over alle blokken
-                                    heen,
-                                    waardoor alleen deze tekst selecteerbaar is.</p>
-                                <h4>04-09-2024 Shortened Some Code</h4>
-                                <p>Er bestond een functie die na een page load de eerste button en wrapper active class
-                                    geeft. Later bedacht ik me dat ik simpelweg in de HTML deze handmatig een active
-                                    class
-                                    kan geven. Dit is voor nu beter aangezien mijn menu nu niet dynamisch is, maar hard
-                                    in
-                                    de code staat. Mocht ik deze code later nog nodig hebben, dan weet ik hem te vinden
-                                    ;)
-                                </p>
-                                <pre class="ilw_codeblock"><code>
-        function setActiveTab(){
-            //At page load set the first tab
-            var $this = $(&#39;nav .nav_item&#39;).first();
-            let num = $this.data(&#39;giver&#39;);
-            $this.toggleClass(&quot;active&quot;)
-            let toshow = $(&#39;article .wrapper[data-receiver=&#39;+num+&#39;]&#39;);
-            toshow.toggleClass(&quot;active&quot;)
-        }
-                                    </code></pre>
-                                <p>Op de I Love Website zullen hieronder afbeeldingen getoond worden van de schetsen
-                                    voor
-                                    deze website.</p>
+        <div class="sections_container_outer main_grid">
+            <div></div>
+            <div class="sections_container">
+                <section class="i_love_web_section note-section-container">
+                    <div class="blocks-container">
+                        <section class="blocks-group note-group">
+                            <h2>My Tribe</h2>
+                            <p>Voor deze opdracht moesten we een online visitekaartje maken in je eigen stijl.</p>
+                            <h3>Waar heb ik voor gekozen?</h3>
+                            <p>Ik heb gekozen om een layout te maken waar in de linkerkant een menu te vinden is met
+                                buttons waardoor het gedeelte rechts beperkt is qua hogote en er geen nieuwe
+                                pagina&#39;s nodig zijn.</p>
+                            <h3>Waar liep ik tegen aan?</h3>
+                            <p>Aan het begin stonden mijn scss -&gt; css watch instellingen nog niet helemaal goed,
+                                dus
+                                dit duurde even voordat mijn scss goed gecompiled werdt naar css code.
+                                Daarnaast waren sommige stukke content niet selecteerbaar. Dit heb ik opgelost met
+                                de
+                                volgende code:
+                            </p>
+                            <pre class="ilw_codeblock"><code>
+.wrapper{
+    opacity: 0;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    &amp;.active{
+        opacity: 1;
+        z-index: 99;
+        overflow: auto;
+    }
+}
+                                </code></pre>
+                            <p>Met behulp van een hoge z-index op de actieve wrapper valt deze over alle blokken
+                                heen,
+                                waardoor alleen deze tekst selecteerbaar is.</p>
+                            <h4>04-09-2024 Shortened Some Code</h4>
+                            <p>Er bestond een functie die na een page load de eerste button en wrapper active class
+                                geeft. Later bedacht ik me dat ik simpelweg in de HTML deze handmatig een active
+                                class
+                                kan geven. Dit is voor nu beter aangezien mijn menu nu niet dynamisch is, maar hard
+                                in
+                                de code staat. Mocht ik deze code later nog nodig hebben, dan weet ik hem te vinden
+                                ;)
+                            </p>
+                            <pre class="ilw_codeblock"><code>
+function setActiveTab(){
+    //At page load set the first tab
+    var $this = $(&#39;nav .nav_item&#39;).first();
+    let num = $this.data(&#39;giver&#39;);
+    $this.toggleClass(&quot;active&quot;)
+    let toshow = $(&#39;article .wrapper[data-receiver=&#39;+num+&#39;]&#39;);
+    toshow.toggleClass(&quot;active&quot;)
+}
+                                </code></pre>
+                            <p></p>
+                            <div class="buttons">
+                                <a target="_blank" href="./assets/img/my-tribe-schets.jpeg" class="button">Klik om mijn schets te bekijken van deze site</a>
+                                <a target="_blank" href="https://divaninl.github.io/your-tribe-profile-card/" class="button">Bekijk de site</a>
+                            </div>
+                            
 
 
-                            </section>
-                            <section class="blocks-group note-group">
-                                <h2>Talk Webtechnologie 03-09-2024</h2>
-                                <h3>Wat heb ik voor nieuws
-                                    tijdens deze presentatie geleerd?</h3>
-                                <ol>
-                                    <li>
-                                        <p>Voor mij vorheen nog onbekende CSS-selectors:
-                                            a[href$=&quot;.pdf&quot;] - a elementen die een href hebben die de string
-                                            &quot;.pdf&quot; bevat.
-                                            p::first-letter/line - de eerste letter of regel van een p tag wordt
-                                            getarget.
-                                            Hiervoor gebruikte ik normaal
-                                            een span-element</p>
-                                    </li>
-                                    <li>
-                                        <p>LCH kleuren - een nieuw kleurenmodel die kleuren weergeeft die meer
-                                            overeenkomen
-                                            met hoe het menselijk oog
-                                            deze weergeeft.</p>
-                                    </li>
-                                </ol>
-                            </section>
-                            <section class="blocks-group note-group">
-                                <h2>Daily Checkout 04-09-2024</h2>
-                                <h3>Schrijf kort op wat je vandaag hebt
-                                    gedaan</h3>
-                                <ol>
-                                    <li>Bugs gefixet bij mijn tribe profile card</li>
-                                    <li>Schets van de tribe profile card uitgebreid met HTML Tags en wat css code.</li>
-                                    <li>I love webpagina geschetst.</li>
-                                    <li>I love web pagina geforked.</li>
-                                </ol>
-                                <h3>3 Studievragen</h3>
-                                <ol>
-                                    <li>Wat is het nut van een breakdown schets?
-                                        Voor jezelf het denkvermogen verminderen tijdens het programmeren + zodat je een
-                                        beeld kan krijgen wat je wilt
-                                        maken</li>
-                                    <li>Waar moet je op letten als je een breakdown schets maakt?
-                                        Zoveel mogelijk elementen benoemen + alvast nadenken over css/js</li>
-                                    <li>Wat is het nut van een comment?
-                                        Zodat andere mensen je code beter kunnen begrijpen</li>
-                                </ol>
-                                <h3>TO DO:</h3>
-                                <ul>
-                                    <li>Comments refinen op de my-tribe page</li>
-                                    <li>Met rode en groene pen de html + css benoemen op de schets van de i love web
-                                        page
-                                    </li>
-                                    <li>I love web pagina begin bouwen</li>
-                                    <li>Tekst maken over de Lessen van week 1 in markdowns:
-                                        (my tribe page (schetsen en bugs), presentatie basis html/css/js (wat heb ik
-                                        geleerd), i love web page schetsen)
-                                    </li>
-                                </ul>
-                            </section>
-                            <section class="blocks-group note-group">
-                                <h2>Daily Checkout 05-09-2024</h2>
-                                <h3>Schrijf kort op wat je
-                                    vandaag hebt gedaan en nog gaat doen</h3>
-                                <p>Ik ben vanochtend met een uitklapbare sidebar begonnen. Ik moet enkel nog twee icons
-                                    met
-                                    links toevoegen.</p>
-                                <h3>Schrijf een aantal studievragen op:</h3>
-                                <ol>
-                                    <li>Wat maakt JavaScript verschillend van HTML en CSS?</li>
-                                </ol>
-                                <blockquote>
-                                    <p>Met JavaScript maak je je website dynamisch en kan HTML en CSS veranderen op
-                                        basis
-                                        van acties en/of gebeurtenissen.</p>
-                                </blockquote>
-                                <ol>
-                                    <li>Wat van mijn HTML en CSS kennis kan ik hergebruiken binnen JavaScript?</li>
-                                </ol>
-                                <blockquote>
-                                    <p>Je hebt CSS-notaties nodig om elementen aan te spreken in JavaScript en het is
-                                        handig
-                                        om te weten hoe een HTML structuur werkt als je functies als
-                                        document.CreateElement
-                                        gaat gebruiken.</p>
-                                </blockquote>
-                                <ol>
-                                    <li>Wat ga ik verder vandaag nog doen met JavaScript?</li>
-                                </ol>
-                                <blockquote>
-                                    <p>Vandaag niks meer, het Javascript gedeelte van mijn uitvouwbare social media blok
-                                        op
-                                        mijn visitekaart werkt. Er zitten alleen nog wat bugs in de CSS en de HTML.</p>
-                                </blockquote>
-                                <h3>TO DO:</h3>
-                                <ul>
-                                    <li>Journal omzetten naar HTML-stukken.</li>
-                                    <li>Zorgen dat de content van het uitvouwbare social media blok op de visitekaart
-                                        bugloos en gevuld is met content.</li>
-                                    <li>Foto&#39;s van schetsen maken en deze opslaan in mijn Cloud + mijn I Love Web
-                                        Repository</li>
-                                </ul>
+                        </section>
+                        <section class="blocks-group note-group">
+                            <h2>Talk Webtechnologie 03-09-2024</h2>
+                            <h3>Wat heb ik voor nieuws
+                                tijdens deze presentatie geleerd?</h3>
+                            <ol>
+                                <li>
+                                    <p>Voor mij vorheen nog onbekende CSS-selectors:
+                                        a[href$=&quot;.pdf&quot;] - a elementen die een href hebben die de string
+                                        &quot;.pdf&quot; bevat.
+                                        p::first-letter/line - de eerste letter of regel van een p tag wordt
+                                        getarget.
+                                        Hiervoor gebruikte ik normaal
+                                        een span-element</p>
+                                </li>
+                                <li>
+                                    <p>LCH kleuren - een nieuw kleurenmodel die kleuren weergeeft die meer
+                                        overeenkomen
+                                        met hoe het menselijk oog
+                                        deze weergeeft.</p>
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="blocks-group note-group">
+                            <h2>Daily Checkout 04-09-2024</h2>
+                            <h3>Schrijf kort op wat je vandaag hebt
+                                gedaan</h3>
+                            <ol>
+                                <li>Bugs gefixet bij mijn tribe profile card</li>
+                                <li>Schets van de tribe profile card uitgebreid met HTML Tags en wat css code.</li>
+                                <li>I love webpagina geschetst.</li>
+                                <li>I love web pagina geforked.</li>
+                            </ol>
+                            <h3>3 Studievragen</h3>
+                            <ol>
+                                <li>Wat is het nut van een breakdown schets?
+                                    Voor jezelf het denkvermogen verminderen tijdens het programmeren + zodat je een
+                                    beeld kan krijgen wat je wilt
+                                    maken</li>
+                                <li>Waar moet je op letten als je een breakdown schets maakt?
+                                    Zoveel mogelijk elementen benoemen + alvast nadenken over css/js</li>
+                                <li>Wat is het nut van een comment?
+                                    Zodat andere mensen je code beter kunnen begrijpen</li>
+                            </ol>
+                            <h3>TO DO:</h3>
+                            <ul>
+                                <li>Comments refinen op de my-tribe page</li>
+                                <li>Met rode en groene pen de html + css benoemen op de schets van de i love web
+                                    page
+                                </li>
+                                <li>I love web pagina begin bouwen</li>
+                                <li>Tekst maken over de Lessen van week 1 in markdowns:
+                                    (my tribe page (schetsen en bugs), presentatie basis html/css/js (wat heb ik
+                                    geleerd), i love web page schetsen)
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="blocks-group note-group">
+                            <h2>Daily Checkout 05-09-2024</h2>
+                            <h3>Schrijf kort op wat je
+                                vandaag hebt gedaan en nog gaat doen</h3>
+                            <p>Ik ben vanochtend met een uitklapbare sidebar begonnen. Ik moet enkel nog twee icons
+                                met
+                                links toevoegen.</p>
+                            <h3>Schrijf een aantal studievragen op:</h3>
+                            <ol>
+                                <li>Wat maakt JavaScript verschillend van HTML en CSS?</li>
+                            </ol>
+                            <blockquote>
+                                <p>Met JavaScript maak je je website dynamisch en kan HTML en CSS veranderen op
+                                    basis
+                                    van acties en/of gebeurtenissen.</p>
+                            </blockquote>
+                            <ol>
+                                <li>Wat van mijn HTML en CSS kennis kan ik hergebruiken binnen JavaScript?</li>
+                            </ol>
+                            <blockquote>
+                                <p>Je hebt CSS-notaties nodig om elementen aan te spreken in JavaScript en het is
+                                    handig
+                                    om te weten hoe een HTML structuur werkt als je functies als
+                                    document.CreateElement
+                                    gaat gebruiken.</p>
+                            </blockquote>
+                            <ol>
+                                <li>Wat ga ik verder vandaag nog doen met JavaScript?</li>
+                            </ol>
+                            <blockquote>
+                                <p>Vandaag niks meer, het Javascript gedeelte van mijn uitvouwbare social media blok
+                                    op
+                                    mijn visitekaart werkt. Er zitten alleen nog wat bugs in de CSS en de HTML.</p>
+                            </blockquote>
+                            <h3>TO DO:</h3>
+                            <ul>
+                                <li>Journal omzetten naar HTML-stukken.</li>
+                                <li>Zorgen dat de content van het uitvouwbare social media blok op de visitekaart
+                                    bugloos en gevuld is met content.</li>
+                                <li>Foto&#39;s van schetsen maken en deze opslaan in mijn Cloud + mijn I Love Web
+                                    Repository</li>
+                            </ul>
 
-                            </section>
-                            <section class="blocks-group note-group">
+                        </section>
+                        <section class="blocks-group note-group">
 
-                                <h2>Daily Checkout 09-09-2024</h2>
-                                <h3>Schrijf op wat je vandaag gedaan hebt</h3>
-                                <p>Vandaag zijn we begonnen aan de Squadpage-opdracht.
-                                    Hiervoor hebben we een design geschetst + al onderzoek gedaan welke technieken we
-                                    willen gebruiken en hoe we ze willen gebruiken.</p>
-                                <p>Drie dingen die ik vandaag geleerd heb:</p>
-                                <ul>
-                                    <li>:focus-within</li>
-                                    <li>om minder jquery te gebruiken</li>
-                                    <li>Verschill tussen a- en button-tags, wanneer je beide gebruikt</li>
-                                </ul>
-                                <h3>Schrijf 2 dingen die je interessant vind:</h3>
-                                <ul>
-                                    <li>CSS Grid layout</li>
-                                    <li>Verschill tussen a- en button-tags, wanneer je beide gebruikt</li>
-                                </ul>
-                                <h3>Schrijf 1 ding waar je nog vragen over hebt</h3>
-                                <ul>
-                                    <li>CSS Grid layout</li>
-                                </ul>
-                            </section>
-                            <section class="blocks-group note-group">
-                                <h2>Daily Checkout 10-09-2024</h2>
-                                <h3>Schrijf op wat je vandaag gedaan hebt</h3>
-                                <p>Vandaag hebben we de basics geleerd van CSS grids</p>
-                                <p>Drie dingen die ik vandaag geleerd heb:</p>
-                                <ul>
-                                    <li>verschil tussen grid layouts met alleen afmetingen + areas</li>
-                                    <li>grid-column/row: 1/-1 (-1 is de laatste)</li>
-                                    <li>gebruik align en justify self</li>
-                                </ul>
-                                <h3>Schrijf 2 dingen die je interessant vind:</h3>
-                                <ul>
-                                    <li>grid-column/row: 1/-1 (-1 is de laatste)</li>
-                                    <li>Responsive grid layouts</li>
-                                </ul>
-                                <h3>Schrijf 1 ding waar je nog vragen over hebt</h3>
-                                <ul>
-                                    <li>PRE CODE tags in je html zonder whitespacing</li>
-                                </ul>
-                            </section>
-                        </div>
-                </div>
+                            <h2>Daily Checkout 09-09-2024</h2>
+                            <h3>Schrijf op wat je vandaag gedaan hebt</h3>
+                            <p>Vandaag zijn we begonnen aan de Squadpage-opdracht.
+                                Hiervoor hebben we een design geschetst + al onderzoek gedaan welke technieken we
+                                willen gebruiken en hoe we ze willen gebruiken.</p>
+                            <p>Drie dingen die ik vandaag geleerd heb:</p>
+                            <ul>
+                                <li>:focus-within</li>
+                                <li>om minder jquery te gebruiken</li>
+                                <li>Verschill tussen a- en button-tags, wanneer je beide gebruikt</li>
+                            </ul>
+                            <h3>Schrijf 2 dingen die je interessant vind:</h3>
+                            <ul>
+                                <li>CSS Grid layout</li>
+                                <li>Verschill tussen a- en button-tags, wanneer je beide gebruikt</li>
+                            </ul>
+                            <h3>Schrijf 1 ding waar je nog vragen over hebt</h3>
+                            <ul>
+                                <li>CSS Grid layout</li>
+                            </ul>
+                        </section>
+                        <section class="blocks-group note-group">
+                            <h2>Daily Checkout 10-09-2024</h2>
+                            <h3>Schrijf op wat je vandaag gedaan hebt</h3>
+                            <p>Vandaag hebben we de basics geleerd van CSS grids</p>
+                            <p>Drie dingen die ik vandaag geleerd heb:</p>
+                            <ul>
+                                <li>verschil tussen grid layouts met alleen afmetingen + areas</li>
+                                <li>grid-column/row: 1/-1 (-1 is de laatste)</li>
+                                <li>gebruik align en justify self</li>
+                            </ul>
+                            <h3>Schrijf 2 dingen die je interessant vind:</h3>
+                            <ul>
+                                <li>grid-column/row: 1/-1 (-1 is de laatste)</li>
+                                <li>Responsive grid layouts</li>
+                            </ul>
+                            <h3>Schrijf 1 ding waar je nog vragen over hebt</h3>
+                            <ul>
+                                <li>PRE CODE tags in je html zonder whitespacing</li>
+                            </ul>
+                        </section>
+                        <section class="blocks-group note-group"></section>
+                            <h2>Daily Checkout 11-09-2024</h2>
+                            <h3>Schrijf kort op wat je vandaag hebt gedaan, en nog gaat doen.</h3>
+                            <p>Vandaag hebben we media queries besproken en online onderzocht hoe dit gebruikt wordt</p>
+                            <p>Vandaag ga ik verder nog in mijn i-love-web pagina de volgende wijzigingen doorvoeren</p>
+                            <ul>
+                                <li>SCSS slopen en CSS nesten (geleerd van Justus dat dit nu mogelijk is)</li>
+                                <li>CSS grid gebruiken voor layouts ipv margin: auto</li>
+                            </ul>
+                            <p>Verder ga ik nog werken aan de my squad page. Hiervoor ga ik het volgende doen</p>
+                            <ul>
+                                <li>Grid layout maken voor de campusblokken</li>
+                                <li>Hier ook een desktop versie voor bouwen</li>
+                            </ul>
+                            <h3>Schrijf drie studievragen op</h3>
+                            <ul>
+                                <li>Hoe kan ik bij &lt;code&gt; en &lt;pre&gt; tags ervoor zorgen dat ik mijn code niet links in de html hoef te plaatsen maar wel tabjes kan gebruiken?</li>
+                                <li>is min-width altijd beter dan max-width (mobile-first)</li>
+                            </ul>
+                        </section>
+                    </div>
             </div>
+            <div></div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>
