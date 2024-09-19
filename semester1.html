@@ -69,21 +69,21 @@
                                 volgende code:
                             </p>
                             <pre class="ilw_codeblock"><code>
-.wrapper{
-    opacity: 0;
-    padding: 24px;
-    width: 100%;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    &amp;.active{
-        opacity: 1;
-        z-index: 99;
-        overflow: auto;
-    }
-}
-                                </code></pre>
+<!--                         -->.wrapper{
+<!--                         -->    opacity: 0;
+<!--                         -->    padding: 24px;
+<!--                         -->    width: 100%;
+<!--                         -->    box-sizing: border-box;
+<!--                         -->    position: absolute;
+<!--                         -->    top: 0;
+<!--                         -->    height: 100%;
+<!--                         -->    &amp;.active{
+<!--                         -->        opacity: 1;
+<!--                         -->        z-index: 99;
+<!--                         -->        overflow: auto;
+<!--                         -->    }
+<!--                         -->}
+                            </code></pre>
                             <p>Met behulp van een hoge z-index op de actieve wrapper valt deze over alle blokken
                                 heen,
                                 waardoor alleen deze tekst selecteerbaar is.</p>
@@ -97,15 +97,15 @@
                                 ;)
                             </p>
                             <pre class="ilw_codeblock"><code>
-function setActiveTab(){
-    //At page load set the first tab
-    var $this = $(&#39;nav .nav_item&#39;).first();
-    let num = $this.data(&#39;giver&#39;);
-    $this.toggleClass(&quot;active&quot;)
-    let toshow = $(&#39;article .wrapper[data-receiver=&#39;+num+&#39;]&#39;);
-    toshow.toggleClass(&quot;active&quot;)
-}
-                                </code></pre>
+<!--                         -->.function setActiveTab(){
+<!--                         -->    //At page load set the first tab
+<!--                         -->    var $this = $(&#39;nav .nav_item&#39;).first();
+<!--                         -->    let num = $this.data(&#39;giver&#39;);
+<!--                         -->    $this.toggleClass(&quot;active&quot;)
+<!--                         -->    let toshow = $(&#39;article .wrapper[data-receiver=&#39;+num+&#39;]&#39;);
+<!--                         -->    toshow.toggleClass(&quot;active&quot;)
+<!--                         --> }
+                            </code></pre>
                             <p></p>
                             <div class="buttons">
                                 <a target="_blank" href="./assets/img/my-tribe-schets.jpeg" class="button">Klik om mijn schets te bekijken van deze site</a>
@@ -338,6 +338,17 @@ function setActiveTab(){
                                 <li>t voor een tekstvlak</li>
                                 <li>Command + g voor groeperen en Command + Shift + g voor degroeperen</li>
                             </ul>
+                        </section>
+                        <section class="blocks-group note-group">
+                            <h2>Daily Checkout 18-9-2024</h2>
+                            <h3>Schrijf in je Learning Journal kort op wat je vandaag hebt gedaan.</h3>
+                            <p>Vandaag hebben we de squad pages van ons groepje samengevormd tot 1 squad page!
+                                Ook hebben we de balans opgemaakt welke issues er nog opgelost moeten worden, en al een groot deel ervan
+                                opgepakt.</p>
+                            <h3>Schrijf 3 dingen die je geleerd hebt:</h3>
+                            <ol>
+                                <li>Hoe je merge conflicten in GitHub kan oplossen en wat ze inhouden</li>
+                            </ol>
                         </section>
                         
                         
