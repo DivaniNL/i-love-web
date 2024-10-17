@@ -65,6 +65,10 @@ md#output{
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    margin-top: 15px;
+}
+.buttons + p{
+    margin-top: 15px;
 }
 .button, button{
     padding: 10px 15px;
