@@ -520,6 +520,57 @@
                             <p>Ik ben nog niet begonnen, maar ga er vanmiddag mee aan de slag.</p>
 
                         </div>
+                        <div class="blocks-group note-group">
+                            <h1>Daily Checkout 16-10-2024</h1>
+
+                            <h2>Schrijf op wat je vandaag hebt gedaan</h2>
+
+                            <p>Vandaag heb ik mijn WCAG audit deeltaak gepresenteerd. Daarna heb ik hier feedback op gekregen van mijn mentor in Portflow. Daarna hebben we een workshop gekregen over user experience. Hierin hebben we bij verschillende elementen tips gekregen om betere HTML (en ook met behulp van CSS state selectors betere CSS) te schrijven.</p>
+
+                            <h2>Benoem 3 dingen die je hebt geleerd</h2>
+
+                            <ul>
+                            <li>Het target attribuut in CSS</li>
+                            <li>::backdrop selector</li>
+                            <li>De fieldset en legend selectors</li>
+                            </ul>
+
+                            <h2>Beschrijf alle 6 onderdelen uit de workshop en noteer welke je kan toepassen in je opdracht.</h2>
+
+                            <h3>Links</h3>
+
+                            <p>Als je de gebruiker ergens op wil laten klikken EN ergens naartoe wilt sturen, dan gebruik je een &lt;a&gt; en geen &lt;button&gt;. Verder kan je met een anchor link (href="#elementID") de pagina laten scrollen. Op dit moment kan je ook met CSS met behulp van (::target) het element targeten in CSS waarnaar gescrolled is. Verder kan je met het download attribuut de user een link laten downloaden. Dit kan een html pagina zijn, maar ook een afbeelding op een server.</p>
+
+                            <h3>Afbeeldingen</h3>
+
+                            <p>Het is belangrijk om duidelijke alt attributen toe te voegen aan je website, zodat gebruikers met slecht internet nog wel kunnen zien waar de afbeelding over gaat. Als er tekst in de afbeelding staat, probeer dit zo duidelijk in de alt tekst te vermelden.</p>
+
+                            <h3>Labels voor invoervelden</h3>
+
+                            <p>Sommige invoervelden zijn klein en op telefoon moeilijk aanklikbaar, zoals een checkbox of een radio button. Hier is het handig om een label om een invoerveld te plaatsen. Hierdoor kan je ook op de tekst (de label) klikken om het invoerveld te bereiken. Ook is het handig om een focus attribuut toe te voegen aan je invoervelden, zodat het duidelijk is dat een invoerveld geselecteerd is.</p>
+
+                            <h3>Headings</h3>
+
+                            <p>Als je een goede headings-nest structuur gebruikt, kunnen screenreaders er een mooie inhoudsopgave van maken. Ook zorgt dit voor nettere HTML.</p>
+
+                            <h3>Accordeons (FAQ)</h3>
+
+                            <p>Accordeons zijn een veelgebruikte tool bij het maken van websites. Je ziet op bijna elke FAQ-sectie wel een accordeon staan. Hiermee kan je content beperken op je website, maar ook weer niet, omdat je uitklapbare stukken tekst hebt. Ook kan je hiermee ervoor zorgen dat telkens maar een tabje geopend is.</p>
+
+                            <h3>Popups</h3>
+
+                            <p>Popups kan je ook heel makkelijk maken zonder JS te gebruiken:</p>
+
+                            <pre class="ilw_codeblock"><code>
+<!--                     -->&lt;button popovertarget="popup"&gt;Open iets&lt;/button&gt;
+<!--                     -->&lt;dialog popover id="popup"&gt;
+<!--                     -->    &lt;p&gt;Dit staat in een popup/overlay/popover.&lt;/p&gt;
+<!--                     -->    &lt;p&gt;Leuk he.&lt;/p&gt;
+<!--                     -->    &lt;button popovertarget="popup" popovertargetaction="hide"&gt;Sluit dit ding weer&lt;/button&gt;
+<!--                     -->&lt;/dialog&gt;
+                            </code></pre>
+
+                        </div>
 
                     </div>
             </div>
