@@ -105,7 +105,32 @@ md#output{
 a{
     text-decoration: none;
     color: inherit;
+    &:not(.button):not(.buttonheader):not(.dropdownlink){
+        color: var(--color2);
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--color2);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        &:hover{
+            &:after{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }  
+    }
+    
 }
+
 body{
     background-color: var(--color3);
     &:after{
@@ -221,7 +246,7 @@ header{
                                 cursor: pointer;
                             }
                         }
-                        button{
+                        &.buttonheader{
                             padding: 10px 15px;
                             display: flex;
                             align-items: center;
