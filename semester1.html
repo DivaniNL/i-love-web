@@ -519,56 +519,11 @@
                             <h2>17 Oktober 2024</h2>
                             <p><strong>Jarig!🎉 Vandaag mag ik 24 kaarsjes uitblazen!</strong></p>
                             <p>Goed, door naar de orde van de dag, want er moet natuurlijk nog wel wat gedaan worden. Vandaag heb ik de eerste stappen gezet in de analysefase van sprint 3 voor de artikel-detailpagina van Red Pers.
-                                Allereerst heb ik de Accessibility-test gedaan op <a target="_blank" href="https://www.a11yproject.com/">www.a11yproject.com</a>
-                            </p>
-                            <div class="buttons">
-                                <a target="_blank" href="./assets/img/a11y_all-human.png" class="button">Hier is het resultaat van de A11y test</a>
-                            </div>
-                            <p>Uit de a11y test zijn de volgende punten niet door de test heen gekomen.</p>
-                            <p><strong>GLOBAL CODE</strong></p>
-                            <ul>
-                                <li>Validate your HTML.</li>
-                                <li>Avoid using the autofocus attribute.</li>
-                            </ul>
-
-                            <p><strong>KEYBOARD</strong></p>
-                            <ul>
-                                <li>Ensure there is a visible focus style for interactive elements that are navigated to via keyboard input.</li>
-                                <li>Check that keyboard focus order matches the visual layout.</li>
-                                <li>Ensure all interactive elements can be accessed and operated using a keyboard alone.</li>
-                            </ul>
-
-                            <p><strong>IMAGES</strong></p>
-                            <ul>
-                                <li>Ensure that all <code>&lt;img&gt;</code> elements have an alt attribute.</li>
-                                <li>Make sure decorative images use a null (empty) alt attribute value.</li>
-                                <li>Verify that important images have meaningful alt text.</li>
-                            </ul>
-
-                            <p><strong>CONTROLS</strong></p>
-                            <ul>
-                                <li>Ensure that controls have visible :focus states.</li>
-                                <li>Provide a skip link and ensure it is visible when focused.</li>
-                                <li>Identify links that open in a new tab or window.</li>
-                            </ul>
-
-                            <p><strong>APPEARANCE</strong></p>
-                            <ul>
-                                <li>Check your content in specialized browsing modes (e.g., high contrast, screen readers).</li>
-                                <li>Ensure that fonts and text sizes are readable on all screen sizes.</li>
-                            </ul>
-
-                            <p><strong>COLOR CONTRAST</strong></p>
-                            <ul>
-                                <li>Check the contrast for all icons and UI elements.</li>
-                                <li>Ensure that text and background contrast meet accessibility guidelines (e.g., WCAG 2.1 AA standards).</li>
-                                <li>Test for color blindness to ensure key information isn't conveyed by color alone.</li>
-                            </ul>
-                            <p>Daarna heb ik een lighthouse-test gedaan.</p>
+                                Allereerst heb ik de Lighthouse-test gedaan.</p>
                             <div class="buttons">
                                 <a target="_blank" href="./assets/img/lighthouse_all_human.pdf" class="button">Hier is het resultaat van de Lighthouse test</a>
                             </div>
-                            <p>Als laatste heb ik nog wat handmatige tests gedaan. Als eerste kwam de keyboard test aan bod. Hiervoor ben ik door middel van tabben door de pagina heen gegaan. Wat mij opviel, is dat de buttons "outline: inherit" bevatten. Ik wist niet dat dit de focus state beinvloedde. Ik heb hiervoor <a href="https://github.com/DivaniNL/all-human-accessible-website/issues/12">een issue</a> aangemaakt. Wat heir wel gaat zijn de buttons in de popups. Deze worden overgeslagen tijdens het tabben mits ze actief zijn. De offscreencontent wordt dus genegeerd.</p>
+                            <p>Daarna heb ik nog wat handmatige tests gedaan. Als eerste kwam de keyboard test aan bod. Hiervoor ben ik door middel van tabben door de pagina heen gegaan. Wat mij opviel, is dat de buttons "outline: inherit" bevatten. Ik wist niet dat dit de focus state beinvloedde. Ik heb hiervoor <a href="https://github.com/DivaniNL/all-human-accessible-website/issues/12">een issue</a> aangemaakt. Wat heir wel gaat zijn de buttons in de popups. Deze worden overgeslagen tijdens het tabben mits ze actief zijn. De offscreencontent wordt dus genegeerd.</p>
                             <p>Als tweede ging ik de handmatige test doen met betrekking tot de screen reader. Hier kwam ik erachter dat sommige afbeeldingen niet voorgelezen werden. Dit komt omdat niet alle afbeeldingen een alt-attribuut hebben. Ook werden v=sommige buttons niet voorgelezen. Dit zijn de buttons zonder tekst, maar met enkel een icoontje. Deze moeten een aria-label krijgen. Ook hiervoor heb ik issues aangemaakt: </p>
                             <div class="buttons">
                                 <a target="_blank" href="https://github.com/DivaniNL/all-human-accessible-website/issues/14" class="button">Issue betreft Alt attributen</a>
