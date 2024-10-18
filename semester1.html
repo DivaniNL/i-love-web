@@ -524,66 +524,81 @@
                             <div class="buttons">
                                 <a target="_blank" href="./assets/img/a11y_all-human.png" class="button">Hier is het resultaat van de A11y test</a>
                             </div>
-                            <p>Uit deze test zijn de volgende punten niet door de test heen gekomen.</p>
+                            <p>Uit de a11y test zijn de volgende punten niet door de test heen gekomen.</p>
                             <p><strong>GLOBAL CODE</strong></p>
                             <ul>
-                                <li> b</li>
-                                <li></li>
-                                <li></li>
+                                <li>Validate your HTML.</li>
+                                <li>Avoid using the autofocus attribute.</li>
                             </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            Validate your HTML.
-                            Avoid using the autofocus attribute.
 
-                             Keyboard
+                            <p><strong>KEYBOARD</strong></p>
+                            <ul>
+                                <li>Ensure there is a visible focus style for interactive elements that are navigated to via keyboard input.</li>
+                                <li>Check that keyboard focus order matches the visual layout.</li>
+                                <li>Ensure all interactive elements can be accessed and operated using a keyboard alone.</li>
+                            </ul>
 
-                            Make sure there is a visible focus style for interactive elements that are navigated to via keyboard input.
-                            Check to see that keyboard focus order matches the visual layout.
+                            <p><strong>IMAGES</strong></p>
+                            <ul>
+                                <li>Ensure that all <code>&lt;img&gt;</code> elements have an alt attribute.</li>
+                                <li>Make sure decorative images use a null (empty) alt attribute value.</li>
+                                <li>Verify that important images have meaningful alt text.</li>
+                            </ul>
 
-                             IMAGES
+                            <p><strong>CONTROLS</strong></p>
+                            <ul>
+                                <li>Ensure that controls have visible :focus states.</li>
+                                <li>Provide a skip link and ensure it is visible when focused.</li>
+                                <li>Identify links that open in a new tab or window.</li>
+                            </ul>
+
+                            <p><strong>APPEARANCE</strong></p>
+                            <ul>
+                                <li>Check your content in specialized browsing modes (e.g., high contrast, screen readers).</li>
+                                <li>Ensure that fonts and text sizes are readable on all screen sizes.</li>
+                            </ul>
+
+                            <p><strong>COLOR CONTRAST</strong></p>
+                            <ul>
+                                <li>Check the contrast for all icons and UI elements.</li>
+                                <li>Ensure that text and background contrast meet accessibility guidelines (e.g., WCAG 2.1 AA standards).</li>
+                                <li>Test for color blindness to ensure key information isn't conveyed by color alone.</li>
+                            </ul>
+                            <p>Daarna heb ik een lighthouse-test gedaan.</p>
+                            <div class="buttons">
+                                <a target="_blank" href="./assets/img/lighthouse_all_human.pdf" class="button">Hier is het resultaat van de Lighthouse test</a>
+                            </div>
+                            <p>Als laatste heb ik nog wat handmatige tests gedaan. Als eerste kwam de keyboard test aan bod. Hiervoor ben ik door middel van tabben door de pagina heen gegaan. Wat mij opviel, is dat de buttons "outline: inherit" bevatten. Ik wist niet dat dit de focus state beinvloedde. Ik heb hiervoor <a href="https://github.com/DivaniNL/all-human-accessible-website/issues/12">een issue</a> aangemaakt. Wat heir wel gaat zijn de buttons in de popups. Deze worden overgeslagen tijdens het tabben mits ze actief zijn. De offscreencontent wordt dus genegeerd.</p>
+                            <p>Als tweede ging ik de handmatige test doen met betrekking tot de screen reader. Hier kwam ik erachter dat sommige afbeeldingen niet voorgelezen werden. Dit komt omdat niet alle afbeeldingen een alt-attribuut hebben. Ook werden v=sommige buttons niet voorgelezen. Dit zijn de buttons zonder tekst, maar met enkel een icoontje. Deze moeten een aria-label krijgen. Ook hiervoor heb ik issues aangemaakt: </p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://github.com/DivaniNL/all-human-accessible-website/issues/14" class="button">Issue betreft Alt attributen</a>
+                                <a target="_blank" href="https://github.com/DivaniNL/all-human-accessible-website/issues/19" class="button">Issue betreft Aria labels</a>
+                            </div>
+                            <p>Als laatste ging ik een heading en landmarks test doen. Ook hier was ik niet tevreden over. Ik vond dat de taxonomie van de headings niet helemaal klopte met hoe ik het zou indelen. Hier had ik beter over na moeten denken. Ook wordt de nav meerdere keren gebruikt. Hier had Joost ook al een issue voor ingeschoten.</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://github.com/DivaniNL/all-human-accessible-website/issues/20" class="button">Issue betreft betere heading levels</a>
+                                <a target="_blank" href="https://github.com/DivaniNL/red-pers/issues/4" class="button">Issue van Joost betreft de dubbele Nav</a>
+                            </div>
+                        </section>
+                        <section class="block-group note-group">
+                            <h2>Daily Checkout 18-10-2024</h2>
+
+                            <h3>Schrijf op wat je vandaag hebt gedaan</h3>
                             
-                            Make sure that all img elements have an alt attribute.
-                            Make sure that decorative images use null alt (empty) attribute values.
-
-                             CONTROLS
-
-                            Ensure that controls have :focus states.
-                            Provide a skip link and make sure that it is visible when focused.
-                            Identify links that open in a new tab or window.
-
-                             APPEARENCE
-
-                            Check your content in specialized browsing modes.
-
-                             COLOR CONTRAST
-
-                            Check the contrast for all icons.
-
-                            <p>Hier is de validatie van mijn HTML:</p>
+                            <p>Vandaag hadden we een code/design review van Toegankelijkheid. Ik heb met Ole samen de reviews gedaan van 
+                            <a href="https://github.com/julia-stevens/all-human-accessible-website/issues/17">Julia</a> en 
+                            <a href="https://github.com/DeBosOs/all-human-accessible-website/issues/1">Luc</a>. Daarnaast heb ik zelf ook een 
+                            <a href="https://github.com/DivaniNL/all-human-accessible-website/issues/18">review</a> gekregen.</p>
+                            
+                            <h3>Neem de uitbreiding van de checklist code review toegankelijkheid over in je Learning Log en leg kort uit hoe je die getest hebt:</h3>
+                            <ul>
+                              <li><strong>Class namen bevatten een duidelijke beschrijving van de inhoud</strong> – Getest of de klasse namen niet te lang zijn, en overeenkomen met de content, of waar het element voor dient.</li>
+                              <li><strong>Outline by focus op &lt;button&gt; en &lt;a&gt;</strong> – Testen door te tabben door de content heen, of deze elementen andere styling krijgen (desnoods standaard styling met de zwarte border).</li>
+                              <li><strong>&lt;ul&gt;, &lt;ol&gt;, en &lt;menu&gt; moeten een &lt;li&gt; bevatten</strong> – Website inspecteren en de DOM doorlopen.</li>
+                              <li><strong>Aria-label, aria-expand, etc... voor toegankelijkheid screen readers</strong> – Website inspecteren en de DOM doorlopen.</li>
+                              <li><strong>Genoeg contrast in een tekst met achtergrond duo</strong> – Bijvoorbeeld geen lichtrode tekst op een rode achtergrond. Lighthouse test gedaan op het gebied van toegankelijkheid en gecontroleerd of dit punt terugkwam bij de fouten.</li>
+                            </ul>
+                            
                         </section>
                     </div>
                 </section>
