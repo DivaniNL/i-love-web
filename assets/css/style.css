@@ -26,7 +26,6 @@
     box-sizing: border-box;
 }
 
-
 /*  Basic vars */
 /*  */
 @keyframes shake {
@@ -188,6 +187,13 @@ body{
             padding: 24px;
         }
         
+    }
+    .anchor{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 10px;
+        width: 100%;
     }
 }
 
