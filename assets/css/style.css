@@ -395,6 +395,9 @@ main.semester_page{
                         border-radius: 6px;
                         margin: 10px;
                     }
+                    .anchor:focus{
+                        color: red;
+                    }
                     .anchor:focus ~ h2 {
                         animation: bounce 1s forwards;
                         animation-timing-function: cubic-bezier(0.98, 0.81, 0.67, 1.34);
