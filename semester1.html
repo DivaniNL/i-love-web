@@ -515,14 +515,14 @@
 <!--                     -->&lt;/dialog&gt;
                             </code></pre>
                         </section>
-                        <section class="blocks-group note-group">
+                        <section class="blocks-group note-group" id="s3-analyse">
                             <h2>17 Oktober 2024</h2>
                             <p><strong>Jarig!🎉 Vandaag mag ik 24 kaarsjes uitblazen!</strong></p>
                             <p>Goed, door naar de orde van de dag, want er moet natuurlijk nog wel wat gedaan worden. Vandaag heb ik de analysefase van sprint 3 voor de artikel-detailpagina van Red Pers achter de rug. Na de sprintplanning doorgenomen te hebben heb ik de Lighthouse-test gedaan op mijn website uit sprint 2.</p>
                             <div class="buttons">
                                 <a target="_blank" href="./assets/img/lighthouse_all_human.pdf" class="button">Hier is het resultaat van de Lighthouse test</a>
                             </div>
-                            <p>Daarna heb ik nog wat handmatige tests gedaan. Als eerste kwam de keyboard test aan bod. Hiervoor ben ik door middel van tabben door de pagina heen gegaan. Wat mij opviel, is dat de buttons "outline: inherit" bevatten. Ik wist niet dat dit de focus state beinvloedde. Ik heb hiervoor <a href="https://github.com/DivaniNL/all-human-accessible-website/issues/12">een issue</a> aangemaakt. Wat heir wel gaat zijn de buttons in de popups. Deze worden overgeslagen tijdens het tabben mits ze actief zijn. De offscreencontent wordt dus genegeerd.</p>
+                            <p>Daarna heb ik nog wat handmatige tests gedaan. Als eerste kwam de keyboard test aan bod. Hiervoor ben ik door middel van tabben door de pagina heen gegaan. Wat mij opviel, is dat de buttons "outline: inherit" bevatten. Ik wist niet dat dit de focus state beinvloedde. Ik heb hiervoor <a href="https://github.com/DivaniNL/all-human-accessible-website/issues/12">een issue</a> aangemaakt. Wat hier wel gaat zijn de buttons in de popups. Deze worden overgeslagen tijdens het tabben mits ze actief zijn. De offscreencontent wordt dus genegeerd.</p>
                             <p>Als tweede ging ik de handmatige test doen met betrekking tot de screen reader. Hier kwam ik erachter dat sommige afbeeldingen niet voorgelezen werden. Dit komt omdat niet alle afbeeldingen een alt-attribuut hebben. Ook werden v=sommige buttons niet voorgelezen. Dit zijn de buttons zonder tekst, maar met enkel een icoontje. Deze moeten een aria-label krijgen. Ook hiervoor heb ik issues aangemaakt: </p>
                             <div class="buttons">
                                 <a target="_blank" href="https://github.com/DivaniNL/all-human-accessible-website/issues/14" class="button">Issue betreft Alt attributen</a>
@@ -561,7 +561,16 @@
                                 <a target="_blank" href="./assets/img/red_pers_contrast_old.png" class="button">Originele kleur rood</a>
                                 <a target="_blank" href="./assets/img/red_pers_contrast_improve.png" class="button">Aangepaste rode kleur</a>
                             </div>
-                            <p>Deze kleuren zal ik in een "@media (prefers-contrast: more)" query plaatsen, zodat ik in de inspector de kleuren kan omwisselen om het verschil te laten zien.</p>
+                            <p>Deze kleuren zal ik later vandaag in een "@media (prefers-contrast: more)" query plaatsen, zodat ik in de inspector de kleuren kan omwisselen om het verschil te laten zien.</p>
+                            <p>Hier moet ik nog meer onderzoek naar doen.</p>
+                        </section>
+                        <section class="blocks-group note-group">
+                            <h2>18 Oktobber 2024 - @media prefers-contrast</h2>
+                            <p>Vandaag heb ik mij verdiept in het toepassen van media queries op het gebied van toegankelijkheid. Aangezien ik nog niet definitief de kleurwijziging wil doorvoeren op de website, maar het toch wil presenteren tijdens de Sprint Review, heb ik deze kleurwijzigingen in een speciale media query gezet.</p>
+                            <div class="buttons">
+                                <a target="_blank" class="button" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast">Op deze pagina heb ik er kennis over opgedaan</a>
+                                <a target="_blank" class="button" href="https://github.com/DivaniNL/all-human-accessible-website/commit/a7dd2753c6c16aafc50a283876df650fde08ca12#diff-dccd1fbbd55f72eca67be97e6abdac761f4125e4a22c81214e5be44b63e57c07R67-R73">Hier is te zien waar ik het heb toegepast.</a>
+                        </div>
                         </section>
                         <section class="blocks-group note-group">
                             <h2>A11y test</h2>
