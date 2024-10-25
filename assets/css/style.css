@@ -396,23 +396,21 @@ main.semester_page{
                         margin: 10px;
                     }
                     .anchor:target ~ h2 {
+                        margin-left: 30px;
                         animation: bounce 1s forwards;
+                        animation-timing-function: cubic-bezier(0.98, 0.81, 0.67, 1.34);
+                        color: red;
                     }
                     
                     @keyframes bounce {
                         0% {
-                            transform: scale(1) translateX(20px); /* Start a bit to the right */
+                            margin-left: 30px;
                         }
                         25% {
-                            transform: scale(1.1) translateX(100px); /* Scale and move closer to center */
                         }
                         100% {
-                            transform: scale(1) translateX(0); /* Return to original position */
+                            margin-left: 0;
                         }
-                    }
-                    
-                    .anchor:target ~ h2 {
-                        animation-timing-function: cubic-bezier(0.98, 0.81, 0.67, 1.34);
                     }
                     
                 }
