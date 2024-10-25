@@ -19,6 +19,9 @@
 --margin-s: 50px;
 --margin-xs: 20px;
 }
+html{
+    scroll-behavior: smooth !important;
+}
 *{
     margin: 0;
     padding: 0;
