@@ -194,6 +194,7 @@ body{
         }
         .blocks-container{
             padding: 24px;
+            
         }
         
     }
@@ -394,6 +395,30 @@ main.semester_page{
                         border-radius: 6px;
                         margin: 10px;
                     }
+                    .anchor:focus ~ h2 {
+                        animation: bounce 1s forwards;
+                        animation-timing-function: cubic-bezier(0.98, 0.81, 0.67, 1.34);
+                        color: red; /* This will apply to the h2 when the anchor is focused */
+                    }
+                    
+                    @keyframes bounce {
+                        0% {
+                            transform: scale(1) translateX(20px); /* Start a bit to the right */
+                        }
+                        25% {
+                            transform: scale(1.1) translateX(10px); /* Scale and move closer to center */
+                        }
+                        50% {
+                            transform: scale(1.1) translateX(0); /* Hold position at center */
+                        }
+                        75% {
+                            transform: scale(1.1) translateX(-5px); /* Overshoot to the left */
+                        }
+                        100% {
+                            transform: scale(1) translateX(0); /* Return to original position */
+                        }
+                    }
+                    
                 }
             }
         }
