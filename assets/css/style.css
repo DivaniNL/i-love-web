@@ -200,7 +200,7 @@ body{
     }
     .anchor{
         position: absolute;
-        top: 0;
+        top: -86px;
         left: 0;
         height: 10px;
         width: 100%;
@@ -405,24 +405,36 @@ main.semester_page{
                     
                     
                 }
+                &.sticky-buttons{
+                    position: sticky;
+                    top: 0;
+                    translate: -24px 0;
+                    width: calc(100% + 48px);
+                    z-index: 999;
+                    background: var(--white);
+                    padding: 20px;
+                    .buttons{
+                        margin: 0 !important;
+                    }
+                }
+                &.sprint-divider{
+                    margin-bottom: var(--margin-s);
+                    color: var(--white);
+                    padding: 20px;
+                    transition: background 0.1s;
+                    &:first-child{
+                        margin-bottom: 0;
+                    }
+                    h2{
+                        display: flex;
+                        span{
+                            margin-left: auto;
+                        }
+                    }
+                }
             }
         }
         
-    }
-    section.sprint-divider{
-        margin-bottom: var(--margin-s);
-        color: var(--white);
-        padding: 20px;
-        transition: background 0.1s;
-        &:first-child{
-            margin-bottom: 0;
-        }
-        h2{
-            display: flex;
-            span{
-                margin-left: auto;
-            }
-        }
     }
 }
 
