@@ -11,7 +11,7 @@ function addNoteAnchors(){
 
 const dividers = document.querySelectorAll('.sprint-divider');
 
-dividers.forEach((divider, index) => {
+dividers.forEach((divider) => {
     let angle = 90; // Starting angle for each divider
 
     function rotateGradient() {
