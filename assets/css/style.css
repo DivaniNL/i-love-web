@@ -409,5 +409,28 @@ main.semester_page{
         }
         
     }
+    section.sprint-divider{
+        margin-bottom: var(--margin-s);
+        color: var(--white);
+        padding: 20px;
+        transition: background 0.1s;
+        &:first-child{
+            margin-bottom: 0;
+        }
+        h2{
+            display: flex;
+            span{
+                margin-left: auto;
+            }
+        }
+    }
 }
 
+/* @keyframes rotateColors {
+    0% {
+        background: conic-gradient(from 0deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    }
+    100% {
+        background: conic-gradient(from 360deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    }
+} */

@@ -16,3 +16,25 @@ function addNoteAnchors(){
 //         element.innerHTML = html.replace(regex, '\n');
 //     }
 // });
+
+
+// Select all elements with the class 'sprint-divider'
+const dividers = document.querySelectorAll('.sprint-divider');
+
+dividers.forEach((divider, index) => {
+    let angle = 90; // Starting angle for each divider
+
+    function rotateGradient() {
+        // Increment the angle
+        angle += 1; // Adjust this value for faster/slower rotation
+
+        // Update the background of the current rotating gradient
+        divider.style.background = `conic-gradient(from ${angle}deg, violet, indigo, blue, green, yellow, orange, red, violet)`;
+
+        // Call the function again on the next animation frame
+        requestAnimationFrame(rotateGradient);
+    }
+
+    // Start the rotation for this divider
+    rotateGradient();
+});
