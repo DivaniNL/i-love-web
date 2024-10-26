@@ -553,15 +553,18 @@
                             <div class="buttons">
                                 <a target="_blank" href="./assets/img/lighthouse_all_human.pdf" class="button">Hier is het resultaat van de Lighthouse test</a>
                             </div>
-                            <p>Daarna heb ik nog wat handmatige tests gedaan. Als eerste kwam de keyboard test aan bod. Hiervoor ben ik door middel van tabben door de pagina heen gegaan. Wat mij opviel, is dat de buttons "outline: inherit" bevatten. Ik wist niet dat dit de focus state beinvloedde. Ik heb hiervoor <a href="https://github.com/DivaniNL/all-human-accessible-website/issues/12">een issue</a> aangemaakt. Wat hier wel gaat zijn de buttons in de popups. Deze worden overgeslagen tijdens het tabben mits ze actief zijn. De offscreencontent wordt dus genegeerd.</p>
+                            <p>Daarna heb ik nog wat handmatige tests gedaan. Als eerste kwam de keyboard test aan bod. Hiervoor ben ik door middel van tabben door de pagina heen gegaan. Wat mij opviel, is dat de buttons "outline: inherit" bevatten. Ik wist niet dat dit de focus state beinvloedde. Ik heb hiervoor <a href="https://github.com/DivaniNL/all-human-accessible-website/issues/12">een issue</a> aangemaakt. Wat hier ook mis gaat zijn de buttons in de popups. Deze worden overgeslagen tijdens het tabben. Tijdens het bekijken van de popup tabt de site ook door de a's en buttons die niet in de popup staan. Ook is de tabvolgorde niet correct.</p>
                             <p>Als tweede ging ik de handmatige test doen met betrekking tot de screen reader. Hier kwam ik erachter dat sommige afbeeldingen niet voorgelezen werden. Dit komt omdat niet alle afbeeldingen een alt-attribuut hebben. Ook werden sommige buttons niet voorgelezen. Dit zijn de buttons zonder tekst, maar met enkel een icoontje. Deze moeten een aria-label krijgen. Ook hiervoor heb ik issues aangemaakt: </p>
                             <div class="buttons">
                                 <a target="_blank" href="https://github.com/DivaniNL/all-human-accessible-website/issues/14" class="button">Issue betreft Alt attributen</a>
                                 <a target="_blank" href="https://github.com/DivaniNL/all-human-accessible-website/issues/19" class="button">Issue betreft Aria labels</a>
                             </div>
-                            <p>Als laatste ging ik een heading en landmarks test doen. Ook hier was ik niet tevreden over. Ik vond dat de taxonomie van de headings niet helemaal klopte met hoe ik het zou indelen. Hier had ik beter over na moeten denken. Ook wordt de nav meerdere keren gebruikt. Hier had Joost ook al een issue voor ingeschoten.</p>
+                            <p>Als laatste ging ik een heading en landmarks test doen. Ook hier was ik niet tevreden over. Ik vond dat de taxonomie van de headings niet helemaal klopte met hoe ik het zou indelen. Hier had ik beter over na moeten denken.</p>
                             <div class="buttons">
                                 <a target="_blank" href="https://github.com/DivaniNL/all-human-accessible-website/issues/20" class="button">Issue betreft betere heading levels</a>
+                            </div>
+                            <p>Vandaag zag ik ook dat Joost Faber een issue had ingeschoten. Hij zag dat ik dubbele content had in mijn code.</p>
+                            <div class="buttons">
                                 <a target="_blank" href="https://github.com/DivaniNL/red-pers/issues/4" class="button">Issue van Joost betreft de dubbele Nav</a>
                             </div>
                         </section>
