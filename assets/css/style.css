@@ -216,7 +216,8 @@ header{
         justify-content: space-between;
         align-items: center;
         height: 100px;
-        position: relative;
+        position: sticky;
+        top: 0;
         .logo_container{
             display: flex;
             height: 75px;
@@ -407,7 +408,7 @@ main.semester_page{
                 }
                 &.sticky-buttons{
                     position: sticky;
-                    top: 0;
+                    top: 100px;
                     translate: -24px 0;
                     width: calc(100% + 48px);
                     z-index: 999;
