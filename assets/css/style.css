@@ -211,13 +211,14 @@ body{
 /* HEADER */
 header{
     background-color: var(--color2);
-    height: 100px;
     position: sticky;
+    z-index: 999;
     top: 0;
     .header_container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100px;
         .logo_container{
             display: flex;
             height: 75px;
