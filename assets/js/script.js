@@ -8,17 +8,7 @@ function addNoteAnchors(){
     noteGroup.id = `noteID-${index + 1}`;
     });
 }
-// document.querySelectorAll("pre code").forEach(function(element) {
-//     var html = element.innerHTML;
-//     var pattern = html.match(/\s*\n[\t\s]*/);
-//     if (pattern) {
-//         var regex = new RegExp(pattern[0], "g");
-//         element.innerHTML = html.replace(regex, '\n');
-//     }
-// });
 
-
-// Select all elements with the class 'sprint-divider'
 const dividers = document.querySelectorAll('.sprint-divider');
 
 dividers.forEach((divider, index) => {
