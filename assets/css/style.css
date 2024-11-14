@@ -396,6 +396,12 @@ main.semester_page{
                         background-color: #f6f8fa;
                         border-radius: 6px;
                         margin: 10px;
+                        > code{
+                            background-color: inherit;
+                        }
+                    }
+                    code{
+                        background-color: #818b981f;
                     }
                     .anchor + h2{
                         transition:0.8s cubic-bezier(0.175, 0.885, 0.32, 1.975) 2s;

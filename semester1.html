@@ -820,17 +820,17 @@
                               <li>Zet je variable soms binnen een element. Door een andere scope te gebruiken, kan je voor bepaalde elementen en de child elementen ervan, variabelen maken en/of aanpassen. Verdere inspiratie: <a href="https://blog.logrocket.com/css-variables-scoping/">https://blog.logrocket.com/css-variables-scoping/</a> <br><br>
                                 <strong>BIJV:</strong><br>
                                 <pre class="ilw_codeblock"><code>
-        <!--                     -->.button-one {
-        <!--                     -->    --color: salmon;
-        <!--                     -->    color: var(--color);
-        <!--                     -->}
+<!--                             -->.button-one {
+<!--                             -->    --color: salmon;
+<!--                             -->    color: var(--color);
+<!--                             -->}
                                 </code></pre>
                               </li>
                               <li>Je kan variabelen ook inline gebruiken (voor nu nog niet relevant, maar dit kan handig zijn als je met data gaat werken). <br><br>
                                 <strong>BIJV:</strong><br>
                                 <pre class="ilw_codeblock">
                                     <code>
-        <!--                        -->&lt;button style="--color: red"/&gt;
+<!--                                -->&lt;button style="--color: red"/&gt;
                                     </code>
                                 </pre>
                               </li>
@@ -850,8 +850,126 @@
                             
                             
                         </section>
+                        <section class="blocks-group note-group">
+                            <h2>Opdracht betreft Cascade en Specificity [13-11-2024]</h2>
+                            <p>Na de Workshop "stylesheets for styleguides" zijn we zelf aan de slag gegaan met verschillende experimenten betreft Cascade en Specificity.</p>
+        
+                            <hr>
+        
+                            <h3>Experiment 1: Element Selector</h3>
+                            <p>Ik heb een <code>&lt;h2&gt;</code> element gemaakt met een class uit de gezamenlijke stylesheet en nog een <code>&lt;h2&gt;</code> element zonder class:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->&lt;h2 class="heading-medium"&gt;Ik ben een heading, welke kleur krijg ik?&lt;/h2&gt;
+<!--                         -->&lt;h2&gt;Ik ben ook een heading, welke kleur krijg ik?&lt;/h2&gt;
+                            </code></pre>
+        
+                            <p>In specificity.css heb ik een element selector gemaakt met een andere kleur dan in de huisstijl:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->h2 {
+<!--                         -->    color: purple;
+<!--                         -->}
+                            </code></pre>
+        
+                            <h4>Vragen</h4>
+                            <p><strong>Wordt de heading nu paars? Of wordt de huisstijl uitgevoerd?</strong></p>
+                            <p>De heading wordt inderdaad Paars.</p>
+        
+                            <p><strong>Waarom gebeurt dit?</strong></p>
+                            <p>Dit gebeurt omdat het specificity css-bestand later ingeladen wordt als de file met de huisstijl.</p>
+        
+                            <hr>
+        
+                            <h3>Experiment 2: Class Selector</h3>
+                            <p>Ik heb een extra <code>&lt;h2&gt;</code> element toegevoegd met twee classes:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->&lt;h2 class="heading-medium green"&gt;Ik ben een heading met twee classes&lt;/h2&gt;
+                            </code></pre>
+        
+                            <p>Vervolgens heb ik de green class in specificity.css toegevoegd met een nieuwe kleur:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->.green {
+<!--                         -->    color: green;
+<!--                         -->}
+                            </code></pre>
+        
+                            <h4>Vragen</h4>
+                            <p><strong>Welke kleur krijgt de heading met twee classes? De kleur van de huisstijl of de green class?</strong></p>
+                            <p>Deze wordt zwart. Deze kleur is afkomstig uit de huisstijl.</p>
+        
+                            <p><strong>Waarom krijgt de heading die kleur?</strong></p>
+                            <p>Omdat in <code>redpers.css</code> deze code staat:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->.h2.heading_quote {
+<!--                         -->    /*Quote */
+<!--                         -->    color: var(--black);
+<!--                         -->    font-family: var(--font-heading-important);
+<!--                         -->    font-weight: bold;
+<!--                         -->    line-height: var(--line-height-xs);
+<!--                         -->    font-size: var(--font-size-header-xl);
+<!--                         -->}
+                            </code></pre>
+        
+                            <p>Deze selector heeft een weight van <code>0 0 1 1</code>. Het target de class en het element. De waarde hiervan is 11.<br>
+                            De selector in <code>specificity.css</code> bevat de volgende code:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->.green {
+<!--                         -->    color: green;
+<!--                         -->}
+                            </code></pre>
+        
+                            <p>Deze selector heeft een weight van <code>0 0 1 0</code>. Het target enkel de class. De waarde hiervan is 10.</p>
+        
+                            <p>Aangezien <code>10 &gt; 11</code> wint de selector in de huisstijl.</p>
+        
+                            <hr>
+        
+                            <h3>Experiment 3: Class Volgorde</h3>
+                            <p>In specificity.css heb ik een class gemaakt met dezelfde naam als in de gezamenlijke stylesheet, maar met een andere kleur:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->.heading-medium {
+<!--                         -->    color: pink;
+<!--                         -->}
+                            </code></pre>
+                            <h4>Vragen</h4>
+                            <p><strong>Welke kleur hebben de headings nu?</strong></p>
+                            <p>Zwart</p>
+        
+                            <p><strong>Waarom hebben de headings deze kleur?</strong></p>
+                            <p>Om de zelfde reden als in Experiment 2. In de huisstijl wordt ook het element gebruikt in de selector.</p>
+        
+                            <hr>
+        
+                            <h3>Experiment 4: ID Selector</h3>
+                            <p>Ik heb nog een <code>&lt;h2&gt;</code> element toegevoegd met de heading-medium class uit de gezamenlijke stijlesheet en een ID:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->&lt;h2 class="heading-medium test" id="heading"&gt;Ik ben een heading met een ID&lt;/h2&gt;
+                            </code></pre>
+        
+                            <p>In specificity.css heb ik een ID selector gemaakt met een andere kleur:</p>
+        
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->#heading {
+<!--                         -->    color: yellow;
+<!--                         -->}
+                            </code></pre>
+                            <h4>Vragen</h4>
+                            <p><strong>Welke kleur krijgt de heading?</strong></p>
+                            <p>Deze laatste heading wordt geel.</p>
+        
+                            <p><strong>Waarom wint de kleur van de ID-selector of de class?</strong></p>
+                            <p>Omdat een ID selector zwaarder weegt dan een class selector.</p>
+                        </section>
                     </div>
                 </section>
+
 
             </div>
             <div></div>
