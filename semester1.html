@@ -795,11 +795,6 @@
 
                         </section>
                         <section class="blocks-group note-group">
-
-                            HIER MOET NOG DE OPDRACHT VAN 13 NOVEMBER
-        
-                        </section>
-                        <section class="blocks-group note-group">
                             <h2>Daily checkout 13 november 2024</h2>
         
                             <h3>Documenteer wat je vandaag hebt gedaan. Voeg links toe naar voorbeelden en bronnen.</h3>
@@ -1086,6 +1081,18 @@
                                     <span>Hiermee kun je een item horizontaal centreren binnen het parent-element. Dit heb ik gebruikt om de zwarte blokjes rechtsonderin de artikelen uit te lijnen, waarin datums staan.</span>
                                 </li>
                             </ul>
+                            <p>Hieronder is het Figma-ontwerp te bekijken:</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://www.figma.com/proto/Zlg5s0eUxwUoepbbYbSX2u/Red-Pers-web-24-25-v1.1.001-20240927-(Copy)?page-id=2005%3A4337&node-id=2005-5376&node-type=canvas&viewport=918%2C791%2C0.08&t=Q9VEyoMfJEZtXBMz-1&scaling=min-zoom&content-scaling=fixed" class="button">Mijn Design</a>
+                            </div>
+                            <p>Slide 1: Homepagina Desktop
+                                Slide 2: Homepagina Desktop (WCAG AAA Kleurencontrasten)
+                                Slide 3: Homepagina Desktop Versie B
+                                Slide 4: Homepagina Desktop Versie B (WCAG AAA Kleurencontrasten)
+                                Slide 5: Homepagina Mobiel
+                                Slide 6: Homepagina Mobiel (WCAG AAA Kleurencontrasten)
+                                Slide 7: Homepagina Mobiel Versie B
+                                Slide 8: Homepagina Mobiel Versie B (WCAG AAA Kleurencontrasten)</p>
                         </section>
                         <section class="blocks-group note-group">
                             <h2>Design Day - 17 november 2024</h2>
@@ -1122,10 +1129,57 @@
                                 <em>Een versie gemaakt waarbij te zien is hoe het wordt getoond als er een foutmelding optreedt bij het invullen van het formulier.</em>
                                 </li>
                             </ul>
+                            <p>Hieronder is het Figma-ontwerp te bekijken:</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://www.figma.com/proto/Zlg5s0eUxwUoepbbYbSX2u/Look-and-Feel-SPRINT-4?page-id=2023%3A10&node-id=2023-2702&node-type=canvas&viewport=946%2C847%2C0.15&t=WiYMsGdNvRl4RHq5-1&scaling=min-zoom&content-scaling=fixed" class="button">Mijn Design</a>
+                            </div>
+                            <p>Slide 1: Contactpagina Desktop
+                                Slide 2: Contactpagina Desktop (WCAG AAA Kleurencontrasten)
+                                Slide 3: Contactpagina Desktop Foutmelding
+                                Slide 4: Contactpagina Desktop Foutmelding (WCAG AAA Kleurencontrasten)
+                                Slide 5: Contactpagina Mobiel
+                                Slide 6: Contactpagina Mobiel (WCAG AAA Kleurencontrasten)
+                                Slide 7: Contactpagina Mobiel Foutmelding
+                                Slide 8: Contactpagina Mobiel Foutmelding (WCAG AAA Kleurencontrasten)</p>
+                        </section>
+                        <section class="blocks-group note-group">
+                            <h2>Daily Check Out - 18 november 2024</h2>
+
+                            <h3>Documenteer wat je vandaag hebt gedaan</h3>
+                            <p>Vandaag hebben we een Workshop Typografie en EM gehad van Koop. Hierin hebben we uitleg gekregen over de soorten fonts, font types en CSS-regels die te maken hebben met typografie.</p>
+                            <p>De dingen die ik heb geleerd uit de workshop staan onder "Schrijf vier dingen op die je geleerd hebt".</p>
+                            <p>Hierna hebben we geoefend met de verschillende waardes om font-size in te stellen. Mijn experiment is hieronder te bekijken:</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://divaninl.github.io/look-and-feel-corporate-identity/font.html" class="button">Mijn experiment</a>
+                            </div>
+
+                            <h3>Schrijf vier dingen op die je geleerd hebt</h3>
+                            <ol>
+                                <li><strong>Monospace:</strong> Letters nemen allemaal dezelfde ruimte in. Proportional fonts hebben per letter andere breedte.</li>
+                                <li><strong>Gebruik fallback font:</strong>
+                                    <code>font-family: 'custom', Verdana, sans-serif;</code>  
+                                    <span>Sans serif moet er altijd achter staan.</span>
+                                </li>
+                                <li><strong>CSS vmin:</strong> Pakt of vw of vh, afhankelijk van welke kleiner is.</li>
+                                <li><strong>Niet elke browser ondersteunt elk font type:</strong>  
+                                    Gebruik daarom een <code>@font-face</code> met meerdere types:
+                                    <pre class="ilw_codeblock"><code>
+<!--                                 -->@font-face {
+<!--                                 -->    font-family: 'custom-font';
+<!--                                 -->    src: url('font.woff2') format('woff2'),
+<!--                                 -->        url('font.woff') format('woff'),
+<!--                                 -->        url('font.ttf') format('truetype');
+<!--                                 -->}
+                                    </code></pre>
+                                </li>
+                            </ol>
+
+                            <h3>Schrijf op wat je nu gaat doen</h3>
+                            <p>Ik ga even mijn design doornemen en nadenken over de HTML-layout. Morgen ga ik hiermee aan de slag.</p>
                         </section>
                     </div>
-                </section>
-
+                </section> <!--end of stuff-->
+                
 
             </div>
             <div></div>
