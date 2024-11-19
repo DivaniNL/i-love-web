@@ -416,8 +416,15 @@ main.semester_page{
                         margin-left: 50px;
                         color: var(--color3);
                     }
-                    &.divani-font{
-                        font-family: 'Divani', sans-serif;
+                    /* Normalise custom font */
+                    &.divani-font > *{
+                        font-family: 'Divani', sans-serif !important;
+                    }
+                    &.divani-font > #normalizeFont{
+                        font-family: var(--font1) !important;
+                    }
+                    &.divani-font.normalise-font > *{
+                        font-family: var(--font1) !important;
                     }
                     
                     

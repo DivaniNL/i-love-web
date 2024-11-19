@@ -28,3 +28,12 @@ dividers.forEach((divider) => {
     // Start the rotation for this divider
     rotateGradient();
 });
+
+
+
+document.getElementById('normalizeFont').addEventListener('click', function() {
+    const section = document.querySelector('.blocks-group.note-group.divani-font');
+    if (section) {
+        section.classList.add('normalise-font');
+    }
+});
