@@ -55,6 +55,12 @@ html{
 from, to { border-color: transparent }
 50% { border-color: var(--color3); }
 }
+@font-face {
+    font-family: 'Divani';
+    src: url('./../fonts/Divani-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 md#output{
     display: block;
     background-color: white;
@@ -409,6 +415,9 @@ main.semester_page{
                     .anchor:target + h2 {
                         margin-left: 50px;
                         color: var(--color3);
+                    }
+                    &.divani-font{
+                        font-family: 'Divani', sans-serif;
                     }
                     
                     
