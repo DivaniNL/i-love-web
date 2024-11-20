@@ -10,7 +10,6 @@ function addNoteAnchors(){
 }
 
 const dividers = document.querySelectorAll('.sprint-divider');
-
 dividers.forEach((divider) => {
     let angle = 90; // Starting angle for each divider
 
@@ -18,8 +17,7 @@ dividers.forEach((divider) => {
         // Increment the angle
         angle += 1; // Adjust this value for faster/slower rotation
 
-        // Update the background of the current rotating gradient
-        divider.style.background = `conic-gradient(from ${angle}deg, violet, indigo, blue, green, yellow, orange, red, violet)`;
+        divider.style.setProperty('--angle', `${angle}deg`);
 
         // Call the function again on the next animation frame
         requestAnimationFrame(rotateGradient);
