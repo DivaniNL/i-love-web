@@ -9,23 +9,23 @@ function addNoteAnchors(){
     });
 }
 
-const dividers = document.querySelectorAll('.sprint-divider');
-dividers.forEach((divider) => {
-    let angle = 90; // Starting angle for each divider
+// const dividers = document.querySelectorAll('.sprint-divider');
+// dividers.forEach((divider) => {
+//     let angle = 90; // Starting angle for each divider
 
-    function rotateGradient() {
-        // Increment the angle
-        angle += 1; // Adjust this value for faster/slower rotation
+//     function rotateGradient() {
+//         // Increment the angle
+//         angle += 1; // Adjust this value for faster/slower rotation
 
-        divider.style.setProperty('--angle', `${angle}deg`);
+//         divider.style.setProperty('--angle', `${angle}deg`);
 
-        // Call the function again on the next animation frame
-        requestAnimationFrame(rotateGradient);
-    }
+//         // Call the function again on the next animation frame
+//         requestAnimationFrame(rotateGradient);
+//     }
 
-    // Start the rotation for this divider
-    rotateGradient();
-});
+//     // Start the rotation for this divider
+//     rotateGradient();
+// });
 
 
 
