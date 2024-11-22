@@ -15,8 +15,12 @@
         top: 0;
         left: 0;
         z-index: -1;
-        animation: gradient_rotation 2s infinite linear;
-        background: conic-gradient(from var(--angle), violet, indigo, blue, green, yellow, orange, red, violet);
+        animation: gradient_rotation 2s infinite linear paused;
+        background-color: red;
+        background: conic-gradient(from var(--angle, 90deg), violet, indigo, blue, green, yellow, orange, red, violet);
+        @media (prefers-reduced-motion: no-preference){
+            animation-play-state: running;
+        }
     }
     h2{
         display: flex;
