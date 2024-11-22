@@ -17,7 +17,7 @@
         z-index: -1;
         animation: gradient_rotation 2s infinite linear paused;
         background-color: red;
-        background: conic-gradient(from var(--angle, 90deg), violet, indigo, blue, green, yellow, orange, red, violet);
+        background: conic-gradient(from var(--angle, 0deg), violet, indigo, blue, green, yellow, orange, red, violet);
         @media (prefers-reduced-motion: no-preference){
             animation-play-state: running;
         }
@@ -37,7 +37,7 @@
 
 @keyframes gradient_rotation {
     0% {
-        --angle: 90deg;
+        --angle: 0deg;
     }
     100% {
         --angle: 360deg;
