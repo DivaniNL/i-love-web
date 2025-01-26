@@ -406,6 +406,9 @@ main.semester_page{
                             background-color: inherit;
                         }
                     }
+                    iframe{
+                        max-width: 100%;
+                    }
                     code{
                         background-color: #818b981f;
                     }
@@ -425,6 +428,22 @@ main.semester_page{
                     }
                     &.divani-font.normalise-font > *{
                         font-family: var(--font1) !important;
+                    }
+                    &.has-floater{
+                        .floater{
+                            offset-path: path('M.4 84.1s127.4 188 267.7 0 247.3 0 247.3 0');
+                            offset-distance: 0;
+                            animation: move 1500ms infinite alternate;
+                            width: 11.2rem;
+                            height: 11.2rem;
+                            top: 50%;
+                            position: absolute;
+                            translate: 0 -50%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+
                     }
                     
                     
@@ -448,9 +467,18 @@ main.semester_page{
     }
 }
 
+@keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+}
 
 /* Temp code */
 
-#noteID-70{
+#noteID-71{
     margin-bottom: 90vh;
 }
+
