@@ -24,6 +24,7 @@
     }
     h2{
         display: flex;
+        color: white !important;
         span{
             margin-left: auto;
         }

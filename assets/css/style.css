@@ -74,6 +74,11 @@ md#output{
     gap: 15px;
     flex-wrap: wrap;
     margin-top: 15px;
+    list-style-type: none;
+}
+.text_accent{
+    color: var(--color3);
+    font-weight: bold;
 }
 .buttons + p{
     margin-top: 15px;
@@ -120,7 +125,7 @@ p + h4, ul + h4, ol + h4 {
     background: var(--white);
     width: 100%;
 }
-a{
+p > a, .buttons a, .buttonheader, .dropdownlink{
     text-decoration: none;
     color: inherit;
     &:not(.button):not(.buttonheader):not(.dropdownlink){
@@ -256,6 +261,9 @@ header{
             animation: 
               typing 1s steps(40, end),
               blink-caret .75s step-end infinite;
+            @media (max-width :400px){
+                font-size: 20px;
+            }
         }
         nav{
             height: 100%;
@@ -350,6 +358,9 @@ header{
                         }
                     }
                 }
+                @media (max-width: 650px){
+                    display: none;
+                }
             }
         }
     }
@@ -365,8 +376,11 @@ main#home{
 }
 
 /* Semester page */
-
-main.semester_page{
+a{
+    text-decoration: none;
+    color: inherit;
+}
+main{
     section.outer-container, section.note-section-container{
         .blocks-container{
             padding: 24px;
@@ -445,6 +459,14 @@ main.semester_page{
                         }
 
                     }
+                    .buttons a.button{
+                        color: var(--color3);
+                        &:hover{
+                            background-color: var(--color3);
+                            color: var(--white);
+                            cursor: pointer;
+                        }
+                    }
                     
                     
                 }
@@ -459,6 +481,14 @@ main.semester_page{
                     .buttons{
                         margin: 0 !important;
                     }
+                    .buttons a.button{
+                        color: var(--color3);
+                        &:hover{
+                            background-color: var(--color3);
+                            color: var(--white);
+                            cursor: pointer;
+                        }
+                    }
                 }
                 
             }
@@ -466,7 +496,216 @@ main.semester_page{
         
     }
 }
+main#home{
 
+
+    .sections_container_outer{
+        .sections_container{
+            section.i_love_web_section.section_intro{
+                .blocks-container{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 50px;
+                    /*align-items: center;*/
+                    @media (max-width: 800px){
+                        column-gap: 0;
+                        row-gap: 50px;
+                        grid-template-columns: 1fr;
+                    }
+                    .blocks-group{
+                        grid-row: 1;
+                        &.content-group{
+                            h2{
+                                margin-bottom: 20px;
+                                color: var(--color3);
+                                font-size: 3.1em;
+                            }
+                        }
+                        &.media-group{
+                            @media (max-width: 800px){
+                            grid-row: 2;
+                            }
+                            img{
+                                width: 100%;
+                                border-radius: var(--br);
+                                border: 4px solid var(--color3);
+                                max-height: 300px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+            section.i_love_web_section.section_semesters{
+                margin: 50px 0;
+                h2{
+                    margin-bottom: 20px;
+                    color: var(--color3);
+                    font-size: 3.1em;
+                    text-align: center;
+                    @media (max-width: 600px){
+                        font-size: 2.1em;
+                    }
+                }
+                .carousel_arrows{
+                    list-style: none;
+                    position: absolute;
+                    height: fit-content;
+                    top: calc(50% + 65px);
+                    left: 0;
+                    width: 100%;
+                    translate: 0 -50%;
+                    z-index: 11;
+                    li{
+                        button{
+                            cursor: pointer;
+                            appearance: none;
+                            border: 0;
+                            width: 66px;
+                            position: absolute;
+                            top: 50%;
+                            translate: 0 -50%;
+                            border: 0;
+                            background: inherit;
+                            appearance: none;
+                            @media (min-width: 600px){
+                                width: 130px;
+                            }
+                            svg{
+                                width: 66px;
+                                path:first-child{
+                                    fill: var(--color_accent)
+                                }
+                                
+                                @media (min-width: 600px){
+                                    width: 130px;
+                                }
+                            }
+                            &.arrow_prev_btn{
+                                transform: scale(-1,1);
+                                left: 0;
+                            }
+                            &.arrow_next_btn{
+                                right: 0;
+                            }
+                            &:hover, &:focus, &:active{
+                                svg{  
+                                    path:first-child{
+                                        fill: var(--green);
+                                    } 
+                                }
+                            }
+                            &.scrolling{
+                                &.arrow_prev_btn{
+                                    animation: scaleChangeReverse 0.5s linear;
+                                    animation-iteration-count: 1;
+                                    animation-fill-mode: forwards;
+                                }
+                                &.arrow_next_btn{
+                                    animation: scaleChange 0.5s linear;
+                                    animation-iteration-count: 1;
+                                    animation-fill-mode: forwards;
+                                }
+                                svg{
+                                    path:first-child{
+                                        fill: var(--arrowSlideclr);
+                                        animation: colorChange 0.5s linear;
+                                        animation-iteration-count: 1;
+                                        animation-fill-mode: forwards;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @media (max-width: 650px){
+                        top: calc(50% + 5px);
+                    }
+                }
+                .carousel_slides{
+
+                    list-style: none;
+                    width: 100%;
+                    display: flex;
+                    overflow-x: scroll;
+                    scroll-snap-type: x mandatory;
+                    scrollbar-width: none;  /* Firefox */
+                    z-index: 10;
+                    transition: 0.35s ease-out;
+                    max-width: 790px;
+                    .carousel_slide{
+                        width: 100vw;
+                        max-width: 100%;
+                        scroll-snap-align: center;
+                        min-width: 100%;
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        h3{
+                            margin-bottom: var(--br);
+                            font-size: 2.1em;
+                            color: var(--color3);
+                            @media (max-width: 600px){
+                                font-size: 1.5em;
+                            }
+                        }
+                        figure{
+                            display: grid;
+                            width: 100vw;
+                            max-width: 100%;
+                            width: 100vw;
+                            max-width: 90%;
+                            img{
+                                width: 100vw;
+                                max-width: 100%;
+                                object-fit: cover;
+                                height: 400px;
+                                border-radius: var(--br);
+                                border: 4px solid var(--color3);
+                            }
+                            figcaption{
+                                padding: 0 0.8888rem;
+                                margin: 10px 0;
+                                width: calc(100% - 0.8888rem);
+            
+                                @media (min-width: 600px){
+                                    width: 100%;
+                                }
+                                &.text_small{ /* Slide int  + desc */
+                                    display: flex;
+                                    gap: 0.25rem;
+                                }
+                            }
+                        }  
+                    }
+                    @media (min-width: 600px){
+                        width: 100%;
+                        margin-left: auto;
+                        margin: 0 auto;
+                    }
+                    &.scrolling{
+                        animation: scaleChangeSmaller .55s ease-out;
+                        animation-iteration-count: 1;
+                        animation-fill-mode: forwards;
+                    }
+                    &.disable_scroll{
+                        pointer-events: none;
+                        overflow-x: hidden;
+                    }
+                    &::-webkit-scrollbar { 
+                        display: none;  /* Safari and Chrome */
+                    }
+                }
+                @media (min-width: 1050px){
+                    margin: 120px 0 0 0;
+                }
+            }
+        }
+    }
+
+}
 @keyframes move {
     0% {
       offset-distance: 0%;
@@ -475,7 +714,67 @@ main.semester_page{
       offset-distance: 100%;
     }
 }
-
+@property --arrowSlideclr {
+    syntax:"<color>";
+    inherits:true;
+    initial-value: var(--green);
+}
+@keyframes colorChange {
+    0% {
+        --arrowSlideclr: var(--green);
+    }
+    50%{
+        --arrowSlideclr: var(--pink);
+    }
+    100% {
+        --arrowSlideclr: var(--green);
+    }
+}
+@keyframes scaleChange {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes scaleChangeSmaller {
+    0% {
+        transform: scale(1);
+        translate: 0 0;
+        z-index: -100;
+        position: relative;
+    }
+    50% {
+        transform: scale(0.85);
+        translate: 0 -250px;
+        z-index: -100;
+        position: relative;
+        opacity: 0;
+        
+    }
+    100% {
+        transform: scale(1);
+        translate: 0 0;
+        z-index: 10;
+        position: relative;
+        opacity: 1;
+    }
+}
+@keyframes scaleChangeReverse {
+    0% {
+        transform: scale(-1,1);
+    }
+    50%{
+        transform: scale(-1.1,1.1);
+    }
+    100% {
+        transform: scale(-1,1);
+    }
+}
 /* Temp code */
 
 #noteID-71{
