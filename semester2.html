@@ -121,6 +121,50 @@
                             </div>
 
                         </article>
+                        <article class="blocks-group note-group">
+                            <h2>05-02-2025</h2>
+
+                            <h3>Wat heb ik vandaag gedaan?</h3>
+
+                            <p>Vandaag heb ik de rest van mijn visitekaartje dynamisch gemaakt met JSON uit de database.</p>
+
+                            <p>Hier een stuk code waarin ik mijn werkervaring dynamisch per entry in een table plaats:</p>
+
+                            <pre class="ilw_codeblock"><code>
+<!--                         -->&lt;table class=&quot;table-primary&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+<!--                         -->    &lt;thead&gt;
+<!--                         -->        &lt;tr&gt;
+<!--                         -->            &lt;th&gt;Periode&lt;/th&gt;
+<!--                         -->            &lt;th&gt;Werkervaring&lt;/th&gt;
+<!--                         -->        &lt;/tr&gt;
+<!--                         -->    &lt;/thead&gt;
+<!--                         -->    &lt;tbody&gt;
+<!--                         -->        {% for werkervaring in custom.werkervaringen %}
+<!--                         -->            {% if werkervaring.functie %}
+<!--                         -->                &lt;tr&gt;
+<!--                         -->                    {% if werkervaring.periode %}
+<!--                         -->                        &lt;td&gt;{{ werkervaring.periode }}&lt;/td&gt;
+<!--                         -->                    {% else %}
+<!--                         -->                        &lt;td&gt;Onbekende periode&lt;/td&gt;
+<!--                         -->                    {% endif %}
+<!--                         -->                
+<!--                         -->                    &lt;td&gt;{{ werkervaring.functie }} bij
+<!--                         -->                        {% if werkervaring.link %}
+<!--                         -->                            &lt;a class=&quot;link-werkervaring&quot; target=&quot;_blank&quot; href=&quot;{{ werkervaring.link }}&quot;&gt;
+<!--                         -->                        {% endif %}
+<!--                         -->                        {{ werkervaring.bedrijf }}
+<!--                         -->                        {% if werkervaring.link %}
+<!--                         -->                            &lt;/a&gt;
+<!--                         -->                        {% endif %}
+<!--                         -->                    &lt;/td&gt;
+<!--                         -->                &lt;/tr&gt;
+<!--                         -->            {% endif %}
+<!--                         -->        {% endfor %}
+<!--                         -->    &lt;/tbody&gt;
+<!--                         -->&lt;/table&gt;
+                            </code></pre>
+
+                        </article>
                           
                     </div>
                 </section> <!--end of stuff-->
