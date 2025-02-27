@@ -168,3 +168,7 @@ function fillSlides() {
     });
     sliderInit.prepend(sliderInit.lastElementChild);
   }
+
+
+let formal_name = document.querySelector('.name-formal').innerHTML[0];
+document.querySelector('.name-formal').innerHTML = formal_name + ".";
