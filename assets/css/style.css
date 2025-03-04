@@ -781,3 +781,42 @@ main#home{
     margin-bottom: 90vh;
 }
 
+.questions{
+    display: grid;
+    gap: 10px;
+    li{
+        &.green{
+            strong:nth-of-type(2){
+                background-color: green;
+                color: white;
+                padding: 10px;
+                display: block;
+            }
+        }
+        &.red{
+            strong:nth-of-type(2){
+                background-color: red;
+                color: white;
+                padding: 10px;
+                display: block;
+            }
+        }
+        &.orange{
+            strong:nth-of-type(2){
+                background-color: orange;
+                color: white;
+                padding: 10px;
+                display: block;
+            }
+            
+        }
+        &.yellow{
+            strong:nth-of-type(2){
+                background-color: yellow;
+                color: black;
+                padding: 10px;
+                display: block;
+            }
+        }
+    }
+}
