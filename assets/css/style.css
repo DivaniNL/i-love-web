@@ -820,3 +820,7 @@ main#home{
         }
     }
 }
+a.link_blue{
+    color: blue;
+    text-decoration: underline;
+}
