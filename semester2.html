@@ -57,6 +57,7 @@
                             <div class="buttons">
                                 <a href="#s7" class="button">Sprint 7</a>
                                 <a href="#s8" class="button">Sprint 8</a>
+                                <a href="#s9" class="button">Sprint 9</a>
                             </div>
                             
                         </section>
@@ -616,6 +617,158 @@
 
                             <a class="link_blue" target="_blank" href="https://github.com/fdnd-task/server-side-rendering-server-side-website/blob/main/docs/data-filtering-en-template-filters.md">Bekijk hier de opdracht</a>
                         </article>
+                        <section class="blocks-group sprint-divider">
+                            <div class="anchor" id="s8"></div>
+                            <h2>
+                                SPRINT 9
+                                <span>The Web is for Everyone</span>
+                            </h2>
+                        </section>
+                        <article class="blocks-group note-group">
+                            <h2>17‐03‐2025 ‐ Workshop Sprint Planning</h2>
+                        
+                            <h3>Nieuwe studio!</h3>
+                            <p>We hebben een nieuwe indeling van de studio en het aquarium. De studio is voor stil werken met elkaar en het aquarium is voor kletsen en spelletjes. De pingpongtafel is in aantocht.</p>
+                        
+                            <h3>Workshop Sprint Planning</h3>
+                            <p>Hieronder zijn de drie stappen van Progressive Enhancement (een code strategie waarmee je ervoor kunt zorgen dat je website het altijd doet):</p>
+                        
+                            <ol>
+                                <li><strong>Bepaal de core functionality</strong> van wat je wilt maken.</li>
+                                <li><strong>Bouw de functionaliteit met de simpelste techniek</strong> (meestal HTML met een klein beetje Mobile First CSS voor de huisstijl).</li>
+                                <li><strong>Voeg daarna extra enhancements toe</strong> met CSS en client-side JS om de User Experience te verbeteren (de leukste stap).</li>
+                            </ol>
+                        
+                            <h3>Opdracht</h3>
+                            <p>Kan je bedenken waarom de roltrap een goede metafoor is voor Progressive Enhancement? Teken op het whiteboard hoe de roltrap een voorbeeld van Progressive Enhancement is. Wat gebeurt er in stap 1, 2 en 3?</p>
+                        
+                            <div class="buttons">
+                                <a target="_blank" href="./assets/img/s9-pe.jpg" class="button">Bekijk de metafoor</a>
+                            </div>
+                        
+                            <h3>RAPPE websites maken</h3>
+                            <p>Houd rekening met:</p>
+                            <ul>
+                                <li>Verschillende browsers</li>
+                                <li>Verschillende internetsnelheden</li>
+                            </ul>
+                        
+                            <p>Daarna hebben we onze leertaak geforkt en gecloned, issues van de vorige sprint getransferred naar de nieuwe repository. Vervolgens hebben we een nieuwe planning gemaakt voor alles wat ons deze sprint te wachten staat.</p>
+                        
+                            <h3>Onze planning</h3>
+                            <div class="buttons">
+                                <a target="_blank" href="./assets/img/sprint-planning-s9.jfif" class="button">Bekijk de planning</a>
+                            </div>
+                        </article>
+                        <article class="blocks-group note-group">
+                            <h2>17‐03‐2025 ‐ Workshop User Generated Content</h2>
+                        
+                            <p>We gaan met ons groepje overleggen wat we kunnen maken waarbij je gegevens in jullie Directus database aan moet passen of toe moet voegen.</p>
+                        
+                            <p>Hierna moeten we een snelle schets maken over wat je kan doen.</p>
+                        
+                            <p>Ik heb een idee om per DJ likes te verzamelen, en het DJ Overzicht te sorteren op Likes of alfabetisch (Standaard)</p>
+                        
+                            <h3>Hieronder mijn snelle schets:</h3>
+                            <div class="buttons">
+                                <a target="_blank" href="./assets/img/schets-s9.jfif" class="button">Bekijk de schets</a>
+                            </div>
+                        
+                            <p>Meer mensen aan onze tafel willen graag likes maken en we denken dat het haalbaar is door een like attribuut toe te voegen aan de Directus structuur.</p>
+                        
+                            <p>Hierna hebben we samen onze Directus database geanalyseerd, en voor zichzelf mogelijke problemen en knelpunten genoteerd die je verwacht voor jouw idee.</p>
+                        
+                            <p>De knelpunten die ik zie met mijn idee, is dat er nu niet de mogelijkheid is om likes te geven aan Users (Deejays).</p>
+                        
+                            <h3>Hieronder is een stuk JSON van de users:</h3>
+                            <pre class="ilw_codeblock"><code>
+<!--                     -->{
+<!--                     -->    "users": [
+<!--                     -->      {
+<!--                     -->        "id": 34,
+<!--                     -->        "mh_users_id": {
+<!--                     -->          "sort": null,
+<!--                     -->          "id": 20,
+<!--                     -->          "status": "draft",
+<!--                     -->          "full_name": "Barry Paf",
+<!--                     -->          "date_updated": null,
+<!--                     -->          "date_created": "2024-10-07T09:04:53.041Z",
+<!--                     -->          "cover": "1d3c4caa-2b25-463a-b71c-940a319e5924",
+<!--                     -->          "user_created": "73ac9577-6d00-4fb2-ab53-5313fe572d09",
+<!--                     -->          "user_updated": null
+<!--                     -->        },
+<!--                     -->        "mh_show_id": {
+<!--                     -->          "radiostation": 3,
+<!--                     -->          "sort": null,
+<!--                     -->          "id": 33,
+<!--                     -->          "body": null,
+<!--                     -->          "name": "De Barry Paf Show",
+<!--                     -->          "status": "published",
+<!--                     -->          "date_updated": "2024-12-11T14:17:37.852Z",
+<!--                     -->          "date_created": "2024-10-07T09:04:53.039Z",
+<!--                     -->          "headermobile": "0c6844da-e7c6-4f71-8704-c9394dd37e07",
+<!--                     -->          "headerdesktop": "6169ea03-4081-4869-b3da-222d51f40478",
+<!--                     -->          "user_created": "73ac9577-6d00-4fb2-ab53-5313fe572d09",
+<!--                     -->          "user_updated": "73ac9577-6d00-4fb2-ab53-5313fe572d09",
+<!--                     -->          "thumbnail": "f3b76db1-53cf-4d77-b0eb-eb5d25d9af31",
+<!--                     -->          "users": [34]
+<!--                     -->        }
+<!--                     -->      }
+<!--                     -->    ]
+<!--                     -->}
+                            </pre></code>
+                        
+                            <p>Ik heb dit probleem bij een docent aangekaart (Krijn). Krijn gaat een Messages table toevoegen aan onze databasegroep om ervoor te zorgen dat iedereen zijn eigen POSTS-requests kan maken doormiddel van een POST. Iedereen kan met een zelfgemaakte Syntax voor de For: waarde bedenken, en deze gebruiken voor de request.</p>
+                        
+                            <h3>Ik zou bijvoorbeeld iets kunnen doen als:</h3>
+                            <pre class="ilw_codeblock"><code>
+<!--                     -->{
+<!--                     -->  "id": 10,
+<!--                     -->  "created": "2025-02-24T10:40:28.884Z",
+<!--                     -->  "from": "Radio Veronica",
+<!--                     -->  "text": "5",
+<!--                     -->  "for": "Dylan / Likes for UserID / 2"
+<!--                     -->}
+                            </pre></code>
+                        
+                            <p>Hierna bedacht ik nog een knelpunt. hoe kan ik het verschil ontdekken tussen iemand die de DJ al heeft geliked, en wie nog niet.</p>
+                        
+                            <p>Ik heb hierover gebrainstormt en het volgende hiervoor bedacht:</p>
+                        
+                            <p>In dat geval moet er een soort login komen, waar er dus ook herkend kan worden welk persoon de like heeft gegeven.
+                            Dan zou elke like apart in de database moeten staa, we gaan immers ook POSTEN en niet UPDATEN. Dan had boenstaande manier ook niet gewerkt.</p>
+                        
+                            <h3>Een voorbeeld van twee likes zou dan zijn:</h3>
+                            <pre class="ilw_codeblock"><code>
+<!--                     -->{
+<!--                     -->  "id": 10,
+<!--                     -->  "created": "2025-02-24T10:40:28.884Z",
+<!--                     -->  "from": "UserLoggedin / DivaniNL",
+<!--                     -->  "text": "Like",
+<!--                     -->  "for": "Like for UserID / 2"
+<!--                     -->},
+<!--                     -->{
+<!--                     -->  "id": 11,
+<!--                     -->  "created": "2025-02-24T10:40:28.884Z",
+<!--                     -->  "from": "UserLoggedin / Ju5tu5",
+<!--                     -->  "text": "Like",
+<!--                     -->  "for": "Like for UserID / 2"
+<!--                     -->}
+                        </pre></code>
+                        </article>
+                        <article class="blocks-group note-group">
+
+                            <h2>17‐03‐2025 ‐ Lerend vermogen</h2>
+                            <p>Ik heb een tool gevonden om beter te kunnen testen. Ik heb een plugin gedownload voor Figma: Stark - Contrast & Accessibility Checker. Deze heb ik hier gevonden: 
+                            </p>
+                            <div class="buttons"><a href="https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker" target="_blank" class="button">Bron</a></div>
+                            <p>Hiermee kan je in je Ontwerp live je WCAG kleuren contrasten checken en worden er suggesties getoond. Hieronder is te zien dat ik de mogelijkheden onderzoek.</p>
+                            <div class="buttons">
+                                <a target="_blank" href="./assets/img/17-03-lerend.png" class="button">Bekijk de schets</a>
+                            </div>
+
+                        </article>
+                        
                         
                     </div>
                 </section> <!--end of stuff-->
