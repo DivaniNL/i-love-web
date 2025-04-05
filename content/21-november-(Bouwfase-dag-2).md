@@ -1,0 +1,17 @@
+## 21 november (Bouwfase dag 2)
+
+Vandaag ben ik verder gegaan aan de bouwfase. Ik heb de mobiele versie van de hoofdpagina vanaf 390px compleet. Daarnaast is de desktop versie ook bijna af.
+
+### Wat heb ik gedaan om de code conventie na te leven.
+
+Ik had nog een inconsistentie gevonden met de code conventies.
+De structuur is nu: elementtype_functie.
+De popups heetten eerst bijvoorbeeld (sprint 2 en 3): search_popup.
+
+Met de huidige code conventie is dit niet meer correct.
+Nu heten deze bijvoorbeeld:
+popup_search.
+Hier is te zien dat ik het heb aangepast:
+HTML -> https://github.com/DivaniNL/look-and-feel-corporate-identity/commit/9d273119710ed24422230378358ea6e478e282b7#diff-1b062b89d86c4bd360d644be21410ec92100adac7ed27c5e47a9a38757993f45R682
+JS -> https://github.com/DivaniNL/look-and-feel-corporate-identity/commit/9d273119710ed24422230378358ea6e478e282b7#diff-68e5fc69a6a980a801fd0d1f8a8c78fdf84a7d0a13ae3d9555306935023cefa2L106
+CSS -> https://github.com/DivaniNL/look-and-feel-corporate-identity/commit/c92feee1536566ae5426d776ff7029704a761bc7

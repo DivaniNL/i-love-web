@@ -1,0 +1,36 @@
+## Daily checkout 13 november 2024
+
+### Documenteer wat je vandaag hebt gedaan. Voeg links toe naar voorbeelden en bronnen.
+Eerst hebben we met een groepje van dezelfde opdrachtgever onderzoek gedaan op 3 verschillende websites hoe CSS is toegepast voor een h2 en een button element.  De sites die we moesten onderzoeken mwaren:
+https://css-tricks.com/
+https://www.smashingmagazine.com/
+https://fdnd.nl/.
+
+Aangezien wij nog niet de stylesheet af hadden en er bij ons wat onduidelijkheid was over de opdracht hadden we het vooral over de stylesheet-opdracht gehad. Het is ons wel gelukt om https://css-tricks.com/ te analyseren.
+
+Vandaag hebben we ook uitleg gekrgen over custom properties. Met custom properties zorg je ervoor dat je jezelf niet herhaalt (DRY, Don't Repeat Yourself).
+
+### Schrijf drie dingen op die je geleerd hebt
+1. Zet je variables in de body, niet in root
+2. Zet je variable soms binnen een element. Door een andere scope te gebruiken, kan je voor bepaalde elementen en de child elementen ervan, variabelen maken en/of aanpassen 
+Verdere inspiratie (https://blog.logrocket.com/css-variables-scoping/)
+BIJV:
+.button-one{
+  --color: salmon
+  color: var(--color) //salmon
+}
+3. Je kan variabelen ook inline gebruiken (voor nu nog niet relevant, maar dit kan handig zijn als je met data gaat werken)
+BIJV:
+<button style="--color: red"/>
+
+###  BEDENK OOK:
+
+### Hoe ga je nieuwe CSS code in de gemeenschappelijke en in je eigen code verwerken?
+
+We hebben vandaag met ons groepje een begin gemaakt aan de stylesheet. Deze maak ik morgen af. Ik ga de nieuwe variabelen op de pagina die ik al heb gemaakt verwerken. Hiernaast zal ik mijn eigen stylesheet maken waarin ik:
+1. Deze variabelen gebruik waar nodig
+2. voor mde elementen mijn eigen styling toevoegen en in de <HEAD> deze onder de gezamelijke stylesheet inladen.
+
+### Waar ga je afspraken over jullie CSS strategie met je teamgenoten documenteren?
+
+We gaan in ons eigen Team Board afspraken en andere zaken vermelden. Daarnaast gaan we ook een Miro Board maken waar we later op kunnen reflecteren.

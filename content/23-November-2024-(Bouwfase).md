@@ -1,0 +1,16 @@
+### 23 November 2024  
+De homepage is afgerond. Naast de voltooiing van de basisfunctionaliteit en het design zijn er nog enkele verbeteringen doorgevoerd:  
+- **Aria-labels** toegevoegd aan de donatieknoppen voor betere toegankelijkheid.  
+- **Aria-hidden** toegevoegd aan decoratieve icoontjes en shapes om te voorkomen dat deze door screenreaders worden voorgelezen.  
+
+#### Contactpagina  
+Op de contactpagina is een kleine wijziging aangebracht ten opzichte van het oorspronkelijke design:  
+- De **gap** tussen de invoervelden is op mobiele apparaten aangepast naar **40px** voor een compactere weergave. Op desktops blijft de gap ingesteld op **60px**.  
+
+#### Opgeloste issues uit de code design review  
+Tijdens de code design review zijn de volgende issues opgelost:  
+- [[Issue #32: Button focus styles consistent maken](https://github.com/DivaniNL/look-and-feel-corporate-identity/issues/32)](https://github.com/DivaniNL/look-and-feel-corporate-identity/issues/32).  
+- [[Issue #33: Verbeterde semantiek van HTML-structuur](https://github.com/DivaniNL/look-and-feel-corporate-identity/issues/33)](https://github.com/DivaniNL/look-and-feel-corporate-identity/issues/33).  
+- [[Issue #32: Correct gebruik van typografische stijlen in de Styleguide](https://github.com/DivaniNL/redpers-styleguide/issues/32)](https://github.com/DivaniNL/redpers-styleguide/issues/32).  
+
+Met deze verbeteringen is zowel de functionaliteit als de toegankelijkheid van de website naar een hoger niveau gebracht.

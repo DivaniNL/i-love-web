@@ -1,0 +1,25 @@
+## Daily Checkout 25 November
+
+### Beschrijf in eigen woorden de 3 Gestalt wetten die je vandaag met je team hebt onderzocht. Link naar voorbeelden die je hebt gemaakt en bronnen die je hebt gebruikt. 
+
+Vandaag hebben we in groepjes van 3 personen onderzoek gedaan naar de Gestalt wetten. Ik heb dit vandaag gedaan met Tom en Matthijs.
+Ik zal hieronder even benoemen in mijn eigen woorden wat deze wetten inhouden.
+Met Gestalt Psychologie kan je elementen groeperen in je website, zondare kaders te tekenen. Het menselijke brein is goed in staat om elementen te groeperen.
+
+Wij hebben de onderstaande manieren onderzocht:
+1. **Law of Similarity**: Als elementen gelijk zijn in **vorm**, **kleur** en/of **grootte** dan worden ze door mensen als een groep gezien. Denk maar aan kleuren bij categorieën.
+2. **Law of Proximity**: Als een groep elementen dicht bij elkaar staan en niet dicht bij andere elementen staan, ontstaat er witruimte, die ons brein zit als een scheiding tussen twee groepen. Denk bijvoorbeeld aan de Hero van Duinrell waar de vier belangrijkste attracties dicht bij elkaar staan emt veel witruimte eromheen.
+3. **Law of Common Region**: Als er door middel van lijnen of een kader elementen gegroepeerd worden kan dit als een groep gezien worden. Neem als voorbeeld een formulier met een kader waarin invoervelden staan. Een ander voorbeeld is de menubalk in de header, die vaak een border, of een andere achtergrondkleur heeft.
+
+
+Ik heb een presentatie gemaakt over de Wet van de Gelijkenis.
+Deze is hier te zien:
+https://docs.google.com/presentation/d/1Q29_V2YXHbRPio07UEMMf0TQxLVls9VClbqAusBU5cc/edit?usp=sharing
+In deze presentatie is de opdracht om snel het juiste vlak te selecteren waarin staat: "Klik hier wel"
+
+### Noem 2 dingen die je nog wil leren
+1. De andere gestalt principes
+2. Welk principe het best werkt voor welke situatie
+
+### Geef 1 iemand een compliment
+Ik heb Tom Deeterink een compliment gegeven omdat hij mij goed het verschil heeft uitgelegd tussen de **Law of Proximity** en de **Law of Common Region**

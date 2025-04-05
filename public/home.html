@@ -15,37 +15,8 @@
 
 <body>
     <main id="home">
-        <header class="main_grid">
-            <div></div>
-            <div class="header_container">
-                <a href="./index.html">
-                    <figure class="logo_container">
-                        <img src="./assets/img/divani.png" alt="">
-                    </figure>
-                </a>
-                <div class="title_container">
-                    <h1>I Love Web</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <div class="dropdown">
-                                <a href="">
-                                    <button class="dropbtn">Semesters</button>
-                                </a>
-                                <div class="dropdown-content">
-                                    <a href="./semester1.html">Semester 1</a>
-                                    <a href="./semester2.html">Semester 2</a>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </nav>
-            </div>
-            <div></div>
-
-        </header>
+        {{files | json}}
+        {% render 'partials/header.liquid' %}
         <div class="sections_container_outer main_grid">
             <div></div>
             <div class="sections_container">
@@ -89,7 +60,7 @@
 
                         <ul class="carousel_slides">
                             <li class="carousel_slide">
-                                <a href="./semester1.html#s1" target="_blank">
+                                <a href="./semester1#s1" target="_blank">
                                     <h3>Sprint 1 - Your Tribe</h3>
                                     <figure>
 
@@ -104,7 +75,7 @@
 
                             <li class="carousel_slide">
 
-                                <a href="./semester1.html#s2" target="_blank">
+                                <a href="./semester1#s2" target="_blank">
                                     <h3>Sprint 2 - The Client</h3>
                                     <figure>
 
@@ -119,7 +90,7 @@
 
                             <li class="carousel_slide">
 
-                                <a href="./semester1.html#s3" target="_blank">
+                                <a href="./semester1#s3" target="_blank">
                                     <h3>Sprint 3 - All Human</h3>
                                     <figure>
 
@@ -134,7 +105,7 @@
 
                             <li class="carousel_slide">
 
-                                <a href="./semester1.html#s4" target="_blank">
+                                <a href="./semester1#s4" target="_blank">
                                     <h3>Sprint 4 - Look and Feel</h3>
                                     <figure>
 
@@ -149,7 +120,7 @@
 
                             <li class="carousel_slide">
 
-                                <a href="./semester1.html#s5" target="_blank">
+                                <a href="./semester1#s5" target="_blank">
                                     <h3>Sprint 5 - The Client</h3>
                                     <figure>
 
@@ -164,7 +135,7 @@
 
                             <li class="carousel_slide">
 
-                                <a href="./semester1.html#s6" target="_blank">
+                                <a href="./semester1#s6" target="_blank">
                                     <h3>Sprint 6 - The Startup</h3>
                                     <figure>
 

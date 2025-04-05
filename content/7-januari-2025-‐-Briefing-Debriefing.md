@@ -1,0 +1,55 @@
+## Briefing/Debriefing JUST
+
+Vandaag ben ik samen met mijn groepje (bestaande uit ook Marcin, Miel en Reyhan) op bezoek geweest bij JUST in Den Haag.
+
+Na hun briefing heeft ieder teamlid zijn eigen debriefing gemaakt.
+
+Dit is mijn versie:
+[https://docs.google.com/document/d/1XnrO-dWmpfR_IHlpgvJpZZVjCFILuz3XwcMFEVt_9Gc/edit?tab=t.0](https://docs.google.com/document/d/1XnrO-dWmpfR_IHlpgvJpZZVjCFILuz3XwcMFEVt_9Gc/edit?tab=t.0)  
+
+
+## Hieronder is de gezamenlijke debriefing:
+
+Beste Bram,
+Nog bedankt voor de duidelijkheid en de volledigheid van de aangeleverde assets/designs
+ Hieronder nog even onze debriefing samengevat. Mochten hier nog vragen en opmerkl
+**Doel van het project**
+De bedoeling is om een website te bouwen volgens het ontwerp uit Figma, waarbij we goed letten op toegankelijkheid, responsiveness en correcte HTML-structuur. Elk team-lid bouwt de pagina zelf, zo worden er in dit geval 4 (of mogelijk 5) projecten opgeleverd.  
+  
+
+**Belangrijkste aandachtspunten:**
+ 
+> **Responsive design**  
+
+* Te gebruiken op elke schermgrootte
+> **Toegankelijkheid / Toetsenbordnavigatie**    
+
+* Tabben door content  
+* Sluiten met ESC knop (indien er een modal aanwezig is)  
+* Activeren knoppen
+
+> **Correcte HTML-semantiek**  
+
+* Gebruik juiste elementen (header, footer, nav)
+* Zorg voor een juiste document structuur (h1, h2, h3)
+* Geef alt tekst aan images waar nodig  
+
+> **User feedback**  
+
+* Help gebruiker met subtiele animaties
+* Zorg voor duidelijke indicatoren van interactieve elementen (hover, focus, active)
+* Zorg dat feedback duidelijk is, ook voor mensen die kleurenblind zijn
+ 
+**Uitdagingen**  
+
+Het is belangrijk om het ontwerp goed te vertalen naar de website zonder toegankelijkheid of responsiveness uit het oog te verliezen. Het ontwerp moet ook responsive zijn; te bekijken/gebruiken op verschillende beeldgroottes. Duidelijke user feedback is een must.
+**Verwachting**  
+
+Uiteindelijk moeten we een website hebben die het Figma-ontwerp nauwkeurig volgt, goed werkt op alle apparaten, en voldoet aan de toegankelijkheids- en webstandaarden.
+
+**Feedbackmoment**
+
+Zouden jullie online beschikbaar zijn voor een feedbackmoment op dinsdag om 14:00? Ik hoor het graag.
+
+Met vriendelijke groet,
+Marcin, Dylan, Reyhan en Miel

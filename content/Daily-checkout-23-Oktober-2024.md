@@ -1,0 +1,13 @@
+## Daily checkout 23 Oktober 2024
+### Schrijf 3 dingen op die je vandaag hebt gedaan
+1. Ik heb een Readme gemaakt.
+2. We hebben met ons groepje van Red Pers elkaars werk bekeken.
+3. Ik heb nog wat kleine bugs gefixed in mijn JS voor de all-human site.
+4. Laptoip gebruikt zonder muis of trackpad, en keyboard shortcuts opgezocht en geoefend.
+
+### Beschrijf 2 verbeteringen die je in je readme hebt gemaakt:
+1. Minder code laten zien.
+2. De nadruk gelegd op de belangrijkere elementen.
+
+### Schrijf 1 ding die je anders gaat doen de komende sprint.
+1. Niet te moeilijk over dingen nadenken : )

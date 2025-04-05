@@ -1,0 +1,20 @@
+## Daily Checkout 10-09-2024
+
+### Schrijf op wat je vandaag gedaan hebt
+
+Vandaag hebben we de basics geleerd van CSS grids
+
+Drie dingen die ik vandaag geleerd heb:
+
+*   verschil tussen grid layouts met alleen afmetingen + areas
+*   grid-column/row: 1/-1 (-1 is de laatste)
+*   gebruik align en justify self
+
+### Schrijf 2 dingen die je interessant vind:
+
+*   grid-column/row: 1/-1 (-1 is de laatste)
+*   Responsive grid layouts
+
+### Schrijf 1 ding waar je nog vragen over hebt
+
+*   PRE CODE tags in je html zonder whitespacing

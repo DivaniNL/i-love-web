@@ -1,0 +1,35 @@
+## Ik heb de variaties bedacht voor de gestalt wetten.
+Hier zijn mijn ontwerpen te zien:
+https://www.figma.com/proto/Zlg5s0eUxwUoepbbYbSX2u/Look-and-Feel-SPRINT-4?page-id=2083%3A10&node-id=2088-594&node-type=canvas&viewport=-266%2C2171%2C0.34&t=GVs4eJUOHDNPd390-1&scaling=min-zoom&content-scaling=fixed
+Slide 1: Originele hoofdpagina gemaakt vorig weekend
+Slide 2: Hoofdpagina waarom Similarity Gestalt wet is gebruikt.
+Slide 3: Hoofdpagina waarom Proximity Gestalt wet is gebruikt.
+Slide 2: Hoofdpagina waarom Common Region Gestalt wet is gebruikt.
+
+### Bij red pers variatie in Similarity:
+
+Ik heb gekozen om de kleur aan te passen in de auteur en de border.
+De auteur omdat de auteur centraal staat bij red pers
+Ook de navigatie krijgt per categorie  een dingetje met die kleur (bolletje of streepje).  
+**Waarom heb ik dit gedaan?**  
+Door de kleur krijgen de rubrieken ook een "categoriekleur". Hiermee kan je dus een kleur associeren met een rubriek. Dan weet je gelijk naar welke kleur je zoeken moet bij je volgende bezoek aan de website.
+
+
+### Bij red pers variatie in Proximity:
+
+Ik heb de rubriueken meer witruimte ten opzichte vna elkaar gegeven.
+Ik heb de intro sectie wel dichtbij de eerste afbeelding gehouden, aangezien dit erbij hoort.  
+**Waarom heb ik dit gedaan?**  
+Door deze ruimte is het makkelijker te zien als een sectie eindigt, en een nieuwe begint. Het is nu duidelijker te zien dat de seperator die boven de artikels staat, erbij hoort.
+
+### Bij red pers variatie in Common Region:
+
+Wordt al goed toegepast op de website bij het formulier op de contactpagina en de donatiesectie op de hoofdpagina. Maar aangezien ik niet lui ben heb ik nog nagedacht over een versie die hier beter op scoort.  
+**Wat heb ik hier gedaan?**  
+Ik heb bij de rubriekkoppen (.seperator_rubriek) een extra verticaal lijntje toegevoegd.  
+**Waarom heb ik dit gedaan?**  
+Door deze lijn is het makkelijker te zien dat de seperator die boven de artikels staat, bij de artikels eronder hoort.
+
+
+## Daarnaast heb ik vandaag nog een andere wijziging doorgevoerd naar advies van Krijn:
+Ik heb de "meer (rubrieknaam)" in de seperators bold gemaakt, zodat het duidelijker is dat je erop kan klikken.

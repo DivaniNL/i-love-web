@@ -1,0 +1,11 @@
+## 28 November 2024
+
+### Het einde van Red Pers
+Vandaag tijdens de sprint review kregen we te horen dat Red Pers helaas de samenwerking stopt met de HvA.
+
+### Feedback klant
+
+Wel heb ik goede feedback gekregen van Rainn. 
+De tip en top voor mijn uitwerking waren.
+Tip: gebruik ronde vormen voor de buttons als dit in de huisstijl ook is.
+Top: ze vond de uitwerking van mijn intro gedeelte mooi op mobiel

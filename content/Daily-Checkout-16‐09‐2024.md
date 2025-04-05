@@ -1,0 +1,42 @@
+## Daily Checkout 16-09-2024
+
+
+### Schrijf in je Learning Journal kort op wat je vandaag hebt gedaan. 
+
+Vandaag hebben we de basics geleerd van Figma, hier wat oefeningen mee gemaakt. Ook hebben we uitleg gekregen over visuele hiërarchie en hoe je kan toepassen in je design.
+
+### Schrijf 3 dingen die je geleerd hebt.
+
+1. Ik heb vandaag geleerd hoe je visuele hiërarchie bereikt.
+Je kan dit bereiken door elementen te laten verschillen in de volgende eigenschappen.
+> Grootte
+
+Een groter element zal meer opvallen. hierdoor wordt er eerder naar gekeken worden of een interactie mee uitgevoerd.
+
+> kleurcontrast (warm + koud kleuren)
+
+Je kan spelen met warme en koude kleuren. Als je website veel koude kleuren bevat, kan je één element laten opvallen door deze warme kleuren te geven.
+
+> witruimte en positie
+
+Een element wat gecentreerd is en/of wat meer witruimte om zich heen heeft, zal meer opvallen
+
+> animatie
+
+Een element wat animeert zal meer opvallen dan non-geanimeerde elementen
+
+2. Wat is belangrijk, wat prioriteer je in je design?
+Als je een design maakt, zorg je ervoor dat de belangrijke informatie eerder gelezen wordt. Je kan bovenstaande technieken toepassen om belangrijke elementen te laten opvallen.
+Als eerste moeten belangrijkste informatie gelezen worden. Daarna de belangrijkste details en als laatste de achtergrondinfo.
+
+
+3. Hoe werk je met Figma.
+
+We hebben vandaag oefeningen gedaan met Figma. Hierbij leerden we ook belangrijke shortcodes.
+Dit waren onder andere:
+* alt gebruiken om elementen speciaal groter te maken.
+* Command + ] / [ gebruiken om het element naar boven of beneden te plaatsen in de z-index tree.
+* r toets voor een vierhoek
+* o voor een cirkel
+* t voor een tekstvlak
+* Command + g voor groeperen en Command + Shift + g voor degroeperen

@@ -1,9 +1,2 @@
-Nog buttons maken met anchor links
-
-titels van de artikelen in kopjes zetten
-
-Minder divjes gebruiken
-Grid layout toepssem
-
-
-Divider voor sprints
+Homepagina met blokken /journal
+detailpagina /journal/2025-04-02

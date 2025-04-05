@@ -1,0 +1,8 @@
+## 3 December 2024
+
+### Wat heb ik vandaag gedaan?
+
+Vandaag heb ik mijn wireflow gemaakt voor mijn user Story.
+
+Het issue van de user story is hier te bekijken:
+https://github.com/users/DivaniNL/projects/1/views/1?pane=issue&itemId=89341507&issue=DivaniNL%7Cfix-the-flow-interactive-website%7C3
