@@ -792,7 +792,7 @@
                             </div>
 
                         </article>
-                        <div class="blocks-group note-group">
+                        <article class="blocks-group note-group">
                             <h2>We love Web – Talk van Ischa Gast</h2>
 
                             <p><strong>Spreker:</strong> Ischa Gast</p>
@@ -815,11 +815,194 @@
                                 <li><a href="https://contrast-finder.tanaguru.com/" target="_blank">Contrast Finder</a> – Zoek betere kleuren.</li>
                             </ul>
 
-                        </div>
+                        </article>
+                        <article class="blocks-group note-group">
+                            <div class="anchor" id="s9-qna"></div>
+                            <h2>Vragenlijst Sprint 9</h2>
+                            <p><strong>Vandaag heb ik de vragen op de vragenlijst opnieuw beantwoord.</strong></p>
+                            <p>Per vraag geef ik het antwoord, het aantal punten en een stuk code waarin ik laat zien wat ik (goed) kan of nog niet begrijp.</p>
                         
+                            <h3>Betekenis van het aantal punten</h3>
+                            <ul>
+                            <li>🫣 <strong>0 pnt</strong>: Ik ben hier nog niet aan toe gekomen</li>
+                            <li>🫣 <strong>1 pnt</strong>: Ik heb hiermee geëxperimenteerd, maar ik weet nog niet goed wat dit is</li>
+                            <li>🤓 <strong>2 pnt</strong>: Ik begrijp dit, maar ik kan het nog niet (helemaal) zelfstandig toepassen</li>
+                            <li>🍗 <strong>3 pnt</strong>: I got this</li>
+                            </ul>
+
+                            <h3>De vragen:</h3>
+                        
+                            <details>
+                            <summary>1. Ik kan uitleggen wat NodeJS is en waarvoor het gebruikt wordt</summary>
+                            <p>NodeJS is een tool waarmee JavaScript buiten een browser uitgevoerd kan worden. Je kan dan JS gebruiken voor command line tools (Terminal) en server side code schrijven.</p>
+                            <p class="punten">🤓 2 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>2. Ik weet wat het doel van package.json is en heb hier aanpassingen in gemaakt</summary>
+                            <p>In package.json staan alle node packages waar het project mee werkt. Deze worden allemaal geïnstalleerd met npm install.</p>
+                            <p>Voorbeeld: <a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/c2a37fe142025be721f219cb677e67f170d931b8/package.json#L27">Bekijk de code</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>3. Ik heb met npm packages geïnstalleerd en gebruikt in het bestand server.js</summary>
+                            <p>Ik heb Express en Liquid geïnstalleerd en gebruikt in mijn routes.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/c2a37fe142025be721f219cb677e67f170d931b8/server.js#L307-L311">Bekijk de code</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>4. Ik weet het verschil tussen GET en POST en kan beide gebruiken</summary>
+                            <p>GET haalt data op. POST stuurt data naar de server.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/c2a37fe142025be721f219cb677e67f170d931b8/server.js#L218">GET voorbeeld</a></p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/c2a37fe142025be721f219cb677e67f170d931b8/server.js#L163">POST voorbeeld</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>5. Ik weet wat een REST API is en heb data opgehaald met GET</summary>
+                            <p>Een REST API biedt toegang tot data met behulp van URL’s en HTTP-verzoeken zoals GET. Ik heb data opgehaald met fetch en het gerenderd met Liquid.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/server.js#L312">Bekijk fetch route</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>6. Ik weet wat een JSON-bestand is en kan data uit een REST API uitlezen</summary>
+                            <p>JSON is een tekstformaat om data op te slaan. In Liquid loop ik door de JSON met een for-loop.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/views/pages/klacht.liquid#L56-L66">Liquid voorbeeld</a></p>
+                            <p class="punten">🤓 2 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>7. Ik kan data filteren op basis van een parameter in de URL</summary>
+                            <p>Dit snap ik nog niet goed genoeg. Ik weet wel dat je met `req.params` iets kan opvragen.</p>
+                            <p class="punten">🤓 2 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>8. Ik heb Express gebruikt om GET en POST requests af te handelen</summary>
+                            <p>Ik heb routes opgezet voor GET en POST in Express.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/server.js#L163">POST voorbeeld</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>9. Ik kan gebruik maken van middleware, zoals express.static en express.urlencoded</summary>
+                            <p>Ik gebruik beide midden in mijn server.js bestand.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/server.js#L14-L21">Bekijk code</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>10. Ik weet wat een template engine is en kan een pagina renderen met Liquid</summary>
+                            <p>Ik gebruik Liquid voor al mijn views.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/server.js#L25-L27">Bekijk code</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>11. Ik kan in Liquid data uit een JSON-bestand weergeven op een pagina</summary>
+                            <p>Ik doe dit op de klachtpagina waar ik data van een REST API in een lijst toon.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/views/pages/klacht.liquid#L56-L66">Bekijk voorbeeld</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>12. Ik weet hoe ik met Liquid een lijst kan genereren op basis van JSON-data</summary>
+                            <p>Ik gebruik hier een for-loop voor in Liquid.</p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>13. Ik kan met Liquid formulieren maken en data van de gebruiker uitlezen</summary>
+                            <p>Ik heb een formulier gemaakt en laat de input van de gebruiker zien op de bedankpagina.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/views/pages/bedankt.liquid">Bekijk voorbeeld</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>14. Ik kan data valideren voordat ik deze opsla</summary>
+                            <p>Ik valideer of velden leeg zijn voordat ik de data opsla.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/server.js#L168">Bekijk voorbeeld</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>15. Ik kan user feedback geven, bijvoorbeeld na het versturen van een formulier</summary>
+                            <p>Ik toon een bedankpagina met de inputgegevens van de gebruiker.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/views/pages/bedankt.liquid">Bekijk voorbeeld</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>16. Ik kan in Liquid een controle maken waarmee een image niet getoond wordt als deze niet in de database is ingevuld</summary>
+                            <p>Ik denk dat ik wel weet hoe dit moet, met een default filter. Ik heb het zelf nog niet in mijn code gebruikt.</p>
+                            <p class="punten">🫣 0 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>17. Ik kan JavaScript gebruiken om data op te halen met een fetch request</summary>
+                            <p>Ik heb fetch gebruikt in een route op server.js.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/server.js#L312">Bekijk fetch</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>18. Ik weet het verschil tussen client-side en server-side JavaScript</summary>
+                            <p>Server-side draait op de server en stuurt HTML. Client-side draait in de browser en kan interacties aan de voorkant regelen.</p>
+                            <p class="punten">🤓 2 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>19. Ik kan uitleggen hoe data van de server naar de client gaat</summary>
+                            <p>Via `res.render()` met data of via fetch (JSON) en dan in JS verwerken.</p>
+                            <p class="punten">🤓 2 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>20. Ik kan een route maken voor een 404 pagina</summary>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/server.js#L332-L335">Bekijk 404 route</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>21. Ik kan foutmeldingen tonen aan de gebruiker als er iets misgaat</summary>
+                            <p>Bijvoorbeeld als het formulier niet goed is ingevuld.</p>
+                            <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/main/server.js#L174">Voorbeeld validatie</a></p>
+                            <p class="punten">🍗 3 punten</p>
+                            </details>
+                        
+                            <details>
+                            <summary>22. Ik weet wat het doel is van een try/catch block en kan het gebruiken bij het parsen van JSON</summary>
+                            <p class="punten">🫣 0 punten</p>
+                            </details>
+                            <details>
+                                <summary>23. Ik begrijp het verschil tussen client-side JavaScript en server-side JavaScript en wanneer ik welke het handigst in kan zetten</summary>
+                                <p>Server side Javascript gebruik je voor code die eenmalig nodig is bij het starten van de server, of bij het laden van een route.</p>
+                                <p>Client-side Javascript gebruik je bij acties die vaker uitgevoerd worden (Bijvoorbeeld een eventListener)</p>
+                                <p class="punten">🍗 3 punten</p>
+                            </details>
+                            <details>
+                                <summary>24. Ik kan formulier data die is ge-POST opslaan in een variabele op de server en gebruiken bij het renderen van een pagina</summary>
+                                <p>Ik denk dat ik begrijp wat hier bedoelt wordt.</p>
+                                <p>Ik heb code in een bepaalde key gezet in de JSON:</p>
+                                <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/c2a37fe142025be721f219cb677e67f170d931b8/server.js#L333-L336">Voorbeeld</a></p>
+                                <p>Hier filter ik weer op bij mijn GET voor de likes:</p>
+                                <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/c2a37fe142025be721f219cb677e67f170d931b8/server.js#L258">Voorbeeld</a></p>
+                                <p class="punten">🍗 3 punten?</p>
+                            </details>
+                            <details>
+                                <summary>25. Ik kan formulier data die is ge-POST door middel van een POST of PATCH HTTP request opslaan in de REST API</summary>
+                                <p>Dit doe ik hier:</p>
+                                <p><a href="https://github.com/DivaniNL/the-web-is-for-everyone-interactive-functionality/blob/c2a37fe142025be721f219cb677e67f170d931b8/server.js#L319-L342">Voorbeeld validatie</a></p>
+                                <p class="punten">🍗 3 punten</p>
+                            </details>
+                            <p>Totaal aantal punten: 66/75 punten. Omgerekend naar een cijfer is dit een 8,9.</p>
+                        </article>
                     </div>
                 </section> <!--end of stuff-->
-                
+
 
             </div>
             <div></div>
