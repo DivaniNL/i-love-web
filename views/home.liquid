@@ -19,8 +19,29 @@
         <div class="sections_container_outer main_grid">
             <div></div>
             <div class="sections_contianer">
-                {% for file in files %}
-                    <a href="/journal/{{file | slice: 0,-3}}">{{file | slice: 0,-3}}</a>
+                <h2>Semester 1</h2>
+                {% for i in (0.. highestSprintSoFar) %}
+                    {% if files["Terms"][0]["Sprints"][i] %}
+                        {% assign SprintNr =  files["Terms"][0]["Sprints"][i]["Files"][0].sprint %}
+                        {% assign SprintName =  files["Terms"][0]["Sprints"][i]["SprintTitle"] %}
+                        <h3>Semester 1 - Sprint {{SprintNr}} [{{SprintName}}]</h2>
+                        {% for file in files["Terms"][0]["Sprints"][i]["Files"] %}
+                            <a href="/journal/{{file.fileName | slice: 0,-3}}">{{file.date}} - {{file.Title | replace: "-", " "}}</a>
+                            <br>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+                <h2>Semester 2</h2>
+                {% for i in (0.. highestSprintSoFar) %}
+                    {% if files["Terms"][1]["Sprints"][i] %}
+                        {% assign SprintNr =  files["Terms"][1]["Sprints"][i]["Files"][0].sprint %}
+                        {% assign SprintName =  files["Terms"][1]["Sprints"][i]["SprintTitle"] %}
+                        <h3>Semester 2 - Sprint {{SprintNr}} [{{SprintName}}]</h2>
+                        {% for file in files["Terms"][1]["Sprints"][i]["Files"] %}
+                            <a href="/journal/{{file.fileName | slice: 0,-3}}">{{file.date}} - {{file.Title | replace: "-", " "}}</a>
+                            <br>
+                        {% endfor %}
+                    {% endif %}
                 {% endfor %}
             </div>
             <div></div>

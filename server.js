@@ -7,7 +7,6 @@ import { Liquid } from 'liquidjs';
 import { readdir, readFile } from 'node:fs/promises'
 import * as cheerio from 'cheerio';
 const files = await readdir('content');
-console.log(files);
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
@@ -26,10 +25,100 @@ app.engine('liquid', engine.express());
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
 import { marked } from 'marked'
+let sprintsWTitle = [
+    { "sprint": 1, "title": "Your Tribe" },
+    { "sprint": 2, "title": "The Client" },
+    { "sprint": 3, "title": "All Human" },
+    { "sprint": 4, "title": "Look and Feel" },
+    { "sprint": 5, "title": "Fix the Flow" },
+    { "sprint": 6, "title": "The Startup" },
+    { "sprint": 7, "title": "Connect Your Tribe" },
+    { "sprint": 8, "title": "Server-Side Rendering" },
+    { "sprint": 9, "title": "The Web is for Everyone" },
+    { "sprint": 10, "title": "User Experience" },
+    { "sprint": 11, "title": "Pleasurable UI" },
+    { "sprint": 12, "title": "Proof of Concept" }
+];
+
+const filesWithInfo = [];
+files.forEach((file) => {
+    let fileWithIinfo = [];
+    let cleanedFile = file.replace(/[‐−]/g, '-'); // Haal die kut minnetjes weg en verander naar normaal streepje
+    let termIndexStart = cleanedFile.indexOf("T");
+    let termIndexEnd = cleanedFile.indexOf("-", termIndexStart);
+    let term = cleanedFile.slice(termIndexStart + 1, termIndexEnd);
+
+    let sprintIndexStart = cleanedFile.indexOf("S");
+    let sprintIndexEnd = cleanedFile.indexOf("-", sprintIndexStart);
+    let sprint = cleanedFile.slice(sprintIndexStart + 1, sprintIndexEnd);
+    let hasSubject = cleanedFile.indexOf("~") != -1;
+    let subject;
+    let dateIndexStart;
+    let dateIndexEnd
+    let date;
+    if(hasSubject){
+        let subjectIndexStart = cleanedFile.indexOf("~");
+        let subjectIndexEnd = cleanedFile.indexOf(".", subjectIndexStart);
+        subject = cleanedFile.slice(subjectIndexStart + 1, subjectIndexEnd);
+        console.log(subject);
+
+        dateIndexStart = sprintIndexEnd + 1;
+        dateIndexEnd = subjectIndexStart;
+        date = cleanedFile.slice(dateIndexStart, dateIndexEnd);
+        console.log(date);
+    }
+    else{
+        subject = "Daily Checkout"
+        dateIndexStart = sprintIndexEnd;
+        dateIndexEnd = cleanedFile.indexOf(".", dateIndexStart);
+        date = cleanedFile.slice(dateIndexStart + 1, dateIndexEnd);
+    }
+    filesWithInfo.push({
+        date: date,
+        Title: subject,
+        term: term,
+        sprint: sprint,
+        fileName: file
+    });
+
+});
+let SortedFiles = { Terms: [] };
+filesWithInfo.forEach(file => {
+    // Haal semester en sprint uit de file array instantie
+    const termNum = parseInt(file.term);
+    const sprintNum = parseInt(file.sprint);
+    // Zoekt term op in object
+    let term = SortedFiles["Terms"].find(s => s.term === termNum);
+    // Als de term niet bestaat maak de term object aan met een sprints array
+    if (!term) {
+        term = { term: termNum, Sprints: [] };
+        SortedFiles.Terms.push(term);
+    }
+    // Zoekt sprint op in term object met juiste termnummer
+    let sprint = term["Sprints"].find(s => s.id === sprintNum);
+    // Als sprint niet bestaat, maak sprint aan in het juiste term met een files array
+    if (!sprint) {
+        sprint = { id: sprintNum, SprintTitle: sprintsWTitle[sprintNum - 1]["title"], Files: [] };
+        term.Sprints.push(sprint);
+    }
+    // Voeg file toe aan de juiste sprint
+    sprint.Files.push(file);
+});
+
+let highestSprintSoFar;
+function mostExpensiveItemName(filesWithInfo) {
+    highestSprintSoFar = 0;
+    for (const { sprint } of filesWithInfo) {
+        if (sprint > highestSprintSoFar) {
+            highestSprintSoFar = sprint;
+        }
+    }
+}
+mostExpensiveItemName(filesWithInfo);
 
 app.get('/', async function(request, response){
 
-    response.render('home.liquid', {files: files});
+    response.render('home.liquid', {files: SortedFiles, highestSprintSoFar: highestSprintSoFar});
 })
 app.get('/semester1', async function(request, response){
     response.render('semester1.liquid');
@@ -41,7 +130,6 @@ app.get('/journal/:slug', async function(request, response){
 
     console.log(request.params.slug)
     let fileContent = await readFile('content/'+ request.params.slug + ".md", {encoding: 'utf-8'})
-    console.log(fileContent);
     const markedUp = marked.parse(fileContent)
 
     // Dit had ik echt nooit zelf kunnen doen, dankje ChadGPT. Hiermee zorg ik ervoor dat alle a elementen die direct in een parent element staan, worden omgezet naar a.button in een buttons div
