@@ -1,1 +1,0 @@
-https://shopify.github.io/liquid/basics/introduction/

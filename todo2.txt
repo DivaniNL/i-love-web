@@ -1,0 +1,4 @@
+vertellen over truucjes die je heb geleerd
+
+- grid layout voor main eleemnt ipv full-row
+- css nesting

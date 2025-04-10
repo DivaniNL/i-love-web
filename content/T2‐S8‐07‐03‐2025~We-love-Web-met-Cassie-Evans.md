@@ -1,4 +1,4 @@
-# 07-03-2025 - WE LOVE WEB
+# 07-03-2025 - WE ❤️ WEB
 
 Evenement: We Love Web – Presentatie Cassie Evans over GSAP
 Onderwerp: GSAP API – Animate Everything

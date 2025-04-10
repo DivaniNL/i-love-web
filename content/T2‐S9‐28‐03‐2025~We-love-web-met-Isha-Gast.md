@@ -1,10 +1,10 @@
-### **We love Web – Talk van Ischa Gast**  
+## **We ❤️ Web – Talk van Ischa Gast**  
 
 **Spreker:** Ischa Gast  
 **Werkt bij:** Schiphol  
 **Quote:** *"Liefde voor toegankelijkheid"*  
 
-#### **Belangrijke inzichten uit de talk**  
+### **Belangrijke inzichten uit de talk**  
 
 - **Slechte linknamen voor screenreaders:**  
   Veel bedrijven, zoals Hema, gebruiken nog steeds onduidelijke of niet-beschrijvende linknamen, wat navigeren met een screenreader lastig maakt.  
