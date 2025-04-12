@@ -19,10 +19,12 @@
     <main class="semester_page">
         {% render 'partials/header.liquid' %}
         <div class="sections_container_outer main_grid">
+            <div></div>
             <div class="sections_container">
                 <section class="i_love_web_section note-section-container">
                     <div class="blocks-container">
                         <section class="blocks-group sticky-buttons">
+                            
                         <div class="buttons">
                             <a href="#s1" class="button">Sprint 1</a>
                             <a href="#s2" class="button">Sprint 2</a>
@@ -37,6 +39,7 @@
                             
                         </section>
                         <h2>Semester 1</h2>
+                        
                         {% for i in (0.. highestSprintSoFar) %}
                             {% if files["Terms"][0]["Sprints"][i] %}
                                 {% assign SprintNr =  files["Terms"][0]["Sprints"][i]["Files"][0].sprint %}
@@ -48,7 +51,6 @@
                                         <span>{{SprintName}}</span>
                                     </h2>
                                 </section>
-                                
                                 {% for file in files["Terms"][0]["Sprints"][i]["Files"] %}
                                     <a href="/journal/{{file.fileName | slice: 0,-3}}">{{file.date}} - {{file.Title | replace: "-", " "}}</a>
                                     <br>
@@ -80,6 +82,7 @@
 
 
             </div>
+            <div></div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>

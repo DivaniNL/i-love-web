@@ -1,4 +1,4 @@
-# 17‐03‐2025 ‐ Workshop User Generated Content
+## 17‐03‐2025 ‐ Workshop User Generated Content
 
 We gaan met ons groepje overleggen wat we kunnen maken waarbij je gegevens in jullie Directus database aan moet passen of toe moet voegen. 
 

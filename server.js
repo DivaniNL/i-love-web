@@ -1,9 +1,10 @@
 // Importeer het npm package Express (uit de door npm aangemaakte node_modules map)
 // Deze package is geïnstalleerd via `npm install`, en staat als 'dependency' in package.json
 import express from 'express'
-
+import matter from 'gray-matter';
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
 import { Liquid } from 'liquidjs';
+
 import { readdir, readFile } from 'node:fs/promises'
 import * as cheerio from 'cheerio';
 const files = await readdir('content');
@@ -41,8 +42,7 @@ let sprintsWTitle = [
 ];
 
 const filesWithInfo = [];
-files.forEach((file) => {
-    let fileWithIinfo = [];
+for (const file of files) {
     let cleanedFile = file.replace(/[‐−]/g, '-'); // Haal die kut minnetjes weg en verander naar normaal streepje
     let termIndexStart = cleanedFile.indexOf("T");
     let termIndexEnd = cleanedFile.indexOf("-", termIndexStart);
@@ -60,12 +60,10 @@ files.forEach((file) => {
         let subjectIndexStart = cleanedFile.indexOf("~");
         let subjectIndexEnd = cleanedFile.indexOf(".", subjectIndexStart);
         subject = cleanedFile.slice(subjectIndexStart + 1, subjectIndexEnd);
-        console.log(subject);
 
         dateIndexStart = sprintIndexEnd + 1;
         dateIndexEnd = subjectIndexStart;
         date = cleanedFile.slice(dateIndexStart, dateIndexEnd);
-        console.log(date);
     }
     else{
         subject = "Daily Checkout"
@@ -73,15 +71,22 @@ files.forEach((file) => {
         dateIndexEnd = cleanedFile.indexOf(".", dateIndexStart);
         date = cleanedFile.slice(dateIndexStart + 1, dateIndexEnd);
     }
+    const rawContent = await readFile('content/' + file, { encoding: 'utf-8' });
+    console.log()
+    const { data: frontMatter } = matter(rawContent);
+
+
     filesWithInfo.push({
         date: date,
         Title: subject,
         term: term,
         sprint: sprint,
-        fileName: file
+        fileName: file,
+        frontMatter: frontMatter || {} 
     });
 
-});
+}
+console.log(filesWithInfo);
 let SortedFiles = { Terms: [] };
 filesWithInfo.forEach(file => {
     // Haal semester en sprint uit de file array instantie
@@ -105,6 +110,7 @@ filesWithInfo.forEach(file => {
     sprint.Files.push(file);
 });
 
+
 let highestSprintSoFar;
 function mostExpensiveItemName(filesWithInfo) {
     highestSprintSoFar = 0;
@@ -114,11 +120,16 @@ function mostExpensiveItemName(filesWithInfo) {
         }
     }
 }
+console.log(SortedFiles)
 mostExpensiveItemName(filesWithInfo);
 
 app.get('/', async function(request, response){
 
     response.render('home.liquid', {files: SortedFiles, highestSprintSoFar: highestSprintSoFar});
+})
+app.get('/journal', async function(request, response){
+
+    response.render('journal.liquid', {files: SortedFiles, highestSprintSoFar: highestSprintSoFar});
 })
 app.get('/semester1', async function(request, response){
     response.render('semester1.liquid');
@@ -129,8 +140,23 @@ app.get('/semester2', async function(request, response){
 app.get('/journal/:slug', async function(request, response){
 
     console.log(request.params.slug)
-    let fileContent = await readFile('content/'+ request.params.slug + ".md", {encoding: 'utf-8'})
-    const markedUp = marked.parse(fileContent)
+  
+    marked.use({
+        renderer: {
+            heading({ tokens, depth }) {
+            const text = this.parser.parseInline(tokens);
+            console.log('Heading Level:', depth);
+      
+            // Verschuif alle levels 1 hoger
+            const newLevel = Math.min(depth - 1, 6);
+            return `<h${newLevel}>${text}</h${newLevel}>`;
+          }
+        }
+      });
+      
+      const rawContent = await readFile('content/' + request.params.slug + ".md", { encoding: 'utf-8' });
+      const { content, data } = matter(rawContent); // content = markdown, data = frontmatter
+      const markedUp = marked.parse(content);
 
     // Dit had ik echt nooit zelf kunnen doen, dankje ChadGPT. Hiermee zorg ik ervoor dat alle a elementen die direct in een parent element staan, worden omgezet naar a.button in een buttons div
     const $ = cheerio.load(markedUp);
@@ -175,7 +201,11 @@ app.get('/journal/:slug', async function(request, response){
 
 
 
-    response.render('article.liquid',{content: finalHTML, contentTitle: request.params.slug});
+    response.render('article.liquid',{
+        content: finalHTML, 
+        contentTitle: data.title || request.params.slug,
+        meta: data
+    });
     console.log(finalHTML);
 })
 
@@ -183,6 +213,8 @@ app.get('/garden', async function(request, response){
     response.render('garden.liquid');
 })
 app.get('/over-mij', async function(request, response){
+    
+ 
     response.render('over-mij.liquid');
 })
 

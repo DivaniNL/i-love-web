@@ -1,0 +1,726 @@
+{
+    "Terms": [
+        {
+            "term": 1,
+            "Sprints": [
+                {
+                    "id": 1,
+                    "SprintTitle": "Your Tribe",
+                    "Files": [
+                        {
+                            "date": "03-09-2024",
+                            "Title": "Talk-Webtechnologie",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1-S1-03-09‐2024~Talk-Webtechnologie.md"
+                        },
+                        {
+                            "date": "04-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1-S1-04-09-2024.md"
+                        },
+                        {
+                            "date": "04-09-2024",
+                            "Title": "Opdracht-My-Tribe",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐04‐09‐2024~Opdracht-My-Tribe.md"
+                        },
+                        {
+                            "date": "05-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐05‐09‐2024.md"
+                        },
+                        {
+                            "date": "09-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐09‐09‐2024.md"
+                        },
+                        {
+                            "date": "09-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐09‐10‐2024.md"
+                        },
+                        {
+                            "date": "10-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐10‐09‐2024.md"
+                        },
+                        {
+                            "date": "11-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐11‐09‐2024.md"
+                        },
+                        {
+                            "date": "13-09-2024",
+                            "Title": "We-love-Web-met-Vasilis-van-Gemert",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐13‐09‐2024~We-love-Web-met-Vasilis-van-Gemert.md"
+                        },
+                        {
+                            "date": "16-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐16‐09‐2024.md"
+                        },
+                        {
+                            "date": "18-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "1",
+                            "fileName": "T1‐S1‐18‐09‐2024.md"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "SprintTitle": "The Client",
+                    "Files": [
+                        {
+                            "date": "02-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "2",
+                            "fileName": "T1‐S2‐02‐10‐2024.md"
+                        },
+                        {
+                            "date": "07-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "2",
+                            "fileName": "T1‐S2‐07‐10‐2024.md"
+                        },
+                        {
+                            "date": "23-09-2024",
+                            "Title": "Sprint-Planning",
+                            "term": "1",
+                            "sprint": "2",
+                            "fileName": "T1‐S2‐23‐09‐2024~Sprint-Planning.md"
+                        },
+                        {
+                            "date": "25-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "2",
+                            "fileName": "T1‐S2‐25‐09‐2024.md"
+                        },
+                        {
+                            "date": "27-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "2",
+                            "fileName": "T1‐S2‐27‐09‐2024.md"
+                        },
+                        {
+                            "date": "30-09-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "2",
+                            "fileName": "T1‐S2‐30‐09‐2024.md"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "SprintTitle": "All Human",
+                    "Files": [
+                        {
+                            "date": "14-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐14‐10‐2024.md"
+                        },
+                        {
+                            "date": "16-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐16‐10‐2024.md"
+                        },
+                        {
+                            "date": "17-10-2024",
+                            "Title": "A11y-tests",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐17‐10‐2024~A11y-tests.md"
+                        },
+                        {
+                            "date": "18-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐18‐10‐2024.md"
+                        },
+                        {
+                            "date": "18-10-2024",
+                            "Title": "We-love-Web-Dion-Pieters",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐18‐10‐2024~We-love-Web-Dion-Pieters.md"
+                        },
+                        {
+                            "date": "21-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐21‐10‐2024.md"
+                        },
+                        {
+                            "date": "22-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐22‐10‐2024.md"
+                        },
+                        {
+                            "date": "23-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐23‐10‐2024.md"
+                        },
+                        {
+                            "date": "24-10-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "3",
+                            "fileName": "T1‐S3‐24‐10‐2024.md"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "SprintTitle": "Look and Feel",
+                    "Files": [
+                        {
+                            "date": "11-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐11‐11‐2024.md"
+                        },
+                        {
+                            "date": "12-11-2024",
+                            "Title": "Workshop-Wes-Oudshoorn-Playful-Figma",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐12‐11‐2024~Workshop-Wes-Oudshoorn-Playful-Figma.md"
+                        },
+                        {
+                            "date": "13-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐13‐11‐2024.md"
+                        },
+                        {
+                            "date": "13-11-2024",
+                            "Title": "Opdracht-betreft-Cascasde-en-Specificity",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐13‐11‐2024~Opdracht-betreft-Cascasde-en-Specificity.md"
+                        },
+                        {
+                            "date": "15-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐15‐11‐2024.md"
+                        },
+                        {
+                            "date": "16-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐16‐11‐2024.md"
+                        },
+                        {
+                            "date": "17-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐17‐11‐2024.md"
+                        },
+                        {
+                            "date": "18-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐18‐11‐2024.md"
+                        },
+                        {
+                            "date": "19-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐19‐11‐2024.md"
+                        },
+                        {
+                            "date": "20-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐20‐11‐2024.md"
+                        },
+                        {
+                            "date": "21-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐21‐11‐2024.md"
+                        },
+                        {
+                            "date": "22-11-2024",
+                            "Title": "Code-Review",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐22‐11‐2024~Code-Review.md"
+                        },
+                        {
+                            "date": "23-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐23‐11‐2024.md"
+                        },
+                        {
+                            "date": "24-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐24‐11‐2024.md"
+                        },
+                        {
+                            "date": "25-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐25‐11‐2024.md"
+                        },
+                        {
+                            "date": "26-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐26‐11‐2024.md"
+                        },
+                        {
+                            "date": "26-11-2024",
+                            "Title": "CSS-Challenge-States",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐26‐11‐2024~CSS-Challenge-States.md"
+                        },
+                        {
+                            "date": "28-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "4",
+                            "fileName": "T1‐S4‐28‐11‐2024.md"
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "SprintTitle": "Fix the Flow",
+                    "Files": [
+                        {
+                            "date": "02-12-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐02‐12‐2024.md"
+                        },
+                        {
+                            "date": "02-12-2024",
+                            "Title": "JS-Fundamentals",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐02‐12‐2024~JS-Fundamentals.md"
+                        },
+                        {
+                            "date": "03-12-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐03‐12‐2024.md"
+                        },
+                        {
+                            "date": "04-12-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐04‐12‐2024.md"
+                        },
+                        {
+                            "date": "05-12-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐05‐12‐2024.md"
+                        },
+                        {
+                            "date": "06-12-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐06‐12‐2024.md"
+                        },
+                        {
+                            "date": "06-12-2024",
+                            "Title": "Issues-opgelost",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐06‐12‐2024~Issues-opgelost.md"
+                        },
+                        {
+                            "date": "10-12-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐10‐12‐2024.md"
+                        },
+                        {
+                            "date": "11-12-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐11‐12‐2024.md"
+                        },
+                        {
+                            "date": "11-12-2024",
+                            "Title": "UI-events",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐11‐12‐2024~UI-events.md"
+                        },
+                        {
+                            "date": "13-12-2024",
+                            "Title": "User-Test",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐13‐12‐2024~User-Test.md"
+                        },
+                        {
+                            "date": "17-12-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐17‐12‐2024.md"
+                        },
+                        {
+                            "date": "25-11-2024",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "5",
+                            "fileName": "T1‐S5‐25‐11‐2024.md"
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "SprintTitle": "The Startup",
+                    "Files": [
+                        {
+                            "date": "06-01-2025",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐06‐01‐2025.md"
+                        },
+                        {
+                            "date": "06-01-2025",
+                            "Title": "Wat-mis-ik-voor-de-endterm",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐06‐01‐2025~Wat-mis-ik-voor-de-endterm.md"
+                        },
+                        {
+                            "date": "07-01-2025",
+                            "Title": "Briefing-en-Debriefing",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐07‐01‐2025~Briefing-en-Debriefing.md"
+                        },
+                        {
+                            "date": "08-01-2025",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐08‐01‐2025.md"
+                        },
+                        {
+                            "date": "09-01-2025",
+                            "Title": "One-Column-Layout",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐09‐01‐2025~One-Column-Layout.md"
+                        },
+                        {
+                            "date": "14-01-2025",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐14‐01‐2025.md"
+                        },
+                        {
+                            "date": "14-01-2025",
+                            "Title": "Caroussel-flowcart-gemaakt",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐14‐01‐2025~Caroussel-flowcart-gemaakt.md"
+                        },
+                        {
+                            "date": "14-01-2025",
+                            "Title": "Caroussel-interactie-gebouwd",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐14‐01‐2025~Caroussel-interactie-gebouwd.md"
+                        },
+                        {
+                            "date": "15-01-2025",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐15‐01‐2025.md"
+                        },
+                        {
+                            "date": "17-01-2025",
+                            "Title": "We-love-Web-met-Dave-Ditter",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐17‐01‐2025~We-love-Web-met-Dave-Ditter.md"
+                        },
+                        {
+                            "date": "18-01-2025",
+                            "Title": "Daily Checkout",
+                            "term": "1",
+                            "sprint": "6",
+                            "fileName": "T1‐S6‐18‐01‐2025.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "term": 2,
+            "Sprints": [
+                {
+                    "id": 7,
+                    "SprintTitle": "Connect Your Tribe",
+                    "Files": [
+                        {
+                            "date": "03-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐03‐02‐2025.md"
+                        },
+                        {
+                            "date": "04-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐04‐02‐2025.md"
+                        },
+                        {
+                            "date": "05-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐05‐02‐2025.md"
+                        },
+                        {
+                            "date": "07-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐07‐02‐2025.md"
+                        },
+                        {
+                            "date": "07-02-2025",
+                            "Title": "Reviews",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐07‐02‐2025~Reviews.md"
+                        },
+                        {
+                            "date": "08-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐08‐02‐2025.md"
+                        },
+                        {
+                            "date": "10-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐10‐02‐2025.md"
+                        },
+                        {
+                            "date": "11-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐11‐02‐2025.md"
+                        },
+                        {
+                            "date": "12-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐12‐02‐2025.md"
+                        },
+                        {
+                            "date": "13-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐13‐02‐2025.md"
+                        },
+                        {
+                            "date": "14-02-2025",
+                            "Title": "We-love-Web-met-Kilian-Valkhof",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐14‐02‐2025~We-love-Web-met-Kilian-Valkhof.md"
+                        },
+                        {
+                            "date": "24-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐24‐02‐2025.md"
+                        },
+                        {
+                            "date": "27-02-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "7",
+                            "fileName": "T2‐S7‐27‐02‐2025.md"
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "SprintTitle": "Server-Side Rendering",
+                    "Files": [
+                        {
+                            "date": "04-03-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "8",
+                            "fileName": "T2‐S8‐04‐03‐2025.md"
+                        },
+                        {
+                            "date": "05-03-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "8",
+                            "fileName": "T2‐S8‐05‐03‐2025.md"
+                        },
+                        {
+                            "date": "06-03-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "8",
+                            "fileName": "T2‐S8‐06‐03‐2025.md"
+                        },
+                        {
+                            "date": "07-03-2025",
+                            "Title": "We-love-Web-met-Cassie-Evans",
+                            "term": "2",
+                            "sprint": "8",
+                            "fileName": "T2‐S8‐07‐03‐2025~We-love-Web-met-Cassie-Evans.md"
+                        },
+                        {
+                            "date": "09-03-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "8",
+                            "fileName": "T2‐S8‐09‐03‐2025.md"
+                        },
+                        {
+                            "date": "14-03-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "8",
+                            "fileName": "T2‐S8‐14‐03‐2025.md"
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "SprintTitle": "The Web is for Everyone",
+                    "Files": [
+                        {
+                            "date": "04-04-2025",
+                            "Title": "Vragenlijst-Sprint-9",
+                            "term": "2",
+                            "sprint": "9",
+                            "fileName": "T2‐S9‐04‐04‐2025~Vragenlijst-Sprint-9.md"
+                        },
+                        {
+                            "date": "17-03-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "9",
+                            "fileName": "T2‐S9‐17‐03‐2025.md"
+                        },
+                        {
+                            "date": "17-03-2025",
+                            "Title": "Sprint-Planning",
+                            "term": "2",
+                            "sprint": "9",
+                            "fileName": "T2‐S9‐17‐03‐2025~Sprint-Planning.md"
+                        },
+                        {
+                            "date": "17-03-2025",
+                            "Title": "User-Generated-Content",
+                            "term": "2",
+                            "sprint": "9",
+                            "fileName": "T2‐S9‐17‐03‐2025~User-Generated-Content.md"
+                        },
+                        {
+                            "date": "19-03-2025",
+                            "Title": "Daily Checkout",
+                            "term": "2",
+                            "sprint": "9",
+                            "fileName": "T2‐S9‐19‐03‐2025.md"
+                        },
+                        {
+                            "date": "22-03-2025",
+                            "Title": "Huiswerkopdracht",
+                            "term": "2",
+                            "sprint": "9",
+                            "fileName": "T2‐S9‐22‐03‐2025~Huiswerkopdracht.md"
+                        },
+                        {
+                            "date": "28-03-2025",
+                            "Title": "We-love-web-met-Isha-Gast",
+                            "term": "2",
+                            "sprint": "9",
+                            "fileName": "T2‐S9‐28‐03‐2025~We-love-web-met-Isha-Gast.md"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,10 +1,10 @@
-# 17‐03‐2025 ‐ Workshop Sprint Planning
+## 17‐03‐2025 ‐ Workshop Sprint Planning
 Nieuwe studio! We hebben een nieuwe indeling van de studio en het aquarium.
 De studio is voor stil werken met elkaar en het aquarium is voor kletsen en spelletjes. De pingpongtafel is in aantocht.
 
 
 Hierna hadden we de Workshop Sprint Planning waarin we eerst keken naar wart Progressive enhancement is.
-## 17‐03‐2025 ‐ Workshop Sprint Planning
+### 17‐03‐2025 ‐ Workshop Sprint Planning
 Hieronder zijn de drie stappen van Progrogressive Enhancement (een code strategie waarmee je er kunt orgen dat je website het altijd doet)
 
 1. Bepaal de core functionality van wat je wilt maken

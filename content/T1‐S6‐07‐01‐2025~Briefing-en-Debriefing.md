@@ -5,7 +5,7 @@ Vandaag ben ik samen met mijn groepje (bestaande uit ook Marcin, Miel en Reyhan)
 Na hun briefing heeft ieder teamlid zijn eigen debriefing gemaakt.
 
 Dit is mijn versie:
-[https://docs.google.com/document/d/1XnrO-dWmpfR_IHlpgvJpZZVjCFILuz3XwcMFEVt_9Gc/edit?tab=t.0](https://docs.google.com/document/d/1XnrO-dWmpfR_IHlpgvJpZZVjCFILuz3XwcMFEVt_9Gc/edit?tab=t.0)  
+[Eigen debriefing](https://docs.google.com/document/d/1XnrO-dWmpfR_IHlpgvJpZZVjCFILuz3XwcMFEVt_9Gc/edit?tab=t.0)  
 
 
 ## Hieronder is de gezamenlijke debriefing:

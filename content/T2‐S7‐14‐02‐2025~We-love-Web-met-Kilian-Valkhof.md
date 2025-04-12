@@ -1,18 +1,14 @@
-# Daily checkout 14-02-2025
+## Daily checkout 14-02-2025
 
-## Code-Design review
+### Code-Design review
 
 
 Vandaag heb ik samen met Halima en Karima twee mensen beoordeeld:
 
-Viresh (vsheo):
-https://github.com/vsheo/connect-your-tribe-squad-page/issues/7
+[Viresh (vsheo):](https://github.com/vsheo/connect-your-tribe-squad-page/issues/7)
+[Kim (kimnikitaschijf):](https://github.com/kimnikitaschijf/connect-your-tribe-squad-page/issues/4#issuecomment-2658738133)
 
-Kim (kimnikitaschijf):
-https://github.com/kimnikitaschijf/connect-your-tribe-squad-page/issues/4#issuecomment-2658738133
-
-## We ❤️ web
-
+### We ❤️ web
 
 Vandaag kregen we een talk van de bedenker van polypane, vastgetekend: Kilian Valkhof
 De maker van Polypane ontwikkelde deze browser voor developers zonder investeerders. Zijn motto: "Alles bouwt voort op wat je eerder hebt gedaan."

@@ -28,10 +28,11 @@ function addNoteAnchors(){
 // });
 
 
-
+if(document.getElementById('normalizeFont')){
 document.getElementById('normalizeFont').addEventListener('click', function() {
     const section = document.querySelector('.blocks-group.note-group.divani-font');
     if (section) {
-        section.classList.add('normalise-font');
+        section.classList.toggle('normalise-font');
     }
 });
+}

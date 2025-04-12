@@ -83,6 +83,9 @@ md#output{
 .buttons + p{
     margin-top: 15px;
 }
+h1{
+    font-size: 28px;
+}
 p + h3, ul + h3, ol + h3, .buttons + h3, h2 + h3 {
     margin-top: 15px;  
 }
@@ -170,6 +173,7 @@ body{
         min-height: calc(100vh - 100px);
         margin-bottom: 100px;
         .sections_container{
+            grid-column: 2/2;
             height: 100%;
             background-clip: padding-box; 
             position: relative;
@@ -211,7 +215,7 @@ body{
     }
     .anchor{
         position: absolute;
-        top: -186px;
+        top: -245px;
         left: 0;
         height: 10px;
         width: 100%;
@@ -392,7 +396,7 @@ main{
                     }
                 }
                 &.note-group{ 
-                    .text{
+
                         h2, h3, h4, h5, h6{
                             &:not(:last-child){
                                 margin-bottom: 15px;
@@ -406,7 +410,7 @@ main{
                         ul, ol{
                             margin-bottom: 5px;
                         }
-                    }
+                    
                     .ilw_codeblock{
                         padding: 1rem;
                         overflow: auto;

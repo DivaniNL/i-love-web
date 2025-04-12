@@ -29,6 +29,9 @@
             margin-left: auto;
         }
     }
+    &:not(:first-of-type){
+        margin-top: var(--margin-s);
+    }
 }
 @property --angle {
     syntax:"<angle>";

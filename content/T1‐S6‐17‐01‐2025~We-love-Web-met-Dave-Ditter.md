@@ -1,4 +1,4 @@
-# 17 Januari - We love Web met Dave Bitter
+## 17 Januari - We love Web met Dave Bitter
 
 Vandaag hebben we een presentatie gehad van Dave Bitter over zijn liefde voor het web. Hieronder een samenvatting van de presentatie:
 
