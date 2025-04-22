@@ -1,0 +1,6 @@
+.ll_demo{
+    width: 60%;
+    display: block;
+    object-fit: cover;
+    margin: 1000px auto;
+}

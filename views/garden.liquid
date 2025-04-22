@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Web - Semester 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/garden.css">
+    <link rel="stylesheet" href="/assets/css/sprint-divider.css">
+</head>
+
+<body>
+    <main class="semester_page">
+        {% render 'partials/header.liquid' %}
+        <div class="sections_container_outer main_grid">
+            <div class="sections_container">
+                <section class="i_love_web_section note-section-container">
+                    <div class="blocks-container">
+                        <article class="blocks-group garden-group layout-shift">
+                            <h2>Gardening - Layout shift</h2>
+                            <p>Hier een voorbeeld hoe irritant layout shifts kunnen zijn. Probeer eens de throttling aan te zetten in je network tab</p>
+                            <img  class="destroy" src="https://picsum.photos/500" height="500">
+                            <button class="destroy">Vernietig de hele wereld</button>
+                            <button>Verdien nu 20K!!</button>
+                        </article>
+                        <article class="blocks-group garden-group lazyload">
+                            <h2>Gardening - Lazyload</h2>
+                            <img src="https://picsum.photos/id/1/5000/3333" width="200" height="500" alt="" class="ll_demo" loading="lazy">
+                            <img src="https://picsum.photos/id/0/5000/3333" width="200" height="500" alt="" class="ll_demo" loading="lazy">
+                            <img src="https://picsum.photos/id/2/5000/3333" width="200" height="500" alt="" class="ll_demo" loading="lazy">
+                            <img src="https://picsum.photos/id/3/5000/3333" width="200" height="500" alt="" class="ll_demo" loading="lazy">
+                            <img src="https://picsum.photos/id/4/5000/3333" width="200" height="500" alt="" class="ll_demo" loading="lazy">
+                            <img src="https://picsum.photos/id/5/5000/3333" width="200" height="500" alt="" class="ll_demo" loading="lazy">
+                            <img src="https://picsum.photos/id/6/5000/3333" width="200" height="500" alt="" class="ll_demo" loading="lazy">
+                            <img src="https://picsum.photos/id/7/5000/3333" width="200" height="500" alt="" class="ll_demo" loading="lazy">
+                        </article>
+                    </div>
+                </section> <!--end of stuff-->
+
+
+            </div>
+    </main>
+    <script defer src="assets/js/gardening.js"></script>
+</body>
+
+</html>
+
+
