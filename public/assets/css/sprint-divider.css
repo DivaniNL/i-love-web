@@ -4,8 +4,8 @@
     color: var(--white);
     padding: 20px;
     position: relative;
-    &:first-child{
-        margin-bottom: 0;
+    &:first-of-type{
+        margin-top: 0;
     }
     &:after{
         content: '';

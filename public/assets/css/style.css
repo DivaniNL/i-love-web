@@ -496,6 +496,28 @@ main{
                 }
                 
             }
+            table.table_notes{
+                width: 100%;
+                text-align: left;
+                tr>td:first-child {
+                    width: 100px;
+                }
+                tr{
+                    position: relative;
+                    &:hover{
+                        background-color: var(--color3);
+                        color: var(--white);
+                        cursor: pointer;
+                    }
+                }
+                tr>td>a:before{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                }
+            }
         }
         
     }

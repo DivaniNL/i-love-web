@@ -41,95 +41,37 @@ let sprintsWTitle = [
     { "sprint": 12, "title": "Proof of Concept" }
 ];
 
+let termsWTitle = [
+    { "term": 1, "title": "Static Web" },
+    { "term": 2, "title": "Data-Driven Web" },
+    { "term": 3, "title": "Workflow, Tooling & Frameworks" },
+    { "term": 4, "title": "Meesterproef" },
+];
+
 const filesWithInfo = [];
 for (const file of files) {
-    let cleanedFile = file.replace(/[‐−]/g, '-'); // Haal die kut minnetjes weg en verander naar normaal streepje
-    let termIndexStart = cleanedFile.indexOf("T");
-    let termIndexEnd = cleanedFile.indexOf("-", termIndexStart);
-    let term = cleanedFile.slice(termIndexStart + 1, termIndexEnd);
-
-    let sprintIndexStart = cleanedFile.indexOf("S");
-    let sprintIndexEnd = cleanedFile.indexOf("-", sprintIndexStart);
-    let sprint = cleanedFile.slice(sprintIndexStart + 1, sprintIndexEnd);
-    let hasSubject = cleanedFile.indexOf("~") != -1;
-    let subject;
-    let dateIndexStart;
-    let dateIndexEnd
-    let date;
-    if(hasSubject){
-        let subjectIndexStart = cleanedFile.indexOf("~");
-        let subjectIndexEnd = cleanedFile.indexOf(".", subjectIndexStart);
-        subject = cleanedFile.slice(subjectIndexStart + 1, subjectIndexEnd);
-
-        dateIndexStart = sprintIndexEnd + 1;
-        dateIndexEnd = subjectIndexStart;
-        date = cleanedFile.slice(dateIndexStart, dateIndexEnd);
-    }
-    else{
-        subject = "Daily Checkout"
-        dateIndexStart = sprintIndexEnd;
-        dateIndexEnd = cleanedFile.indexOf(".", dateIndexStart);
-        date = cleanedFile.slice(dateIndexStart + 1, dateIndexEnd);
-    }
     const rawContent = await readFile('content/' + file, { encoding: 'utf-8' });
-    console.log()
+    console.log(file)
     const { data: frontMatter } = matter(rawContent);
 
 
     filesWithInfo.push({
-        date: date,
-        Title: subject,
-        term: term,
-        sprint: sprint,
-        fileName: file,
-        frontMatter: frontMatter || {} 
+        frontMatter: frontMatter || {},
+        date: file.slice(0, -3),
+        sprint: frontMatter.Sprint || null,
+        term : frontMatter.Term || null,
     });
 
 }
 console.log(filesWithInfo);
-let SortedFiles = { Terms: [] };
-filesWithInfo.forEach(file => {
-    // Haal semester en sprint uit de file array instantie
-    const termNum = parseInt(file.term);
-    const sprintNum = parseInt(file.sprint);
-    // Zoekt term op in object
-    let term = SortedFiles["Terms"].find(s => s.term === termNum);
-    // Als de term niet bestaat maak de term object aan met een sprints array
-    if (!term) {
-        term = { term: termNum, Sprints: [] };
-        SortedFiles.Terms.push(term);
-    }
-    // Zoekt sprint op in term object met juiste termnummer
-    let sprint = term["Sprints"].find(s => s.id === sprintNum);
-    // Als sprint niet bestaat, maak sprint aan in het juiste term met een files array
-    if (!sprint) {
-        sprint = { id: sprintNum, SprintTitle: sprintsWTitle[sprintNum - 1]["title"], Files: [] };
-        term.Sprints.push(sprint);
-    }
-    // Voeg file toe aan de juiste sprint
-    sprint.Files.push(file);
-});
-
-
-let highestSprintSoFar;
-function mostExpensiveItemName(filesWithInfo) {
-    highestSprintSoFar = 0;
-    for (const { sprint } of filesWithInfo) {
-        if (sprint > highestSprintSoFar) {
-            highestSprintSoFar = sprint;
-        }
-    }
-}
-console.log(SortedFiles)
-mostExpensiveItemName(filesWithInfo);
 
 app.get('/', async function(request, response){
 
-    response.render('home.liquid', {files: SortedFiles, highestSprintSoFar: highestSprintSoFar});
+    response.render('home.liquid', {files: filesWithInfo});
 })
 app.get('/journal', async function(request, response){
 
-    response.render('journal.liquid', {files: SortedFiles, highestSprintSoFar: highestSprintSoFar});
+    response.render('journal.liquid', {files: filesWithInfo, sprints: sprintsWTitle, terms: termsWTitle});
 })
 app.get('/semester1', async function(request, response){
     response.render('semester1.liquid');

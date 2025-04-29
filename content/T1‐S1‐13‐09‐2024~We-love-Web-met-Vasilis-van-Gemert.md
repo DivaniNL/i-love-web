@@ -1,4 +1,0 @@
-## We ❤️ Web: Vasilis van Gemert
-Vasilis van Gemert benadrukt in zijn lezing dat hij het leuk vindt om soms nutteloze dingen te maken en hoe tegenwoordig veel websites op elkaar lijken. Volgens hem is het belangrijk dat websites toegankelijk zijn voor iedereen. Daarnaast vindt hij dat je je creativiteit de vrije loop moet laten en leuke animaties kunt toevoegen om een website dynamischer en aantrekkelijker te maken, zonder de toegankelijkheid uit het oog te verliezen.
-
-Een van zijn kernpunten is dat het web niet alleen functioneel moet zijn, maar ook plezier en ervaring moet bieden aan de gebruiker.
