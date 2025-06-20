@@ -57,8 +57,10 @@
                                         </table>
                                         {% assign tableOpen = false %}
                                     {% endif %}
+
                                     {% assign currentSprint = filteredItem.sprint %}
-                                    {% assign sprintName = sprints[ currentSprint | minus: 1 ].title %}
+                                    {% assign arraySprint =  currentSprint | minus: 1%}
+                                    {% assign sprintName = sprints[ arraySprint].title %}
                                     <section class="blocks-group sprint-divider">
                                         <div class="anchor" id="s{{ currentSprint }}"></div>
                                         <h2>

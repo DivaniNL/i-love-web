@@ -27,18 +27,18 @@ app.engine('liquid', engine.express());
 app.set('views', './views')
 import { marked } from 'marked'
 let sprintsWTitle = [
-    { "sprint": 1, "title": "Your Tribe" },
-    { "sprint": 2, "title": "The Client" },
-    { "sprint": 3, "title": "All Human" },
-    { "sprint": 4, "title": "Look and Feel" },
-    { "sprint": 5, "title": "Fix the Flow" },
-    { "sprint": 6, "title": "The Startup" },
-    { "sprint": 7, "title": "Connect Your Tribe" },
-    { "sprint": 8, "title": "Server-Side Rendering" },
-    { "sprint": 9, "title": "The Web is for Everyone" },
-    { "sprint": 10, "title": "User Experience" },
-    { "sprint": 11, "title": "Pleasurable UI" },
-    { "sprint": 12, "title": "Proof of Concept" }
+    { "sprint": 0, "title": "Your Tribe" },
+    { "sprint": 1, "title": "The Client" },
+    { "sprint": 2, "title": "All Human" },
+    { "sprint": 3, "title": "Look and Feel" },
+    { "sprint": 4, "title": "Fix the Flow" },
+    { "sprint": 5, "title": "The Startup" },
+    { "sprint": 6, "title": "Connect Your Tribe" },
+    { "sprint": 7, "title": "Server-Side Rendering" },
+    { "sprint": 8, "title": "The Web is for Everyone" },
+    { "sprint": 9, "title": "User Experience" },
+    { "sprint": 10, "title": "Pleasurable UI" },
+    { "sprint": 11, "title": "Proof of Concept" }
 ];
 
 let termsWTitle = [
