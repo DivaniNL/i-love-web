@@ -1,9 +1,10 @@
-.sprint-divider{
+.sprint-divider, .button_cool{
     --angle: 0deg;
     margin-bottom: var(--margin-s);
     color: var(--white);
     padding: 20px;
     position: relative;
+    z-index: 1;
     &:first-of-type{
         margin-top: 0;
     }

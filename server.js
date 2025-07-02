@@ -154,6 +154,9 @@ app.get('/journal/:slug', async function(request, response){
 app.get('/garden', async function(request, response){
     response.render('garden.liquid');
 })
+app.get('/works', async function(request, response){
+    response.render('works.liquid');
+})
 app.get('/over-mij', async function(request, response){
     
  

@@ -16,69 +16,41 @@
 </head>
 
 <body>
-    <main class="semester_page">
+    <main class="home">
         {% render 'partials/header.liquid' %}
         <div class="sections_container_outer main_grid">
             <div class="sections_container">
-                <section class="i_love_web_section note-section-container">
-                    <div class="blocks-container">
-                        <section class="blocks-group sticky-buttons">
-                        <div class="buttons">
-                            <a href="#s1" class="button">Sprint 1</a>
-                            <a href="#s2" class="button">Sprint 2</a>
-                            <a href="#s3" class="button">Sprint 3</a>
-                            <a href="#s4" class="button">Sprint 4</a>
-                            <a href="#s5" class="button">Sprint 5</a>
-                            <a href="#s6" class="button">Sprint 6</a>
-                            <a href="#s7" class="button">Sprint 7</a>
-                            <a href="#s8" class="button">Sprint 8</a>
-                            <a href="#s9" class="button">Sprint 9</a>
-                        </div>
-                            
-                        </section>
-                        <h2>Semester 1</h2>
-                        {% for i in (0.. highestSprintSoFar) %}
-                            {% if files["Terms"][0]["Sprints"][i] %}
-                                {% assign SprintNr =  files["Terms"][0]["Sprints"][i]["Files"][0].sprint %}
-                                {% assign SprintName =  files["Terms"][0]["Sprints"][i]["SprintTitle"] %}
-                                <section class="blocks-group sprint-divider">
-                                    <div class="anchor" id="s{{SprintNr}}"></div>
-                                    <h2>
-                                        SPRINT {{SprintNr}}
-                                        <span>{{SprintName}}</span>
-                                    </h2>
-                                </section>
-                                
-                                {% for file in files["Terms"][0]["Sprints"][i]["Files"] %}
-                                    <a href="/journal/{{file.fileName | slice: 0,-3}}">{{file.date}} - {{file.Title | replace: "-", " "}}</a>
-                                    <br>
-                                {% endfor %}
-                            {% endif %}
-                        {% endfor %}
-                        <h2>Semester 2</h2>
-                        {% for i in (0.. highestSprintSoFar) %}
-                            {% if files["Terms"][1]["Sprints"][i] %}
-                                {% assign SprintNr =  files["Terms"][1]["Sprints"][i]["Files"][0].sprint %}
-                                {% assign SprintName =  files["Terms"][1]["Sprints"][i]["SprintTitle"] %}
-                                <section class="blocks-group sprint-divider">
-                                    <div class="anchor" id="s{{SprintNr}}"></div>
-                                    <h2>
-                                        SPRINT {{SprintNr}}
-                                        <span>{{SprintName}}</span>
-                                    </h2>
-                                </section>
-                                {% for file in files["Terms"][1]["Sprints"][i]["Files"] %}
-                                    <a href="/journal/{{file.fileName | slice: 0,-3}}">{{file.date}} - {{file.Title | replace: "-", " "}}</a>
-                                    <br>
-                                {% endfor %}
-                            {% endif %}
-                        {% endfor %}
-
-                        
-                    </div>
-                </section> <!--end of stuff-->
-
-
+                <section class="home_links">
+                    <nav>
+                        <ul>
+                            <li class="link_home">
+                                <a href="/over-mij">
+                                    <figure>
+                                        <img src="/assets/img/Dylan.jpg" alt="Afbeelding van Dylan">
+                                        <figcaption>Over mij</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="link_home">
+                                <a href="/works">
+                                    <figure>
+                                        <img src="/assets/img/works.avif" alt="Afbeelding van posters">
+                                        <figcaption>Portfolio</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="link_home">
+                                <a href="/journal">
+                                    <figure>
+                                        <img src="/assets/img/journal.avif" alt="Afbeelding van een boek">
+                                        <figcaption>Learning Journal HvA</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                
             </div>
     </main>
     <script src="assets/js/script.js"></script>

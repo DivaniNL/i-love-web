@@ -1,0 +1,25 @@
+.button_normal{
+    padding: 14px 24px;
+    border: 3px solid #E72E39;
+    background-color: white;
+    color: #E72E39;
+    font-size: 20px;
+    font-family: var(--font1);
+    border-radius: 24px;
+    margin-top: 2rem;
+    display: block;
+    width: fit-content;
+    transition: 0.3s ease;
+    &:hover, &:focus-visible{
+        background-color: #E72E39;
+        color: white;
+    }
+    &.jk{
+        color: #447070;
+        border-color: #447070;
+        &:hover, &:focus-visible{
+            background-color: #447070;
+            color: white;
+        }
+    }
+}
