@@ -55,6 +55,26 @@ html{
 from, to { border-color: transparent }
 50% { border-color: var(--color3); }
 }
+@keyframes slide-in-translate {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .animation-slide--right {
+        transform: translateX(500px);
+        opacity: 0;
+        z-index: -1;
+        animation: 0.3s slide-in-translate var(--delay) ease-out forwards;
+    }
+    .animation-slide--left {
+        z-index: -1;
+        transform: translateX(-500px);
+        opacity: 0;
+        animation: 0.3s slide-in-translate var(--delay) ease-out forwards;
+    }
+}
 @font-face {
     font-family: 'Divani';
     src: url('./../fonts/Divani-Regular.otf') format('opentype');
@@ -386,6 +406,7 @@ a{
 }
 main{
     section.outer-container, section.note-section-container{
+
         .blocks-container{
             padding: 24px;
             .blocks-group{
@@ -600,6 +621,7 @@ main.home{
                 width: 80%;
                 margin: 0 auto;
                 padding-top: 3rem;
+                padding-bottom: 3rem;
                 nav ul{
                     display: grid;
                     grid-template-columns: 1fr 1fr;
