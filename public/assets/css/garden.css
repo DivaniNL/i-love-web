@@ -4,3 +4,60 @@
     object-fit: cover;
     margin: 1000px auto;
 }
+.garden-group.color .colors{
+    display: grid;
+    gap: 10px;
+    background-color: black;
+    padding: 20px;
+    p{
+        background-color: white;
+        padding: 10px;
+    }
+    .name{
+        color: rebeccapurple;
+    }
+    .rgb{
+        color: rgb(102 51 153);
+    }
+    .hex{
+        color: #663399;
+    }
+    .hsl{
+        color: hsl(270, 50%, 40%);
+    }
+}
+@keyframes huerotate{
+    0%{
+        --h: 0
+    }
+    100%{
+        --h: 359
+    }
+}
+@property  --h{
+    syntax:"<angle>";
+    inherits:true;
+    initial-value:270;
+}
+
+.hslchanger{
+    appearance: none;
+    padding: 10px;
+    --h: 270;
+    --s: 50%;
+    --l: 40%;
+    color: white;
+    border: 1px solid white;
+    background-color: hsl(var(--h), var(--s), var(--l));
+    outline: none !important;
+    &:hover{
+        --l: 80%;
+    }
+    &:focus{
+        --s: 90%;
+    }
+    &:active{
+        animation: huerotate infinite;
+    }
+    
+}
