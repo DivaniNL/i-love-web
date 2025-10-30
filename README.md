@@ -82,5 +82,10 @@ sander van surkum - one alow step can make whole journey feel slow
 pagmatic is what your site needs
 magical - 100ms
 
+so,
+
+know who to pelase
+know why usrrs on ur aitw (engagement or productive)
+
 
 
