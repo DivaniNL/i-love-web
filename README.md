@@ -171,4 +171,67 @@ a redirect could reduce the ttfb
 
 write a script on webpagetest
 
+# Marcy Stutton Todd - A11y and performance
+@khan academy
+
+there is a broad spectrum of disablities
+
+started in pop agency in seattle
+
+was tasked with making a11y sites
+
+she met people with disabilities on target qa team
+discovered wow can make a difference in building sites
+
+
+now working ui engineeerjbg testinf frontend platsform tooling on khan academy
+
+work on wonderbloxka design system in react and the khan academy a11y team
+
+### real ally + perf 
+
+## skeleton loading
+
+greyscale placeholders to represent thw layout of the page to come
+spans and divs with no sementic meaning as skeleton loading blocks
+sone sites have everything in skeleton with no conter. visible
+
+at khan academy
+aria-roledescription= this table is loading or not
+
+
+## device access in any locale
+
+in februari 62% global traffic 35% desktop
+
+je kan designen voor zoomed in states
+
+## keystroke level performance
+
+whatvis we measured performabce by the number of leyboard commands it took to complete a task on the wbesite
+- can keyboard users skip pask repeated page content
+-are users forced to  inactive widgets
+- how discoverable are the keyboard shortcuts
+- can a screenreader performbthe same functions
+
+use a skip to content button
+
+important metrics
+
+- number of seconds untill a screenreader can read the content
+aria-busy
+
+- minimize ja, use default css html
+
+- is reduced motion supported on your website
+
+- number of minutes spend doing user tests with disabled people
+
+### why do this
+disabled people need access
+prioritizing to prevent access debt
+
+do you treat mobile the same way
+
+
 
