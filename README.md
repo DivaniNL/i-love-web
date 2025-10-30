@@ -79,9 +79,8 @@ so same users, same clicks but different experience
 
 sander van surkum - one alow step can make whole journey feel slow
 
-
-
-
+pagmatic is what your site needs
+magical - 100ms
 
 
 
