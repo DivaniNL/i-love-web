@@ -297,7 +297,12 @@ users are saying a lot of bad stuff about slow sites on social media
 it illustrates how people percieve performance
 
 
+## growth area: teamwork
 
+plan: i wanna improce relationship witht he product team by initiating check ibs, shared goals etc
+
+contributing files is een goed voorbeeld die goed gebruikt word
+before writing code,see pain points
 
 
 
