@@ -164,4 +164,11 @@ we focus on the worst case scwnario
 
 most tools start fron peasimsitic baseline
 
+if you go to the garget page directly thrre is no caching
+use routing that is logical, the path that users take to get to the key page
+
+a redirect could reduce the ttfb
+
+write a script on webpagetest
+
 
