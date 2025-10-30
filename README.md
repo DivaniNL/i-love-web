@@ -233,5 +233,16 @@ prioritizing to prevent access debt
 
 do you treat mobile the same way
 
+# Micheal Hladky - Big data, zero js. virtual scrolling
+
+:(
+# Ines Akrap - Fast, green, responsible
+solutions engineer in storyblok (about to leave)
+
+zij gebruikte als metafoor een lego mannetje "bandit" als user
+
+constraint = creativity
+
+If my project was a bridge, would you cross it?
 
 
