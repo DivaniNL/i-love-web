@@ -18,7 +18,7 @@ hier gelde de pacman regel op de conventies.
 altijd tijden het praten in groepen ruimte over laten
 
 
-## Tammy everts - how fast is fast enough
+# Tammy everts - how fast is fast enough
 
 - fast is magical (catherine Jue, co founder at kernal)
 
@@ -87,5 +87,81 @@ so,
 know who to pelase
 know why usrrs on ur aitw (engagement or productive)
 
+# Harry Roberts - how to think like a performance engineer
+csswz.it/think (slides)
+csswizardry
+
+## tools of the trade
+
+### crux (chrome iser experience report)
+
+crux democrised wepperf
+
+when you install chrome it asks are u ok with grabbunf telematry
+chrome will measure the speed of the metrics of the sites u visit
+
+### treo
+
+graphical way to loom at data
+
+### webpagetest
+
+the gold standard in performance engineering
+its a wrap up around devtools
+
+## the metrics that matter
+
+- agree on what ur benchmarking
+
+
+## core wb vitals
+
+-lcp
+ useful for ecommerce site. 
+-inp
+does it geel aluggiaxh after loading
+-cls
+non time based metrix
+
+## enabler metrica
+
+- time to first byte
+
+a bad ttfb will always mean a slower fcp and lcp
+
+a good ttfb doesnt mean ur site is fast but a bad trfb is always a alow experience
+
+ttfn is a black hole. debugging it is difficult
+
+- domcontentloaded
+this fires that your deferred ja has finished loading
+
+if the lcp is done (lets say 2.5s) and the domcontent loaded is 3.8 seconds. there is a 1.3s gap where things wont work (frustartion) like the hamburger menu that doesnt work
+
+## reliable realistic or repeatable
+
+pick three
+
+- test conditions
+
+what sort of:
+urls
+device type
+connection speed
+geographix locale
+do we test
+
+url - easy (you know your urls)
+device type - know your users
+connection speed - most tools run too slowly(lighthouse of bad internet connection)
+in webpage test a lot of options for connections speed
+geographic locale - only matters if you have users more apread out over the world
+
+
+## cold start scenarios
+
+we focus on the worst case scwnario
+
+most tools start fron peasimsitic baseline
 
 
