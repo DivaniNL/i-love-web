@@ -245,4 +245,59 @@ constraint = creativity
 
 If my project was a bridge, would you cross it?
 
+# Ethan Gardner - Making Performance allies
+
+soft skill gaps in engineers
+
+1. communication
+2. teamwork
+3. creativity & problem solving
+4. project management and organisation
+5. documentation
+
+## communication
+how you say things matter
+once you get busy its harder to bring the point nice
+
+dont say no but say not right now
+
+
+marketing opens new doors
+performance keeps them open
+
+search for common ground. look for things u have in common with people
+### get tobknow you questions
+one is:
+has there veen friction working with engineering in past
+if yes, he has to take more care to devlop relationship
+
+
+## current work va challengen
+
+What are their biggest challenges and what are they working on
+
+
+slow ads are not unique
+ads can cause hundreds of request
+ads are slow because it uses a lot of requests
+
+when ads take too long they hold up the reat of the page
+. show down
+frustrate users etc
+
+
+
+...
+
+## info for sceptics
+
+" realise this is nerd speak but"
+
+users are saying a lot of bad stuff about slow sites on social media
+it illustrates how people percieve performance
+
+
+
+
+
 
