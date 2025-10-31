@@ -304,5 +304,6 @@ plan: i wanna improce relationship witht he product team by initiating check ibs
 contributing files is een goed voorbeeld die goed gebruikt word
 before writing code,see pain points
 
-
+slides sebastian
+https://docs.google.com/presentation/d/1YZR_Oay1nzE9ujHndF-1yNkjNx2bRXy3MRNY7P5ngZA/mobilepresent?slide=id.g38c479513fd_0_0
 
